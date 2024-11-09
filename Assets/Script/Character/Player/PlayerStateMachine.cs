@@ -3,6 +3,7 @@ using UnityEngine;
 public class PlayerStateMachine : MonoBehaviour
 {
     public PlayerState currentState {get; private set;} //申明一个状态
+    public Player player;
     
     public void Initialize(PlayerState _startState)
     {

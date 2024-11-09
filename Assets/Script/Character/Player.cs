@@ -11,12 +11,17 @@ public class Player : CharacterBase
     public Vector2 direction= Vector2.zero;
     public Rigidbody2D rb;
     public Animator anim;
-    public PlayerStateMachine stateMachine;
+    
+    private PlayerStateMachine stateMachine;
     
     private void Awake()
     {
         playertest = new Play2DInput();
         rb = this.transform.GetComponent<Rigidbody2D>();
+         
+        PlayerState idleState = new PlayerState(this,"Idle");
+        stateMachine = new PlayerStateMachine();
+        stateMachine.Initialize(idleState);
     }
 
     private void OnEnable()
