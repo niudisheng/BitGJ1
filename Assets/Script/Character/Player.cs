@@ -9,7 +9,10 @@ public class Player : CharacterBase
     public Play2DInput playertest;
     public float forceMagnitude = 10f; // 调整这个值来改变力量大小
     public Vector2 direction= Vector2.zero;
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
+    public Animator anim;
+    public PlayerStateMachine stateMachine;
+    
     private void Awake()
     {
         playertest = new Play2DInput();
