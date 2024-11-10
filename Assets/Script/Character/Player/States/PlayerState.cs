@@ -3,14 +3,16 @@ using UnityEngine;
 public class PlayerState
 {
     protected PlayerStateMachine stateMachine;
+    public string stateName;
     protected Player player; 
     public string animatorName;
  
-    public PlayerState(Player _player, string _animBoolName) //   构造函数，将上述变量传入
+    public PlayerState(Player _player, string _stateName) //   构造函数，将上述变量传入
     {
         this.player = _player; //获取player，也可以调用player中的参数    
         // this.stateMachine = _stateMachine;
-        this.animatorName = _animBoolName; //动画参数的名字
+        stateName = _stateName;
+        animatorName = stateName;
     }
  
     public virtual void Enter()
