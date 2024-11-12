@@ -6,7 +6,6 @@ public class CharacterBase : MonoBehaviour
 {
     public int maxHealth;
     private int currentHealth;
-    public float speed;
     public void takeDamage(int damage)
     {
         currentHealth -= damage;

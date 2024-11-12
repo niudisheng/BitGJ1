@@ -1,8 +1,11 @@
 using System;
-public enum  playerState 
+public enum  States 
 {
     idle,
     run,
     attack,
-    dead
+    dead,
+    rolling,
+    jump,
+    fall,
 }

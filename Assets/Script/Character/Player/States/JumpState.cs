@@ -1,6 +1,9 @@
+using UnityEngine.Events;
+
 public class JumpState : PlayerState
 {
-    public JumpState(Player _player, string stateName="Jumping") : base(_player, stateName)
+    
+    public JumpState(Player _player,PlayerStateMachine _stateMachine, States _state=States.jump) : base(_player,_stateMachine, _state)
     {
         
     }
@@ -9,7 +12,9 @@ public class JumpState : PlayerState
     {
         base.Enter();
     }
- 
+
+    
+
     public override void Exit()
     {
         base.Exit();

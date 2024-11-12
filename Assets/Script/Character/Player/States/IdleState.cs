@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 public class IdleState : PlayerState
 {
-    public IdleState(Player _player, string stateName="Idle") : base(_player, stateName)
+    public IdleState(Player _player, PlayerStateMachine _stateMachine, States _state=States.idle) : base(_player,_stateMachine, _state)
     {
         
     }

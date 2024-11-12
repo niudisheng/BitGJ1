@@ -4,23 +4,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem.HID;
-
+using DG.Tweening;
 public class Player : CharacterBase
 {
     public Play2DInput playertest;
-    public float forceMagnitude = 10f; // 调整这个值来改变力量大小
     public Vector2 direction= Vector2.zero;
     public Rigidbody2D rb;
     public Animator anim;
     
     public PlayerStateMachine stateMachine;
-    public bool isJump;
+    [Header("参数设置")]
+    public float forceMagnitude = 10f; // 调整这个值来改变力量大小
+    public bool isJump= true;
+    public float speed = 5f; // 调整这个值来改变速度大小
+    public float height;
+    public float rolltime = 0.5f; // 调整这个值来改变高度大小
     private void Awake()
     {
         playertest = new Play2DInput();
         rb = this.transform.GetComponent<Rigidbody2D>();
          
-        PlayerState idleState = new PlayerState(this,"Idle");
+        PlayerState idleState = new IdleState(this,stateMachine);
         // stateMachine = new PlayerStateMachine();
         stateMachine.Initialize(idleState);
     }
@@ -30,7 +34,8 @@ public class Player : CharacterBase
         playertest.Enable();
         // playertest.Player.Move.started += ctx => MoveDirection(ctx.ReadValue<Vector2>());
         //TODO: 绑定输入事件,非常重要
-        playertest.Player.Jump.started += ctx => Jump(true);
+        playertest.Player.Jump.started += ctx => Jump();
+        playertest.Player.Roll.started += ctx => stateMachine.ChangeState(new RollingState(this,stateMachine));
     }
     private void OnDisable()
     {
@@ -42,10 +47,7 @@ public class Player : CharacterBase
         //获取输入
         direction = playertest.Player.Move.ReadValue<Vector2>();
         MoveDirection(direction);
-        if (Input.GetKey(KeyCode.Space))
-        {
-            Shot();
-        }
+        
         
         
         
@@ -64,13 +66,14 @@ public class Player : CharacterBase
         rb.velocity = new Vector2(direction1.x* speed, rb.velocity.y);
     }
 
-    public void Jump(bool isJump1)
+    public void Jump()
     {
-        if (isJump1&&stateMachine.currentState.stateName=="Idle")
+        Debug.Log("jump");
+        if (stateMachine.currentState.stateName==States.idle)
         {
             // rb.AddForce(new Vector2(0, forceMagnitude));
             rb.velocity = new Vector2(rb.velocity.x, speed );
-            stateMachine.ChangeState(new JumpState(this));
+            stateMachine.ChangeState(new JumpState(this,stateMachine));
         }
     }
 
@@ -97,8 +100,14 @@ public class Player : CharacterBase
             Vector3 force = direction2 * forceMagnitude + Vector3.up * forceMagnitude;
             rb.AddForce(force, ForceMode2D.Impulse);
             */
-            stateMachine.ChangeState(new IdleState(this));
+            stateMachine.ChangeState(new IdleState(this,stateMachine));
         }
     }
-    
+
+    void roll()
+    {
+        
+        stateMachine.ChangeState(new RollingState(this,stateMachine));
+    }
+
 }
