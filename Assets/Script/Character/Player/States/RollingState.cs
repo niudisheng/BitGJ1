@@ -29,7 +29,7 @@ public class RollingState : PlayerState
     private void rollcheck()
     {
         //解除翻滚
-        if (player.stateMachine.currentState == this)
+        if (player.currentState == States.rolling)
         {
             stateMachine.ChangeState(new IdleState(player, stateMachine));
         }

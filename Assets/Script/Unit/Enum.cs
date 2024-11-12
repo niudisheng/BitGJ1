@@ -1,11 +1,12 @@
 using System;
+[Serializable]
 public enum  States 
 {
-    idle,
-    run,
-    attack,
-    dead,
-    rolling,
-    jump,
-    fall,
+    idle=0,
+    run=1,
+    attack=2,
+    dead=4,
+    rolling=8,
+    jump=16,
+    fall=32,
 }

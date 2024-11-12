@@ -13,12 +13,17 @@ public class Player : CharacterBase
     public Animator anim;
     
     public PlayerStateMachine stateMachine;
+    
+
+
     [Header("参数设置")]
     public float forceMagnitude = 10f; // 调整这个值来改变力量大小
-    public bool isJump= true;
     public float speed = 5f; // 调整这个值来改变速度大小
     public float height;
     public float rolltime = 0.5f; // 调整这个值来改变高度大小
+    
+    public States currentState
+    { get =>stateMachine.currentState.stateName; }
     private void Awake()
     {
         playertest = new Play2DInput();
@@ -59,8 +64,7 @@ public class Player : CharacterBase
         {
             return;
         }
-        Debug.Log($"{stateMachine.currentState.stateName}");
-        //跳跃逻辑
+
         
         
         rb.velocity = new Vector2(direction1.x* speed, rb.velocity.y);
