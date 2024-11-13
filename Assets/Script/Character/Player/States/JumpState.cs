@@ -3,6 +3,7 @@ using UnityEngine.Events;
 public class JumpState : PlayerState
 {
     
+    
     public JumpState(Player _player,PlayerStateMachine _stateMachine, States _state=States.jump) : base(_player,_stateMachine, _state)
     {
         
@@ -25,4 +26,5 @@ public class JumpState : PlayerState
         base.Update();
         
     }
+    
 }

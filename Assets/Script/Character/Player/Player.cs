@@ -52,10 +52,7 @@ public class Player : CharacterBase
         //获取输入
         direction = playertest.Player.Move.ReadValue<Vector2>();
         MoveDirection(direction);
-        
-        
-        
-        
+        Debug.Log(currentState.ToString());
     }
 
     public void MoveDirection(Vector2 direction1)
@@ -64,36 +61,25 @@ public class Player : CharacterBase
         {
             return;
         }
-
-        
-        
+        stateMachine.ChangeState(new MoveState(this,stateMachine));
         rb.velocity = new Vector2(direction1.x* speed, rb.velocity.y);
     }
 
     public void Jump()
     {
         Debug.Log("jump");
-        if (stateMachine.currentState.stateName==States.idle)
-        {
-            // rb.AddForce(new Vector2(0, forceMagnitude));
-            rb.velocity = new Vector2(rb.velocity.x, speed );
-            stateMachine.ChangeState(new JumpState(this,stateMachine));
-        }
+        rb.velocity = new Vector2(rb.velocity.x, speed );
+        stateMachine.ChangeState(new JumpState(this,stateMachine));
+            
+        
     }
 
-    public void Shot()
-    {
-        Debug.Log("shot");
-    }
-    
-    
     /// <summary>
-    /// 碰撞检测
+    /// 碰撞地面检测
     /// </summary>
     /// <param name="collision"></param>
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("碰撞");
         if (rb != null&&collision.gameObject.CompareTag("Ground"))
         {
             /*

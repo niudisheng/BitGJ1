@@ -3,7 +3,7 @@ using System;
 public enum  States 
 {
     idle=0,
-    run=1,
+    move=1,
     attack=2,
     dead=4,
     rolling=8,

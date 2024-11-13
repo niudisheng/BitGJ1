@@ -1,6 +1,5 @@
-
 using UnityEngine;
-public class PlayerStateMachine : MonoBehaviour
+public class PlayerStateMachine
 {
     public PlayerState currentState {get; private set;} //申明一个状态
     
