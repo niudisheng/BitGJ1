@@ -20,7 +20,6 @@ public class RollingState : PlayerState
     {
         var rolltime = player.rolltime;
         var x_velocity = player.height / rolltime;
-        Debug.Log(x_velocity);
         player.rb.velocity = new Vector2(x_velocity,player.rb.velocity.y);
         DelayedAction.instance.StartDelayedAction( 0.5f,rollcheck );
 
@@ -29,12 +28,7 @@ public class RollingState : PlayerState
     private void rollcheck()
     {
         //解除翻滚
-        if (player.currentState == States.rolling)
-        {
-            stateMachine.ChangeState(new IdleState(player, stateMachine));
-        }
-        
-        
+        stateMachine.RemoveState(States.rolling);
     }
 
     public override void Exit()

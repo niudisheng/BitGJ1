@@ -14,6 +14,7 @@ public class MoveState : PlayerState
     {
         base.Enter();
         
+        
     }
  
     public override void Exit()
