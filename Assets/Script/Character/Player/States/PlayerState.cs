@@ -21,7 +21,7 @@ public class PlayerState
         Debug.Log("Entering state: " + stateName);
         if (stateName != States.idle)
         {
-            Debug.LogWarning("Removing idle state");
+            // Debug.LogWarning("Removing idle state");
             stateMachine.RemoveState(States.idle);
         }
     }

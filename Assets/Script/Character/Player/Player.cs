@@ -41,6 +41,7 @@ public class Player : CharacterBase
         //TODO: 绑定输入事件,非常重要
         playertest.Player.Jump.started += ctx => Jump();
         playertest.Player.Roll.started += ctx => roll();
+        
     }
     private void OnDisable()
     {

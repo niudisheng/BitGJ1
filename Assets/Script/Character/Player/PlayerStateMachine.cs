@@ -27,8 +27,6 @@ public class PlayerStateMachine
     {
         states.Add(_state);
         _state.Enter();
-        
-        
     }
     public void RemoveState(States _state)
     {
