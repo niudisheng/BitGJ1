@@ -21,10 +21,16 @@ public class Player : CharacterBase
     public float speed = 5f; // 调整这个值来改变速度大小
     public float height;
     public float rolltime = 0.5f; // 调整这个值来改变高度大小
-    
-    
+
+    [Header("状态")]
+    public bool isFirstJump;
+    public bool isDoubleJump;
+    public bool isGround;
+
     private void Awake()
     {
+        isFirstJump = false;
+        isDoubleJump = false;
         playertest = new Play2DInput();
         stateMachine = new PlayerStateMachine();
         rb = this.transform.GetComponent<Rigidbody2D>();
@@ -70,10 +76,24 @@ public class Player : CharacterBase
     public void Jump()
     {
         Debug.Log("jump");
-        rb.velocity = new Vector2(rb.velocity.x, speed );
-        stateMachine.AddState(new JumpState(this,stateMachine));
-            
-        
+        if (!isFirstJump && isGround && !isDoubleJump)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, speed);
+            stateMachine.AddState(new JumpState(this, stateMachine));
+            isFirstJump = true;
+        }
+        else if (isFirstJump && !isGround && !isDoubleJump)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, speed);
+            stateMachine.AddState(new JumpState(this, stateMachine));
+            isDoubleJump = true;
+            isFirstJump= false;
+        }
+        else if (isDoubleJump)
+        {
+            //isDoubleJump = false;
+        }
+
     }
 
     /// <summary>
@@ -93,6 +113,17 @@ public class Player : CharacterBase
             rb.AddForce(force, ForceMode2D.Impulse);
             */
             stateMachine.RemoveState(States.jump);
+            isGround = true;
+            isDoubleJump= false;
+            isFirstJump= false;
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (rb != null && collision.gameObject.CompareTag("Ground"))
+        {
+            isGround = false;
+
         }
     }
     void roll()

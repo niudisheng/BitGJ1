@@ -2,8 +2,6 @@ using UnityEngine.Events;
 
 public class JumpState : PlayerState
 {
-    
-    
     public JumpState(Player _player,PlayerStateMachine _stateMachine, States _state=States.jump) : base(_player,_stateMachine, _state)
     {
         
@@ -24,7 +22,6 @@ public class JumpState : PlayerState
     public override void Update() //持续调用
     {
         base.Update();
-        
     }
     
 }
