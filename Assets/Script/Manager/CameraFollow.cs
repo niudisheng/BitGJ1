@@ -32,7 +32,7 @@ public class CameraFollow : MonoBehaviour
     void LateUpdate()
     {
         Vector3 desiredPosition = player.position + offset;
-        Debug.LogWarning(desiredPosition);
+        // Debug.LogWarning(desiredPosition);
         var Diff = (transform.position-desiredPosition).magnitude;
         //Diff=0时要保持跟随，Speed要为1
         if (Diff < 0.1f)
