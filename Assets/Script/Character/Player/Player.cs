@@ -163,6 +163,8 @@ public class Player : CharacterBase
     private void OutDefend()
     {
         isDefend= false;
+        
     }
 
+    
 }
