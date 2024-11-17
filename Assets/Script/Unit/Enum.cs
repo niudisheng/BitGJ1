@@ -9,4 +9,10 @@ public enum  States
     rolling=8,
     jump=16,
     fall=32,
+    defend=64,
 }
+public enum EnemyStateEnum
+{
+    patrol,chase,rangeAttack
+}
+

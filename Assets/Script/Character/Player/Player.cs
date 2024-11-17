@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem.HID;
 using DG.Tweening;
+using UnityEngine.InputSystem;
 public class Player : CharacterBase
 {
     public Play2DInput playertest;
@@ -26,6 +27,7 @@ public class Player : CharacterBase
     public bool isFirstJump;
     public bool isDoubleJump;
     public bool isGround;
+    public bool isDefend;
 
     private void Awake()
     {
@@ -34,7 +36,8 @@ public class Player : CharacterBase
         playertest = new Play2DInput();
         stateMachine = new PlayerStateMachine();
         rb = this.transform.GetComponent<Rigidbody2D>();
-         
+
+
         PlayerState idleState = new IdleState(this,stateMachine);
         // stateMachine = new PlayerStateMachine();
         stateMachine.Initialize(this,idleState);
@@ -47,8 +50,12 @@ public class Player : CharacterBase
         //TODO: 绑定输入事件,非常重要
         playertest.Player.Jump.started += ctx => Jump();
         playertest.Player.Roll.started += ctx => roll();
-        
+        playertest.Player.Defend.canceled += ctx =>OutDefend();
+
     }
+
+
+
     private void OnDisable()
     {
         playertest.Disable();
@@ -57,8 +64,16 @@ public class Player : CharacterBase
     private void Update()
     {
         //获取输入
-        direction = playertest.Player.Move.ReadValue<Vector2>();
-        MoveDirection(direction);
+        if (!isDefend)
+        {
+            direction = playertest.Player.Move.ReadValue<Vector2>();
+            MoveDirection(direction);
+        }
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            Defend();
+        }
         
     }
 
@@ -75,23 +90,27 @@ public class Player : CharacterBase
 
     public void Jump()
     {
-        Debug.Log("jump");
-        if (!isFirstJump && isGround && !isDoubleJump)
+        if (!isDefend)
         {
-            rb.velocity = new Vector2(rb.velocity.x, speed);
-            stateMachine.AddState(new JumpState(this, stateMachine));
-            isFirstJump = true;
-        }
-        else if (isFirstJump && !isGround && !isDoubleJump)
-        {
-            rb.velocity = new Vector2(rb.velocity.x, speed);
-            stateMachine.AddState(new JumpState(this, stateMachine));
-            isDoubleJump = true;
-            isFirstJump= false;
-        }
-        else if (isDoubleJump)
-        {
-            //isDoubleJump = false;
+            Debug.Log("jump");
+            if (!isFirstJump && isGround && !isDoubleJump)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, speed);
+                stateMachine.AddState(new JumpState(this, stateMachine));
+                isFirstJump = true;
+            }
+            else if (isFirstJump && !isGround && !isDoubleJump)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, speed);
+                stateMachine.AddState(new JumpState(this, stateMachine));
+                isDoubleJump = true;
+                isFirstJump = false;
+            }
+            else if (isDoubleJump)
+            {
+                //isDoubleJump = false;
+            }
+
         }
 
     }
@@ -128,7 +147,22 @@ public class Player : CharacterBase
     }
     void roll()
     {
-        stateMachine.AddState(new RollingState(this,stateMachine));
+        if (!isDefend)
+        {
+            stateMachine.AddState(new RollingState(this, stateMachine));
+        }
+
+    }
+
+    private void Defend()
+    {
+        isDefend = true;
+        rb.velocity = Vector2.zero;
+        //stateMachine.AddState(new DefendState(this, stateMachine));
+    }
+    private void OutDefend()
+    {
+        isDefend= false;
     }
 
 }
