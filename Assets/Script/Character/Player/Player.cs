@@ -1,11 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.InputSystem.HID;
-using DG.Tweening;
-using UnityEngine.InputSystem;
 public class Player : CharacterBase
 {
     public Play2DInput playertest;
@@ -27,7 +21,11 @@ public class Player : CharacterBase
     public bool isFirstJump;
     public bool isDoubleJump;
     public bool isGround;
-    public bool isDefend;
+
+    public bool isDefend
+    {
+        get { return stateMachine.CheckState(States.defend); }
+    }
 
     private void Awake()
     {
@@ -54,8 +52,6 @@ public class Player : CharacterBase
 
     }
 
-
-
     private void OnDisable()
     {
         playertest.Disable();
@@ -72,7 +68,7 @@ public class Player : CharacterBase
 
         if (Input.GetMouseButtonDown(1))
         {
-            Defend();
+            stateMachine.AddState(new DefendState(this, stateMachine));
         }
         
     }
@@ -123,14 +119,6 @@ public class Player : CharacterBase
     {
         if (rb != null&&collision.gameObject.CompareTag("Ground"))
         {
-            /*
-            // 计算碰撞方向
-            Vector3 direction2 = (transform.position - collision.transform.position).normalized;
-            
-            // 添加力，使其沿抛物线运动
-            Vector3 force = direction2 * forceMagnitude + Vector3.up * forceMagnitude;
-            rb.AddForce(force, ForceMode2D.Impulse);
-            */
             stateMachine.RemoveState(States.jump);
             isGround = true;
             isDoubleJump= false;
@@ -153,17 +141,10 @@ public class Player : CharacterBase
         }
 
     }
-
-    private void Defend()
-    {
-        isDefend = true;
-        rb.velocity = Vector2.zero;
-        //stateMachine.AddState(new DefendState(this, stateMachine));
-    }
+    
     private void OutDefend()
     {
-        isDefend= false;
-        
+        stateMachine.RemoveState(States.defend);
     }
 
     

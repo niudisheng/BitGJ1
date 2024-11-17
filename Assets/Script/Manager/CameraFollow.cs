@@ -42,9 +42,9 @@ public class CameraFollow : MonoBehaviour
         else
         {
             //TODO: 这里需要根据距离差值来设置cameraSpeed
-            cameraSpeed = 1;
+            cameraSpeed = 1-Diff*0.01f;
         }
-
+        Debug.LogWarning(cameraSpeed);
         Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
         
         float clampedX = Mathf.Clamp(smoothedPosition.x, minBounds.x + cameraHalfWidth, maxBounds.x - cameraHalfWidth);

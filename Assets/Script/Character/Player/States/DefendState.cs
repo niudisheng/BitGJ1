@@ -14,19 +14,20 @@ public class DefendState : PlayerState
     public override void Enter()
     {
         base.Enter();
-       defending();
+        
+        defending();
         Debug.Log("fine");
     }
 
     private void defending()
     {
-        player.rb.velocity = Vector2.zero;
+        player.rb.velocity = new Vector2(player.rb.velocity.x, 0);
         //DelayedAction.instance.StartDelayedAction(0.5f, defendcheck);
     }
 
     private void defendcheck()
     {
-        //解除格挡
+        //瑙ｉ櫎鏍兼尅
         stateMachine.RemoveState(States.rolling);
     }
 
@@ -35,7 +36,7 @@ public class DefendState : PlayerState
         base.Exit();
     }
 
-    public override void Update() //持续调用
+    public override void Update() //鎸佺画璋冪敤
     {
         defending();
 

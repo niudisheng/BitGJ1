@@ -2770,6 +2770,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 917399171}
   isSkill1Active: 1
+  Points: []
+  rb: {fileID: 1366058981}
 --- !u!114 &917399170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2848,8 +2850,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.036685944
-        value: 0.20000076
+        time: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -2893,7 +2895,7 @@ LineRenderer:
     numCapVertices: 0
     alignment: 0
     textureMode: 0
-    textureScale: {x: 1, y: 1}
+    textureScale: {x: 100, y: 100}
     shadowBias: 0.5
     generateLightingData: 0
   m_MaskInteraction: 0

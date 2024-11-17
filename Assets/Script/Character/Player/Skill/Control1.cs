@@ -1,10 +1,7 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.EventSystems;
 
 public class Control1 : MonoBehaviour
 {
@@ -40,9 +37,10 @@ public class Control1 : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(Input.GetMouseButtonDown(0));
+
         if (Input.GetMouseButton(0))
         {
+            lineRenderer.enabled = true;
             Vector2 mousePosition = Input.mousePosition;
             Camera mainCamera = Camera.main;
             Vector3 worldPosition =
@@ -57,6 +55,7 @@ public class Control1 : MonoBehaviour
 
     private void crush()
     {
+        //TODO: 逻辑很奇怪，需要优化
         // 当鼠标松开时,计算曲线
         if (Points == null || Points.Count < 2)
         {
@@ -84,14 +83,15 @@ public class Control1 : MonoBehaviour
         lineRenderer.SetPosition(2, tail);
 
         Debug.Log($"Overall Tangent: {overallTangent}");
-        
+        float movetime = 0.2f;
+        lineRenderer.enabled = false;
         // 移动逻辑
-        rb.DOMove(head, 0.5f).OnComplete(
+        rb.DOMove(head, movetime).OnComplete(
             () =>
             {
-                rb.DOMove(overallTangent, 0.5f).OnComplete(
-                    () =>rb.DOMove(tail, 0.5f));
+                rb.DOMove(overallTangent, movetime).OnComplete(
+                    () =>rb.DOMove(tail, movetime));
             });
-
+        lineRenderer.positionCount = 0;
     }
 }

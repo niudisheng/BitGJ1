@@ -11,6 +11,8 @@ public enum  States
     fall=32,
     defend=64,
 }
+
+[Serializable]
 public enum EnemyStateEnum
 {
     patrol,chase,rangeAttack
