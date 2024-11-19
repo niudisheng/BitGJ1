@@ -6,7 +6,7 @@ public abstract class Weapon : MonoBehaviour
     
     public bool isCooldown;
     private float executeRate;
-    private void Start()
+    private void Awake()
     {
         executeRate = weaponData.executeRate;
         isCooldown = true;
@@ -19,9 +19,13 @@ public abstract class Weapon : MonoBehaviour
 
     public virtual void executeWeapon()
     {
-        onExecute();
-        Debug.Log("Execute");
-        waitForCooldown();
+        if (isCooldown)
+        {
+
+            onExecute();
+            Debug.Log("Execute");
+            waitForCooldown();
+        }
     }
 
     public virtual void waitForCooldown()
