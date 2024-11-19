@@ -16,7 +16,7 @@ public class Player : CharacterBase
     public float speed = 5f; // 调整这个值来改变速度大小
     public float height;
     public float rolltime = 0.5f; // 调整这个值来改变高度大小
-
+    public Weapon weapon;
     [Header("状态")]
     public bool isFirstJump;
     public bool isDoubleJump;
@@ -49,6 +49,7 @@ public class Player : CharacterBase
         playertest.Player.Jump.started += ctx => Jump();
         playertest.Player.Roll.started += ctx => roll();
         playertest.Player.Defend.canceled += ctx =>OutDefend();
+        playertest.Player.Attack.started += ctx =>weapon.executeWeapon();
 
     }
 
@@ -75,6 +76,7 @@ public class Player : CharacterBase
 
     public void MoveDirection(Vector2 direction1)
     {
+        //基础移动
         if (direction1 == Vector2.zero)
         {
             stateMachine.RemoveState(States.move);
