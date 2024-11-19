@@ -40,6 +40,6 @@ public class Shooting : Weapon
     {
         Instantiate(projectile, shotPoint.position, transform.rotation);
         timeBtwShorts = startTimeBtwLongs;
-        waitForCooldown();
+        
     }
 }

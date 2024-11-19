@@ -14,23 +14,25 @@ public abstract class Weapon : MonoBehaviour
 
     protected virtual void onExecute()
     {
-        Debug.Log("Execute");
+        
     }
 
     public virtual void executeWeapon()
     {
         onExecute();
+        Debug.Log("Execute");
         waitForCooldown();
     }
 
     public virtual void waitForCooldown()
     {
         isCooldown = false;
-        DelayedAction.instance.StartDelayedAction(executeRate, () =>{
+        Debug.Log(DelayedAction.instance);
+        DelayedAction.instance.StartDelayedAction(executeRate, () =>
             {
                 isCooldown = true;
             }
-        });
+        );
     }
 
 

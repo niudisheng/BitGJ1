@@ -2400,6 +2400,9 @@ MonoBehaviour:
   invulnerable: 0
   myself: {fileID: 235197847}
   player: {fileID: 0}
+  Ondie:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &384187465
 GameObject:
   m_ObjectHideFlags: 0
@@ -2853,7 +2856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84ed15d94a36c9241a1168833dbe86bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponData: {fileID: 0}
+  weaponData: {fileID: 11400000, guid: 7a6c95c35ce329a449c063799dc75556, type: 2}
   isCooldown: 0
   offset: -90
   projectile: {fileID: 5531248069270685575, guid: db2d5be6341f99c47b24d18ddefd16ee, type: 3}
@@ -4672,7 +4675,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1366058976}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 38325b38adf8bb542887fcdfb00f384c, type: 3}
   m_Name: 
@@ -4684,6 +4687,9 @@ MonoBehaviour:
   invulnerable: 0
   myself: {fileID: 1366058976}
   player: {fileID: 0}
+  Ondie:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1594381415
 GameObject:
   m_ObjectHideFlags: 0
@@ -4942,7 +4948,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 55
+    m_Bits: 2103
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
