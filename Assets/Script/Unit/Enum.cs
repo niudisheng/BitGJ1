@@ -11,7 +11,15 @@ public enum  States
     fall=32,
     defend=64,
 }
-
+[Flags]
+public enum AttackType
+{
+    normal=1,
+    throwing=2,
+    special=4,
+    gun=8,
+    
+}
 [Serializable]
 public enum EnemyStateEnum
 {

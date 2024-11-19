@@ -12,7 +12,7 @@ public class Control1 : MonoBehaviour
     public Rigidbody2D rb;
     public void SetOnSkill1()
     {
-        
+        //时空断裂
         GameManager.SetTimeScale(0.1f);
         isSkill1Active = true;
         DelayedAction.instance.StartDelayedAction(2f, () =>
@@ -37,7 +37,10 @@ public class Control1 : MonoBehaviour
 
     private void Update()
     {
-
+        if (!isSkill1Active)
+        {
+            return;
+        }
         if (Input.GetMouseButton(0))
         {
             lineRenderer.enabled = true;
