@@ -14,6 +14,7 @@ public class Character : MonoBehaviour
     public GameObject myself;
     public Play2DInput playertest;
     public Player player;
+    public UnityEvent Ondie;
     private void Awake()
     {
         currentHealth = maxHealth;
@@ -33,7 +34,7 @@ public class Character : MonoBehaviour
             currentHealth = 0;
             if(myself.CompareTag("gold"))
             {
-                Destroy(myself);
+                Ondie?.Invoke();
             }
             if(myself.CompareTag("Player"))
             {
@@ -60,7 +61,7 @@ public class Character : MonoBehaviour
                     currentHealth = 0;
                     if (myself.CompareTag("gold"))
                     {
-                        Destroy(myself);
+                        Ondie?.Invoke();
                     }
                     if (myself.CompareTag("Player"))
                     {
@@ -81,7 +82,7 @@ public class Character : MonoBehaviour
                     currentHealth = 0;
                     if (myself.CompareTag("gold"))
                     {
-                        Destroy(myself);
+                        Ondie?.Invoke();
                     }
                     if (myself.CompareTag("Player"))
                     {
@@ -103,7 +104,7 @@ public class Character : MonoBehaviour
                 currentHealth = 0;
                 if (myself.CompareTag("gold"))
                 {
-                    Destroy(myself);
+                    Ondie?.Invoke();
                 }
                 if (myself.CompareTag("Player"))
                 {
@@ -131,5 +132,14 @@ public class Character : MonoBehaviour
             invulnerable = true;
             invulnerableCounter = invulnerableDuration;
         }
+    }
+    public void DestroyMyself()
+    {
+          Destroy(this);
+    }
+    public void EnemyTlak()
+    {
+        invulnerableCounter = 1;
+        invulnerable = true;
     }
 }

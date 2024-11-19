@@ -83,7 +83,7 @@ public class Enemy : MonoBehaviour
             isWait = false;
             waitTimeCounter = waitTime;
         }
-        if(PhysicsCheck.isGround)
+        if(PhysicsCheck.isGround&&!PhysicsCheck.isWall)
         {
             isWait = false;
             waitTimeCounter = waitTime;

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -4250898978140056623}
   - component: {fileID: 3306305255063391416}
   - component: {fileID: 1874403372505927375}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: mika
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ PolygonCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2048
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2

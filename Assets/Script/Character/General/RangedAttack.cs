@@ -15,4 +15,8 @@ public class RangedAttack : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
             Destroy(gameObject);
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+    }
 }

@@ -18,7 +18,7 @@ public class PlayerState
     public virtual void Enter()
     {
         player.anim.SetBool(animatorName,true);
-        Debug.Log("Entering state: " + stateName);
+        //Debug.Log("Entering state: " + stateName);
         if (stateName != States.idle)
         {
             // Debug.LogWarning("Removing idle state");
@@ -33,7 +33,7 @@ public class PlayerState
  
     public virtual void Exit()
     {
-        Debug.Log("Exiting state: " + animatorName);
+        //Debug.Log("Exiting state: " + animatorName);
         player.anim.SetBool(animatorName,false);
     }
  
