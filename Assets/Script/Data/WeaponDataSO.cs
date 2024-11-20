@@ -21,5 +21,6 @@ public class WeaponDataSO : ScriptableObject
     public float damage;
     //这是冷却
     public float executeRate;
+    public float speed;
 
 }

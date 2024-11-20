@@ -10,11 +10,11 @@ public class ThrowableWeapon : Weapon
     public bool isThrown = false;
     Vector3 difference;
     private Rigidbody2D rb;
-    public float speed = 10f;
+    private float speed;
 
     private void Start()
     {
-        
+        speed = weaponData.speed;
         rb = this.GetComponent<Rigidbody2D>();
     }
 
@@ -28,6 +28,7 @@ public class ThrowableWeapon : Weapon
             rb.velocity = difference * speed;
             rb.bodyType = RigidbodyType2D.Dynamic;
             rb.gravityScale = 1;
+            
         }
         else
         {

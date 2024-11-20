@@ -16,9 +16,10 @@ public abstract class Weapon : MonoBehaviour
     {
         
     }
-
+//TODO: 加入Q键的区分
     public virtual void executeWeapon()
     {
+        
         if (isCooldown)
         {
 
