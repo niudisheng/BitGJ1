@@ -159,9 +159,12 @@ public class Player : CharacterBase
     /// </summary>
     public void RetrieveWeapon(Vector2 pos)
     {
-        //TODO: 优化检索效果，添加速度距离公式
-        rb.DOMove(pos, rolltime);
-        weapon.isThrown = false;
+        rb.DOMove(pos, 0.1f).onComplete += () => 
+        { 
+            weapon.isThrown = false;
+            weapon.rb.isKinematic = true;
+            weapon.rb.velocity = Vector2.zero;
+        };
     }
 
 

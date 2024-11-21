@@ -12,7 +12,7 @@ public abstract class Weapon : MonoBehaviour
     public bool isThrown = false;
     //固定值，让瓦逸自己来改
     protected float offset = -90f;
-    protected Rigidbody2D rb;
+    public Rigidbody2D rb;
     //以下用于计算投掷物的速度和方向
     protected Vector3 difference;
     public UnityAction<Vector2> retrieveWeapon;
@@ -22,7 +22,7 @@ public abstract class Weapon : MonoBehaviour
         isCooldown = true;
     }
     
-    private void Start()
+    protected virtual void Start()
     {
         
         rb = this.GetComponent<Rigidbody2D>();
@@ -48,7 +48,7 @@ public abstract class Weapon : MonoBehaviour
         else
         {
             rb.velocity = difference * weaponData.speed;
-            Debug.LogWarning(rb.velocity);
+            
             rb.bodyType = RigidbodyType2D.Dynamic;
             rb.gravityScale = 1;
             isThrown = true;
