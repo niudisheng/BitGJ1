@@ -2577,8 +2577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponData: {fileID: 11400000, guid: 8360ffed2ffcd6948ab96ae21db9f2c6, type: 2}
   isCooldown: 0
-  isThrown: 1
-  speed: 1
+  isThrown: 0
 --- !u!50 &465415792
 Rigidbody2D:
   serializedVersion: 4
@@ -2943,7 +2942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponData: {fileID: 11400000, guid: 7a6c95c35ce329a449c063799dc75556, type: 2}
   isCooldown: 0
-  offset: -90
+  isThrown: 0
   projectile: {fileID: 5531248069270685575, guid: db2d5be6341f99c47b24d18ddefd16ee, type: 3}
   shotPoint: {fileID: 1909100617}
   startTimeBtwLongs: 1

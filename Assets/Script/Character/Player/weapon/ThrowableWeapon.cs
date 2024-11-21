@@ -6,37 +6,8 @@ using UnityEngine;
 
 public class ThrowableWeapon : Weapon
 {
-    private float offset = -90f;
-    public bool isThrown = false;
-    Vector3 difference;
-    private Rigidbody2D rb;
-    private float speed;
-
-    private void Start()
-    {
-        speed = weaponData.speed;
-        rb = this.GetComponent<Rigidbody2D>();
-    }
-
-    protected override void onExecute()
-    {
-        if (isThrown)
-        {
-            Debug.LogWarning("Weapon is already thrown");
-            //TODO:加入抛出动画和物理效果的代码
-            
-            rb.velocity = difference * speed;
-            rb.bodyType = RigidbodyType2D.Dynamic;
-            rb.gravityScale = 1;
-            
-        }
-        else
-        {
-            //TODO:加入切换动画和攻击状态的代码
-            
-        }
-    }
-
+    
+    
     private void turning()
     {
         if (rb.velocity != Vector2.zero)
@@ -60,7 +31,7 @@ public class ThrowableWeapon : Weapon
 
     private void Update()
     {
-        if (isThrown)
+        if (!isThrown)
         {
             turning();
         }

@@ -6,7 +6,7 @@ using UnityEngine;
 public class Shooting : Weapon
 {
     //×ªÏò½Ç¶È
-    public float offset;
+    
     public GameObject projectile;
     public Transform shotPoint;
     private float timeBtwShorts;

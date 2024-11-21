@@ -17,10 +17,13 @@ public class WeaponDataSO : ScriptableObject
         set { _weaponName = value; }
     
     }
+    [Header("攻击类型")]
     public AttackType attackType;
+    [Header("攻击力")]
     public float damage;
-    //这是冷却
+    [Header("冷却时间")]
     public float executeRate;
+    [Header("投掷物飞出的速度")]
     public float speed;
 
 }

@@ -1,4 +1,5 @@
 
+using DG.Tweening;
 using UnityEngine;
 public class Player : CharacterBase
 {
@@ -45,11 +46,14 @@ public class Player : CharacterBase
     {
         playertest.Enable();
         // playertest.Player.Move.started += ctx => MoveDirection(ctx.ReadValue<Vector2>());
-        //TODO: 绑定输入事件,非常重要
+        //绑定输入事件,非常重要
         playertest.Player.Jump.started += ctx => Jump();
         playertest.Player.Roll.started += ctx => roll();
         playertest.Player.Defend.canceled += ctx =>OutDefend();
         playertest.Player.Attack.started += ctx =>weapon.executeWeapon();
+        playertest.Player.Throw.started += ctx =>weapon.executeThrow();
+        
+        weapon.retrieveWeapon = RetrieveWeapon;
 
     }
 
@@ -150,4 +154,15 @@ public class Player : CharacterBase
     }
 
     
+    /// <summary>
+    /// 冲刺收回武器
+    /// </summary>
+    public void RetrieveWeapon(Vector2 pos)
+    {
+        //TODO: 优化检索效果，添加速度距离公式
+        rb.DOMove(pos, rolltime);
+        weapon.isThrown = false;
+    }
+
+
 }
