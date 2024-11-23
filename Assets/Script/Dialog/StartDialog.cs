@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class StartDialog : MonoBehaviour
 {
-    public TextAsset TextAsset;
+    public DIalogDataSO DIalogDataSO;
     public DialogManager DialogManager;
-    public string thisNPC;
-    public string otherNPC;
-    public bool isPause;
     public bool isRead;
 
     public void StartDialogs()
     {
         DialogManager.dialogue.SetActive(true);
-        DialogManager.oneName = thisNPC;
-        DialogManager.twoName = otherNPC;
-        DialogManager.isPause = this.isPause;
-        DialogManager.ReadText(TextAsset);
+        DialogManager.oneName = DIalogDataSO.thisNPC;
+        DialogManager.twoName = DIalogDataSO.otherNPC;
+        DialogManager.isPause = DIalogDataSO.isPause;
+        DialogManager.ReadText(DIalogDataSO.TextAsset);
         DialogManager.ShowDialogRow();
+    }
+    public void SayOk()
+    {
+        Debug.Log("ok");
     }
 }

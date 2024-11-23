@@ -8,8 +8,9 @@ public class Player : CharacterBase
     public Rigidbody2D rb;
     public Animator anim;
     
+    public PlayerInteractor interactor;
     public PlayerStateMachine stateMachine;
-    
+    public GameObject bag;
 
 
     [Header("参数设置")]
@@ -30,6 +31,7 @@ public class Player : CharacterBase
 
     private void Awake()
     {
+        bag.gameObject.SetActive(false);
         isFirstJump = false;
         isDoubleJump = false;
         playertest = new Play2DInput();
@@ -49,11 +51,13 @@ public class Player : CharacterBase
         //绑定输入事件,非常重要
         playertest.Player.Jump.started += ctx => Jump();
         playertest.Player.Roll.started += ctx => roll();
-        playertest.Player.Defend.canceled += ctx =>OutDefend();
-        playertest.Player.Attack.started += ctx =>weapon.executeWeapon();
-        playertest.Player.Throw.started += ctx =>weapon.executeThrow();
+        //playertest.Player.Defend.canceled += ctx =>OutDefend();
+        //playertest.Player.Attack.started += ctx =>weapon.executeWeapon();
+        //playertest.Player.Throw.started += ctx =>weapon.executeThrow();
+        playertest.Player.Interact.started += ctx => Interact();
+        playertest.Player.OpenBag.started += ctx => OpenBag();
         
-        weapon.retrieveWeapon = RetrieveWeapon;
+        //weapon.retrieveWeapon = RetrieveWeapon;
 
     }
 
@@ -115,6 +119,14 @@ public class Player : CharacterBase
 
         }
 
+    }
+    public void Interact()
+    {
+        interactor.GoInteract();
+    }
+    public void OpenBag()
+    {
+        bag.gameObject.SetActive(true);
     }
 
     /// <summary>
