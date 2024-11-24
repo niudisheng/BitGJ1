@@ -122,7 +122,7 @@ public class Player : CharacterBase
     }
     public void Interact()
     {
-        interactor.GoInteract();
+        //interactor.GoInteract();
     }
     public void OpenBag()
     {

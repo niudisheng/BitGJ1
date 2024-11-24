@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5b20501e0458324a987919b8c2d1164, type: 3}
   m_Name: DialogDataSO
   m_EditorClassIdentifier: 
-  TextAsset: {fileID: 0}
-  thisNPC: 
-  otherNPC: 
+  TextAsset: {fileID: 4900000, guid: 9281c5e5773d8e24097de23af3c177bd, type: 3}
+  thisNPC: zi
+  otherNPC: kanade
   isPause: 0
