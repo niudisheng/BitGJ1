@@ -11,7 +11,6 @@ public class NewPlayer : CharacterBase
     public float speed = 5f;
     [Header("移动相关")]
     public bool isClick = false;
-    public Rigidbody2D rb;
     public double clickTime =0;
     
     private void Start()

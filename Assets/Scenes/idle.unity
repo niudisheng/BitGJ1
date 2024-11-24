@@ -4097,6 +4097,7 @@ GameObject:
   - component: {fileID: 305733869}
   - component: {fileID: 305733868}
   - component: {fileID: 305733870}
+  - component: {fileID: 305733871}
   m_Layer: 12
   m_Name: kanade
   m_TagString: Untagged
@@ -4259,6 +4260,34 @@ MonoBehaviour:
   DIalogDataSO: {fileID: 11400000, guid: 1958867748a4f5343b9109d75b5466ca, type: 2}
   DialogManager: {fileID: 840719184}
   isRead: 0
+--- !u!114 &305733871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305733865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64008708c64c8ae43ba3ad9c00d09cd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 305733870}
+        m_TargetAssemblyTypeName: StartDialog, Assembly-CSharp
+        m_MethodName: StartDialogs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  PlayerInteractor: {fileID: 501941449}
 --- !u!1 &333688185
 GameObject:
   m_ObjectHideFlags: 0
@@ -4697,21 +4726,6 @@ MonoBehaviour:
   NpcLayer:
     serializedVersion: 2
     m_Bits: 4096
-  onInteract:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 305733870}
-        m_TargetAssemblyTypeName: StartDialog, Assembly-CSharp
-        m_MethodName: StartDialogs
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &501941451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4729,6 +4743,8 @@ MonoBehaviour:
   height: 0
   direction: {x: 0, y: 0}
   speed: 5
+  isClick: 0
+  clickTime: 0
 --- !u!1 &543621405
 GameObject:
   m_ObjectHideFlags: 0

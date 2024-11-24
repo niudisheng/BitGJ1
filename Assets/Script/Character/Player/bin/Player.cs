@@ -4,19 +4,19 @@ using UnityEngine;
 public class Player : CharacterBase
 {
     public Play2DInput playertest;
-    public Vector2 direction= Vector2.zero;
+    //public Vector2 direction= Vector2.zero;
     
     
     
     public PlayerInteractor interactor;
-    public PlayerStateMachine stateMachine;
+    //public PlayerStateMachine stateMachine;
     public GameObject bag;
 
 
     [Header("参数设置")]
     public float forceMagnitude = 10f; // 调整这个值来改变力量大小
     public float speed = 5f; // 调整这个值来改变速度大小
-    public float height;
+   // public float height;
      
     public Weapon weapon;
     [Header("状态")]
