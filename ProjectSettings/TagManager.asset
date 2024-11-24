@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - Bullet
   - Wall
+  - Item
+  - Container
   layers:
   - Default
   - TransparentFX
