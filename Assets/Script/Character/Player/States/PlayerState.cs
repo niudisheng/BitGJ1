@@ -4,10 +4,10 @@ public class PlayerState
 {
     protected PlayerStateMachine stateMachine;
     public States stateName;
-    protected Player player; 
+    protected CharacterBase player; 
     public string animatorName;
  
-    public PlayerState(Player _player,PlayerStateMachine _stateMachine, States _state) //   构造函数，将上述变量传入
+    public PlayerState(CharacterBase _player,PlayerStateMachine _stateMachine, States _state) //   构造函数，将上述变量传入
     {
         player = _player; //获取player，也可以调用player中的参数    
         stateName = _state;

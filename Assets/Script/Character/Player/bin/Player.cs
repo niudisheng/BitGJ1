@@ -5,8 +5,8 @@ public class Player : CharacterBase
 {
     public Play2DInput playertest;
     public Vector2 direction= Vector2.zero;
-    public Rigidbody2D rb;
-    public Animator anim;
+    
+    
     
     public PlayerInteractor interactor;
     public PlayerStateMachine stateMachine;
@@ -17,7 +17,7 @@ public class Player : CharacterBase
     public float forceMagnitude = 10f; // 调整这个值来改变力量大小
     public float speed = 5f; // 调整这个值来改变速度大小
     public float height;
-    public float rolltime = 0.5f; // 调整这个值来改变高度大小
+     
     public Weapon weapon;
     [Header("状态")]
     public bool isFirstJump;

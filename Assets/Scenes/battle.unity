@@ -2578,6 +2578,7 @@ MonoBehaviour:
   weaponData: {fileID: 11400000, guid: 8360ffed2ffcd6948ab96ae21db9f2c6, type: 2}
   isCooldown: 0
   isThrown: 0
+  rb: {fileID: 0}
 --- !u!50 &465415792
 Rigidbody2D:
   serializedVersion: 4
@@ -2943,6 +2944,7 @@ MonoBehaviour:
   weaponData: {fileID: 11400000, guid: 7a6c95c35ce329a449c063799dc75556, type: 2}
   isCooldown: 0
   isThrown: 0
+  rb: {fileID: 0}
   projectile: {fileID: 5531248069270685575, guid: db2d5be6341f99c47b24d18ddefd16ee, type: 3}
   shotPoint: {fileID: 1909100617}
   startTimeBtwLongs: 1
@@ -4696,6 +4698,8 @@ MonoBehaviour:
   direction: {x: 0, y: 0}
   rb: {fileID: 1366058981}
   anim: {fileID: 1366058983}
+  interactor: {fileID: 0}
+  bag: {fileID: 0}
   forceMagnitude: 10
   speed: 5
   height: 4
