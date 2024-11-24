@@ -13,15 +13,9 @@ public class PlayerInteractor : MonoBehaviour
     public Vector2 interactDir;
     public bool canInteract;
     public LayerMask NpcLayer;
-    public UnityEvent onInteract;
     private void Update()
     {
         interactDir = Player.direction;
-        if (Input.GetMouseButtonDown(0))
-        {
-            if (canInteract)
-                onInteract?.Invoke();
-        }
     }
     private void FixedUpdate()
     {
