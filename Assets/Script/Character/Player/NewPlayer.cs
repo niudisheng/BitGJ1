@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -8,10 +9,15 @@ public class NewPlayer : CharacterBase
 {
     
     public float speed = 5f;
-    private Vector2 direction;
+    [Header("移动相关")]
+    public bool isClick = false;
+    public Rigidbody2D rb;
+    public double clickTime =0;
+    
     private void Start()
     {
-        
+        stateMachine = new PlayerStateMachine();
+        stateMachine.Initialize(this,new IdleState(this,stateMachine));
     }
 
     private Vector2 checkInput()
@@ -24,23 +30,40 @@ public class NewPlayer : CharacterBase
         }
         return Vector2.zero;
     }
-    public void MoveDirection(Vector2 direction1)
+    private void move()
     {
-        //基础移动
-        if (direction1 == Vector2.zero)
+        if (Input.GetMouseButtonDown(0))
         {
-            stateMachine.RemoveState(States.move);
-            return;
+            clickTime = 0;
+            isClick = true;
         }
-        stateMachine.AddState(new MoveState(this,stateMachine));
-        rb.velocity = new Vector2(direction1.x* speed, rb.velocity.y);
+        if(Input.GetMouseButtonUp(0))
+            isClick = false;
+        if (isClick)
+        {
+            clickTime += Time.deltaTime;
+            if (clickTime >= 0.15)
+            {
+                if( Camera.main.ScreenToWorldPoint(Input.mousePosition).x > transform.position.x)
+                {
+                    direction = Vector2.right;
+                   
+                }
+                else if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x < transform.position.x)
+                {
+                    direction = Vector2.left;
+                }
+                else 
+                {
+                    direction = Vector2.zero;
+                }
+                rb.velocity = direction * speed;
+            }
+        }
     }
-    void Update()
+    private void Update()
     {
-         direction=checkInput();
-         MoveDirection(direction);
-
-
+         move();
     }
 
     private void FixedUpdate()

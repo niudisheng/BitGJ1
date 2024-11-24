@@ -5,10 +5,10 @@ public class PlayerStateMachine
 {
     public PlayerState currentState {get; private set;} //申明一个状态
     private List<PlayerState> states = new (); //申明一个状态列表
-    private Player player;
+    private CharacterBase player;
     
     
-    public void Initialize(Player _player,PlayerState _startState)
+    public void Initialize(CharacterBase _player,PlayerState _startState)
     {
         AddState(_startState);
         player = _player;

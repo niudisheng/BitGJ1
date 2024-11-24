@@ -8,7 +8,8 @@ public class Move : MonoBehaviour
     public bool isClick = false;
     public Rigidbody2D rb;
     public double clickTime =0;
-    private void Update()
+    
+    public void move()
     {
         if (Input.GetMouseButtonDown(0))
         {

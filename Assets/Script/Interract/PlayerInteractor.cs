@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class PlayerInteractor : MonoBehaviour
 {
-    public Player Player;
+    public CharacterBase Player;
     public Vector2 interactArea;
     public Vector2 centerOffSet;
     public float interactDistance;

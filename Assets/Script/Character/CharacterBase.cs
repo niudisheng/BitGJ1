@@ -5,11 +5,12 @@ using UnityEngine;
 public class CharacterBase : MonoBehaviour
 {
     public Animator anim;
-    public int maxHealth;
+    // public int maxHealth;
     private int currentHealth;
     public Rigidbody2D rb;
     public float height;
     public PlayerStateMachine stateMachine;
+    public Vector2 direction;
     public void takeDamage(int damage)
     {
         currentHealth -= damage;
