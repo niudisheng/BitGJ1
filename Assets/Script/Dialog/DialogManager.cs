@@ -9,7 +9,6 @@ using static System.Net.Mime.MediaTypeNames;
 
 public class DialogManager : MonoBehaviour
 {
-    public UnityEvent ifSomeThingToDo;
     [Header("组件")]
     public GameObject dialogue;
     //对话框
@@ -19,7 +18,7 @@ public class DialogManager : MonoBehaviour
     //对话内容
     public SpriteRenderer sprite;
     //角色图片
-    public Button nextButton;
+    //public Button nextButton;
     //下一句对话
     public bool isPause;
     //是否对话是暂停
@@ -100,20 +99,19 @@ public class DialogManager : MonoBehaviour
                 dialogue.gameObject.SetActive(false);
                 dialogIndex = 1;
                 Time.timeScale = 1;
-                ifSomeThingToDo?.Invoke();
             }
         }
     }
 
     //点击按钮的事件
-    public void OnClickNext()
-    {
-        {
-            if (isPause)
-            {
-                Time.timeScale = 0;
-            }
-            ShowDialogRow();
-        }
-    }
+    //public void OnClickNext()
+    //{
+    //    {
+    //        if (isPause)
+    //        {
+    //            Time.timeScale = 0;
+    //        }
+    //        ShowDialogRow();
+    //    }
+    //}
 }
