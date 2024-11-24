@@ -17,7 +17,11 @@ public class PlayerInteractor : MonoBehaviour
     private void Update()
     {
         interactDir = Player.direction;
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (canInteract)
+                onInteract?.Invoke();
+        }
     }
     private void FixedUpdate()
     {
@@ -27,12 +31,5 @@ public class PlayerInteractor : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(transform.position+(Vector3)centerOffSet,interactDistance);
-    }
-    public void GoInteract()
-    {
-        if (canInteract)
-        {
-            onInteract?.Invoke();
-        }
     }
 }

@@ -4256,8 +4256,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d641e76195ec547b4df7ca9bed1440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DIalogDataSO: {fileID: 0}
-  DialogManager: {fileID: 0}
+  DIalogDataSO: {fileID: 11400000, guid: 1958867748a4f5343b9109d75b5466ca, type: 2}
+  DialogManager: {fileID: 840719184}
   isRead: 0
 --- !u!1 &333688185
 GameObject:
@@ -4496,6 +4496,7 @@ GameObject:
   - component: {fileID: 501941446}
   - component: {fileID: 501941445}
   - component: {fileID: 501941444}
+  - component: {fileID: 501941450}
   - component: {fileID: 501941449}
   - component: {fileID: 501941443}
   m_Layer: 7
@@ -4550,7 +4551,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501941441}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50a2f141a6a0c0047bcc1ec16ab7ffdf, type: 3}
   m_Name: 
@@ -4741,7 +4742,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 305733870}
         m_TargetAssemblyTypeName: StartDialog, Assembly-CSharp
-        m_MethodName: SayOk
+        m_MethodName: StartDialogs
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4751,6 +4752,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &501941450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501941441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 587355700ec4c1441bd84a723441d900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isClick: 0
+  rb: {fileID: 501941446}
+  clickTime: 0
 --- !u!1 &543621405
 GameObject:
   m_ObjectHideFlags: 0
