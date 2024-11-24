@@ -21,7 +21,7 @@ public class DefendState : PlayerState
 
     private void defending()
     {
-        player.rb.velocity = new Vector2(player.rb.velocity.x, 0);
+        // player.rb.velocity = new Vector2(player.rb.velocity.x, 0);
         //DelayedAction.instance.StartDelayedAction(0.5f, defendcheck);
     }
 

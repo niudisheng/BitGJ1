@@ -22,7 +22,7 @@ public class RollingState : PlayerState
         player = player as Player;
         
         var x_velocity = player.height / rolltime;
-        player.rb.velocity = new Vector2(x_velocity,player.rb.velocity.y);
+        // player.rb.velocity = new Vector2(x_velocity,player.rb.velocity.y);
         DelayedAction.instance.StartDelayedAction( 0.5f,rollcheck );
 
     }

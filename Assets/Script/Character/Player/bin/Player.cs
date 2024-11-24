@@ -5,7 +5,7 @@ public class Player : CharacterBase
 {
     public Play2DInput playertest;
     public Vector2 direction= Vector2.zero;
-    
+    public Rigidbody2D rb;
     
     
     public PlayerInteractor interactor;
@@ -36,7 +36,7 @@ public class Player : CharacterBase
         isDoubleJump = false;
         playertest = new Play2DInput();
         stateMachine = new PlayerStateMachine();
-        rb = this.transform.GetComponent<Rigidbody2D>();
+        
 
 
         PlayerState idleState = new IdleState(this,stateMachine);
