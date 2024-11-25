@@ -13,7 +13,13 @@ public class Password : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
-
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(1))
+        {
+            gameObject.SetActive(false);
+        }
+    }
     public void StartPassword()
     {
         gameObject.SetActive(true);
