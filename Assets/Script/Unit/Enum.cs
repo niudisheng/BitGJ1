@@ -25,4 +25,11 @@ public enum EnemyStateEnum
 {
     patrol,chase,rangeAttack
 }
+public enum ItemTypeEnum
+{
+    //TODO: 需要问过策划
+    none,
+    weapon,
+    
+}
 
