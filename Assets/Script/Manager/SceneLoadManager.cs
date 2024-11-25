@@ -6,10 +6,26 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoadManager : MonoBehaviour
 {
+    public string sceneName;
+    [ContextMenu("LoadScene")]
+    public void LoadScene()
+    {
+        LoadScene(sceneName);
+    }
+
     static public void LoadScene(string sceneName)
     {
+        UnloadScene();
         //TODO: 加入场景加载进度条
-        SceneManager.LoadScene(sceneName,LoadSceneMode.Single);
+        SceneManager.LoadScene(sceneName,LoadSceneMode.Additive);
+    }
+
+    static public void LoadSceneInMemento(object memento)
+    {
+        GameMemento memento1 = (GameMemento)memento;
+        string sceneName = memento1.sceneName;
+        LoadScene(sceneName);
+        
     }
 
     static public void UnloadScene()
