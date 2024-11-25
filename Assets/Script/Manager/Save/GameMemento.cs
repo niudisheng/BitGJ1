@@ -11,9 +11,10 @@ public class GameMemento
     //道具列表，解谜数据，道具栏状态
 
     // 构造函数，用于初始化状态
-    public GameMemento(Vector3 position,Scene scene)
+    public GameMemento(Vector3 position,string scene)
     {
         playerPosition = position;
+        sceneName = scene;
         
     }
 }

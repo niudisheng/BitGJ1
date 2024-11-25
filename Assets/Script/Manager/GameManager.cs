@@ -1,16 +1,17 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
-
 public class GameManager : MonoBehaviour
 {
-    public Vector3 playerPosition; // 玩家位置
-    public Scene currentScene;     // 当前场景
+    public Transform playerTransform; // 玩家位置
     [Header("广播事件")]
     public ObjectEventSO LoadGameEvent; // 加载游戏事件
+    [ContextMenu("CreateMemento")]
     // 创建备忘录（保存游戏状态）
     public GameMemento CreateMemento()
     {
-        return new GameMemento(playerPosition,currentScene);
+        Vector3 playerPosition1 = playerTransform.position;
+        GameMemento memento = new GameMemento(playerPosition1,SceneLoadManager.CurrentSceneName);
+        SaveManager.instance.SaveGame(new GameMemento(playerPosition1,SceneLoadManager.CurrentSceneName)); // 保存游戏状态
+        return memento;
     }
 
     // 从备忘录中恢复游戏状态

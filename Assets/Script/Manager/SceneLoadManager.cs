@@ -6,11 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoadManager : MonoBehaviour
 {
-    public string sceneName;
+    static public string CurrentSceneName
+    {
+        get { return SceneManager.GetActiveScene().name; }
+    }
+
     [ContextMenu("LoadScene")]
     public void LoadScene()
     {
-        LoadScene(sceneName);
+        LoadScene(CurrentSceneName);
     }
 
     static public void LoadScene(string sceneName)
