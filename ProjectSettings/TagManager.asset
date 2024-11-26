@@ -4,12 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - gold
   - Ground
+  - Bullet
   - Wall
+  - Item
   - Container
-  - NPC
-  - Item2Show
-  - ItemInter
   layers:
   - Default
   - TransparentFX

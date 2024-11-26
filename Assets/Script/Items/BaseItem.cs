@@ -8,7 +8,6 @@ public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public Collider2D collider;
     public UnityEvent OnItemClick;
-    public ItemSO itemData;
     public virtual void OnPointerEnter(PointerEventData eventData)
     {
         this.transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
