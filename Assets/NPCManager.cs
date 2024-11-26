@@ -10,8 +10,8 @@ public class NPCManager : MonoBehaviour
 
     private void Awake()
     {
-        AddInteraction();
-        TrunInteractionOn(startName);
+        //AddInteraction();
+        //TrunInteractionOn(startName);
     }
     
     //这个函数其实不需要，可以直接在Inspector中设置初始的交互对象
