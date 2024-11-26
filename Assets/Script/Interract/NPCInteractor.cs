@@ -4,10 +4,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class NPCInteractor : MonoBehaviour
+public class NPCInteractor : BaseItem
 {
     public bool canInteract = false;
-    public UnityEvent OnInteract;
+    protected UnityAction OnInteract;
     private void Update()
     {
             if (canInteract)
@@ -23,6 +23,7 @@ public class NPCInteractor : MonoBehaviour
                 }
             }
     }
+    //¼ì²âÍæ¼Ò
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))

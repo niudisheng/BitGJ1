@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
-using UnityEngine;
 public class SaveManager : MonoBehaviour
 {
     public List<GameMemento> saves = new List<GameMemento>(); // 存档列表
