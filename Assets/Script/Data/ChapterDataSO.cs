@@ -2,18 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(fileName = "New Chapter Data", menuName = "Data/Chapter Data")]
-public class ChapterDataSO : MonoBehaviour
+public class ChapterDataSO : ScriptableObject
 {
     public List<GameObject> npcList;
     public int chapterNumber;
     public Dictionary<GameObject, bool> itemCheckDict;
 
-    public ChapterDataSO()
+    public void AddNpc(GameObject npc)
     {
-        foreach (GameObject npc in npcList)
-        {
-            itemCheckDict.Add(npc, false);
-        }
         
     }
 

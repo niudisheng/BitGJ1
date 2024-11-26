@@ -4,10 +4,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class NPCInteractor : MonoBehaviour
+public class NPCInteractor : BaseItem
 {
     public bool canInteract = false;
-    public UnityEvent OnInteract;
+    protected UnityAction OnInteract;
     private void Update()
     {
             if (canInteract)
