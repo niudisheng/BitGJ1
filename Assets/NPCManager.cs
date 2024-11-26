@@ -1,36 +1,35 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class NPCManager : MonoBehaviour
 {
     
-    static public ChapterDataSO chapterData;
+    public ChapterDataSO chapterData;
     
-    private GameObject startInteraction;
-    public string startName;
-
-    private void Awake()
+    public List<BaseItem> interactions;
+    static public NPCManager instance;
+    private void Start()
     {
-        //AddInteraction();
-        //TrunInteractionOn(startName);
+        instance = this;
+        AddInteraction();
+        
     }
     
-    //这个函数其实不需要，可以直接在Inspector中设置初始的交互对象
-    public void TrunInteractionOn(string name)
-    {
-        startInteraction.SetActive(true);
-    }
     public void AddInteraction()
     {
-        foreach (GameObject gameObject in chapterData.npcList)
+        foreach (BaseItem item in interactions)
         {
-            // imageDir.Add(gameObject.name, gameObject);
+            ItemSO itemData = item.itemData;
+            chapterData.AddNpc(itemData);
+            ChangeInteraction(itemData,false);
+            
         }
     }
     
     //物品回调，改变自己的交互结果
-    static public void ChangeInteraction(GameObject item)
+    public void ChangeInteraction(ItemSO item,bool result)
     {
-        chapterData.itemCheckDict[item] = true;
+        chapterData.itemCheckDict[item] = result;
     }
 
     //检查是否完成所有交互
