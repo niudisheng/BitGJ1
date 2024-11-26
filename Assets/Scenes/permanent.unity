@@ -1281,7 +1281,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &802270440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1545,7 +1545,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3542f1e497b8ebe48b870f908ddf6d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startName: 
+  chapterData: {fileID: 0}
+  interactions: []
 --- !u!4 &916145542
 Transform:
   m_ObjectHideFlags: 0
@@ -2201,7 +2202,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248789325}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a57a91dfe22fbe048b8d8c204e5c1f85, type: 3}
   m_Name: 
@@ -2250,9 +2251,9 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 5
-  m_Depth: -1
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2731,6 +2732,7 @@ MonoBehaviour:
   OnItemClick:
     m_PersistentCalls:
       m_Calls: []
+  itemData: {fileID: 0}
   itemDescription: {fileID: 1360823144}
 --- !u!114 &1677796319
 MonoBehaviour:
