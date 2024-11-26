@@ -1,0 +1,17 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class ItemInteractable : NPCInteractor
+{
+    private void Awake()
+    {
+        OnInteract += OnInteract1;
+    }
+
+    public void OnInteract1()
+    {
+        NPCManager.instance.ChangeInteraction(itemData,true);
+    }
+}
