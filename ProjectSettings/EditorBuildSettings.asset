@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/battle.unity
     guid: 977614aad4f5db743a0aec7bb9442ba6
   - enabled: 1
-    path: Assets/Scenes/Childhood.unity
+    path: Assets/Scenes/Childhood/Childhood.unity
     guid: c3b06c575d3537340a07cdb5e56a3887
   m_configObjects: {}
