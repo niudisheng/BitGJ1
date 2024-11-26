@@ -12,6 +12,6 @@ public class ItemInteractable : NPCInteractor
 
     public void OnInteract1()
     {
-        NPCManager.ChangeInteraction(this.gameObject);
+        NPCManager.instance.ChangeInteraction(itemData,true);
     }
 }

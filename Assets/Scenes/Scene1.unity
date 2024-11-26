@@ -571,6 +571,7 @@ MonoBehaviour:
   OnItemClick:
     m_PersistentCalls:
       m_Calls: []
+  itemData: {fileID: 0}
   icon: {fileID: 0}
   isDragging: 0
   startPos: {x: 0, y: 0}
@@ -757,13 +758,17 @@ PrefabInstance:
       value: NPCManager
       objectReference: {fileID: 0}
     - target: {fileID: 8794532098368944762, guid: dce148cf85d60984fb7501d757a6e805, type: 3}
+      propertyPath: chapterData
+      value: 
+      objectReference: {fileID: 11400000, guid: fff9beff69d93aa448849c246e6eb0c6, type: 2}
+    - target: {fileID: 8794532098368944762, guid: dce148cf85d60984fb7501d757a6e805, type: 3}
       propertyPath: interactions.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8794532098368944762, guid: dce148cf85d60984fb7501d757a6e805, type: 3}
       propertyPath: interactions.Array.data[0]
       value: 
-      objectReference: {fileID: 2110015438}
+      objectReference: {fileID: 2110015440}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -817,6 +822,7 @@ MonoBehaviour:
   OnItemClick:
     m_PersistentCalls:
       m_Calls: []
+  itemData: {fileID: 11400000, guid: 055c8501a000feb4e9dfa540549f8e33, type: 2}
   canInteract: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
