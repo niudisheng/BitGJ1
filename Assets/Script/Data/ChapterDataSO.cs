@@ -5,6 +5,7 @@ public class ChapterDataSO : ScriptableObject
 {
     public List<ItemSO> npcList=new ();
     public int chapterIndex;
+    
     // public Dictionary<ItemSO, bool> itemCheckDict=new ();
     /// <summary>
     /// 这个函数给NPC调用，把它自己加进来
@@ -18,6 +19,18 @@ public class ChapterDataSO : ScriptableObject
         }
         npcList.Add(npc);
         
+    }
+
+    public bool CheckAllItem()
+    {
+        foreach (var item in npcList)
+        {
+            if (!item.isCompleted)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     public void Reset()

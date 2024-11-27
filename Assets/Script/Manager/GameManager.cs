@@ -1,17 +1,25 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public Transform playerTransform; // 玩家位置
     [Header("广播事件")]
     public ObjectEventSO LoadGameEvent; // 加载游戏事件
-    
+    public List<ChapterDataSO> chapters; // 所有章节数据
+    public ChapterDataSO currentChapter; // 当前章节数据
+
+    public bool isReady = false;
+
+
     [ContextMenu("CreateMemento")]
     // 创建备忘录（保存游戏状态）
     public GameMemento CreateMemento()
     {
         Vector3 playerPosition1 = playerTransform.position;
-        GameMemento memento = new GameMemento(playerPosition1,SceneLoadManager.CurrentSceneName);
-        SaveManager.instance.SaveGame(new GameMemento(playerPosition1,SceneLoadManager.CurrentSceneName)); // 保存游戏状态
+        GameMemento memento = new GameMemento(playerPosition1,SceneLoadManager.CurrentSceneName,currentChapter);
+        SaveManager.instance.SaveGame(memento); // 保存游戏状态
         return memento;
     }
     [ContextMenu("Try Load")]
@@ -39,8 +47,39 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0.1f;
     }
 
-    private void CheckChahter()
+    public void OnloadGame()
+    {
+        StartCoroutine(updateChapter());
+    }
+    
+    [ContextMenu("Move To Next Chapter")]
+    public IEnumerator updateChapter()
     {
         
+        foreach (var chapter in chapters)
+        {
+            
+            
+            currentChapter = chapter;
+            yield return  new WaitWhile(GetNextChapter);
+            isReady = false;
+            
+        }
+    }
+    
+    
+    /// <summary>
+    /// 结果为true时被卡住，为false时，执行下一步
+    /// </summary>
+    /// <returns></returns>
+    public bool GetNextChapter()
+    {
+        
+        //TODO: 需要优化逻辑，当前只是简单实现，后续需要根据章节的条件判断是否进入下一章节
+        if (isReady)
+        {
+            return false;
+        }
+        return true;
     }
 }

@@ -9,6 +9,7 @@ public class ItemInteractable : NPCInteractor
 {
     private void Awake()
     {
+        base.Awake();
         OnInteract += OnInteract1;
     }
 

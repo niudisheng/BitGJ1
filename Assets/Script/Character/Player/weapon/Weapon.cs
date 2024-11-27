@@ -42,7 +42,6 @@ public abstract class Weapon : MonoBehaviour
         
         if (isThrown)
         {
-            //TODO: 实现跟踪收回丢出物体
             Retrieve();
         }
         else
