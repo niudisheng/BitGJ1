@@ -26,14 +26,9 @@ public class GameManager : MonoBehaviour
     public void LoadMemento(GameMemento memento)
     {
         Debug.Log("Game state restored!");
-        LoadGameEvent.RaiseEvent(memento,this); // 广播加载游戏事件
+        LoadGameEvent.RaiseEvent(null,this); // 广播加载游戏事件
     }
-
-    // 示例：展示当前状态
-    public void ShowState()
-    {
-        
-    }
+    
     static public void SetTimeScale(float value)
     {
         Time.timeScale = value;

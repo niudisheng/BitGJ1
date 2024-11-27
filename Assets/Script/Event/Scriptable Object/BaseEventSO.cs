@@ -12,7 +12,7 @@ public class BaseEventSO<T> : ScriptableObject
     public UnityAction<T> OnEventRaised;
     public string lastSender;
     //接受广播事件
-    public void RaiseEvent(T value,object sender)
+    public virtual void RaiseEvent(T value,object sender)
     {
         OnEventRaised?.Invoke(value);
         lastSender=sender.ToString();

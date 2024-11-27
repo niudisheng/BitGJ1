@@ -34,7 +34,7 @@ public class SceneLoadManager : MonoBehaviour
         //TODO: 加入场景加载进度条
         SceneManager.LoadSceneAsync(index,LoadSceneMode.Additive).completed += (op) =>
         {
-            SceneManager.SetActiveScene(SceneManager.GetSceneAt(index));
+            SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(index));
         };
 
     }
