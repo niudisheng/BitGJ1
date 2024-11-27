@@ -6,7 +6,7 @@ using Unity.VisualScripting;
 
 public class SaveManager : MonoBehaviour
 {
-    private List<GameMemento> saves = new List<GameMemento>(); // 存档列表
+    // private List<GameMemento> saves = new List<GameMemento>(); // 存档列表
     static public SaveManager instance;
     public int currentIndex; // 当前存档索引
     private void Awake()
@@ -38,6 +38,7 @@ public class SaveManager : MonoBehaviour
 
 public class FileSaveManager
 {
+    //TODO: 没有进行二进制序列化，导致存档体积过大，需要优化
     // 保存到文件
     public static void SaveToFile(GameMemento memento,int index)
     {
