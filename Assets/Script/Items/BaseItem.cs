@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,IPointerClickHandler
 {
     public Collider2D collider;
-    public UnityEvent OnItemClick;
+    public UnityAction OnClick;
     public ItemSO itemData;
     public virtual void OnPointerEnter(PointerEventData eventData)
     {
@@ -22,7 +22,7 @@ public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        OnItemClick.Invoke();
+        OnClick?.Invoke();
     }
 
     protected void disable()

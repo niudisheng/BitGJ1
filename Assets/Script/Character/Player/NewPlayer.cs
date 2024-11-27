@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 
 public class NewPlayer : CharacterBase
 {
-    
+    public bool canMove;
     public float speed = 5f;
     [Header("移动相关")]
     public bool isClick = false;
@@ -20,18 +20,19 @@ public class NewPlayer : CharacterBase
         rb = this.transform.GetComponent<Rigidbody2D>();
     }
 
-    private Vector2 checkInput()
-    {
-        bool isMousePressed = Input.GetMouseButtonDown(0);
-        if (isMousePressed)
-        {
-             Vector2 direction = Input.mousePosition.x>transform.position.x?new Vector2(1,0):new Vector2(-1,0);
-             return direction;
-        }
-        return Vector2.zero;
-    }
+    //private Vector2 checkInput()
+    //{
+    //    bool isMousePressed = Input.GetMouseButtonDown(0);
+    //    if (isMousePressed)
+    //    {
+    //         Vector2 direction = Input.mousePosition.x>transform.position.x?new Vector2(1,0):new Vector2(-1,0);
+    //         return direction;
+    //    }
+    //    return Vector2.zero;
+    //}
     private void move()
     {
+
         if (Input.GetMouseButtonDown(0))
         {
             clickTime = 0;
@@ -44,18 +45,19 @@ public class NewPlayer : CharacterBase
             clickTime += Time.deltaTime;
             if (clickTime >= 0.15)
             {
-                if( Camera.main.ScreenToWorldPoint(Input.mousePosition).x > transform.position.x)
+                if(Camera.main.ScreenToWorldPoint(Input.mousePosition).x > transform.position.x)
                 {
-                    direction = Vector2.right;
-                   
+                    direction = new Vector2(1,0);
+                    canMove = true;
                 }
                 else if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x < transform.position.x)
                 {
-                    direction = Vector2.left;
+                    direction = new Vector2(-1,0);
+                    canMove = true;
                 }
                 else 
                 {
-                    direction = Vector2.zero;
+                    canMove = false;
                 }
                 rb.velocity = direction * speed;
             }
@@ -63,7 +65,8 @@ public class NewPlayer : CharacterBase
     }
     private void Update()
     {
-         move();
+        if(canMove)
+            move();
     }
 
     private void FixedUpdate()

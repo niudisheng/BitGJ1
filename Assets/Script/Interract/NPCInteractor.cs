@@ -7,7 +7,6 @@ using UnityEngine.Events;
 public class NPCInteractor : BaseItem
 {
     public bool canInteract = false;
-    protected UnityAction OnInteract;
     private void Update()
     {
             if (canInteract)
@@ -18,7 +17,7 @@ public class NPCInteractor : BaseItem
 
                     if (hit.collider != null&hit.collider.CompareTag("NPC"))
                     {
-                        OnInteract?.Invoke();
+                        OnItemClick?.Invoke();
                     }
                 }
             }
