@@ -51,17 +51,20 @@ public class GameManager : MonoBehaviour
     {
         StartCoroutine(updateChapter());
     }
-    
+
     [ContextMenu("Move To Next Chapter")]
+    public void MoveToNextChapter()
+    {
+        isReady = true;
+    }
+
     public IEnumerator updateChapter()
     {
         
         foreach (var chapter in chapters)
         {
-            
-            
             currentChapter = chapter;
-            yield return  new WaitWhile(GetNextChapter);
+            yield return  new WaitWhile(CheckToNextChapter);
             isReady = false;
             
         }
@@ -72,14 +75,15 @@ public class GameManager : MonoBehaviour
     /// 结果为true时被卡住，为false时，执行下一步
     /// </summary>
     /// <returns></returns>
-    public bool GetNextChapter()
+    public bool CheckToNextChapter()
     {
         
         //TODO: 需要优化逻辑，当前只是简单实现，后续需要根据章节的条件判断是否进入下一章节
-        if (isReady)
+        if (currentChapter.CheckAllItem() &&isReady)
         {
             return false;
         }
+        isReady = false;
         return true;
     }
 }
