@@ -9,7 +9,7 @@ public class GameMemento
     
     //TODO:加入更多状态变量：
     //道具列表，解谜数据，道具栏状态
-
+    public ChapterDataSO chapterData; // 当前章节数据
     // 构造函数，用于初始化状态
     public GameMemento(Vector3 position,string scene)
     {

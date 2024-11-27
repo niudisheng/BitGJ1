@@ -15,4 +15,4 @@ MonoBehaviour:
   npcList:
   - {fileID: 0}
   - {fileID: 0}
-  chapterNumber: 1
+  chapterIndex: 2

@@ -58,7 +58,7 @@ public class Control1 : MonoBehaviour
 
     private void crush()
     {
-        //TODO: 逻辑很奇怪，需要优化
+        
         // 当鼠标松开时,计算曲线
         if (Points == null || Points.Count < 2)
         {

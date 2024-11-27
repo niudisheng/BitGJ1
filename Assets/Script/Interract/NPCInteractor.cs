@@ -1,13 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
-
+/// <summary>
+/// 可交互的物品
+/// </summary>
 public class NPCInteractor : BaseItem
 {
     public bool canInteract = false;
     protected UnityAction OnInteract;
+    
+
     private void Update()
     {
             if (canInteract)
@@ -38,4 +43,6 @@ public class NPCInteractor : BaseItem
             canInteract = false;
         }
     }
+
+    
 }
