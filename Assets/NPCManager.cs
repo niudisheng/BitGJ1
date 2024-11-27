@@ -21,14 +21,14 @@ public class NPCManager : MonoBehaviour
     }
     public void AddInteraction()
     {
-        foreach (GameObject gameObject in chapterData.npcList)
+        foreach (ItemSO item in chapterData.npcList)
         {
             // imageDir.Add(gameObject.name, gameObject);
         }
     }
     
     //物品回调，改变自己的交互结果
-    static public void ChangeInteraction(GameObject item)
+    static public void ChangeInteraction(ItemSO item)
     {
         chapterData.itemCheckDict[item] = true;
     }

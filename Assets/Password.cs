@@ -9,17 +9,6 @@ public class Password : MonoBehaviour
     public TMP_Text password;
     public string realPassword;
     public int number;
-    private void Awake()
-    {
-        gameObject.SetActive(false);
-    }
-    private void Update()
-    {
-        if (Input.GetMouseButtonDown(1))
-        {
-            gameObject.SetActive(false);
-        }
-    }
     public void StartPassword()
     {
         gameObject.SetActive(true);
