@@ -63,7 +63,14 @@ public class NewPlayer : CharacterBase
     }
     private void Update()
     {
-         move();
+        
+        if (Camera.main != null)
+        {
+            var input = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Debug.Log(input);
+        }
+
+        move();
     }
 
     private void FixedUpdate()

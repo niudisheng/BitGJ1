@@ -480,9 +480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44d8f79eb0f15047aaa04864d69a205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saves:
-  - playerPosition: {x: 0, y: 0}
-    sceneName: 
+  currentIndex: 0
 --- !u!1 &192937418
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,7 +829,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 543036584}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 837693322}
+        m_TargetAssemblyTypeName: SceneLoadManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &543036584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1019,7 +1029,7 @@ GameObject:
   - component: {fileID: 590592799}
   - component: {fileID: 590592798}
   m_Layer: 5
-  m_Name: SettingButton (1)
+  m_Name: SettingButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1577,7 +1587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &934210266
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2255,6 +2265,7 @@ MonoBehaviour:
   - {fileID: 974593419}
   - {fileID: 1019812080}
   - {fileID: 1340742100}
+  - {fileID: 934210265}
 --- !u!1 &1153604293
 GameObject:
   m_ObjectHideFlags: 0
@@ -2299,9 +2310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b44d8f79eb0f15047aaa04864d69a205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  saves:
-  - playerPosition: {x: 0, y: 0}
-    sceneName: 
+  currentIndex: 0
 --- !u!1 &1248789325
 GameObject:
   m_ObjectHideFlags: 0
@@ -2328,7 +2337,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248789325}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a57a91dfe22fbe048b8d8c204e5c1f85, type: 3}
   m_Name: 
@@ -2379,7 +2388,7 @@ Camera:
   field of view: 60
   orthographic: 0
   orthographic size: 5
-  m_Depth: 0
+  m_Depth: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2403,7 +2412,7 @@ Transform:
   m_GameObject: {fileID: 1248789325}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.95, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

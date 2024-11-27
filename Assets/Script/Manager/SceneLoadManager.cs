@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using UnityEngine;
 
@@ -21,8 +22,23 @@ public class SceneLoadManager : MonoBehaviour
     {
         UnloadScene();
         //TODO: 加入场景加载进度条
-        SceneManager.LoadScene(sceneName,LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync(sceneName,LoadSceneMode.Additive).completed += (op) =>
+        {
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
+        };
     }
+    static public void LoadScene(int index)
+    {
+        UnloadScene();
+        
+        //TODO: 加入场景加载进度条
+        SceneManager.LoadSceneAsync(index,LoadSceneMode.Additive).completed += (op) =>
+        {
+            SceneManager.SetActiveScene(SceneManager.GetSceneAt(index));
+        };
+
+    }
+    
 
     static public void LoadSceneInMemento(object memento)
     {
