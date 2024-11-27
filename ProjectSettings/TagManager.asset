@@ -10,6 +10,7 @@ TagManager:
   - NPC
   - Item2Show
   - ItemInter
+  - Bullet
   layers:
   - Default
   - TransparentFX

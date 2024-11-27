@@ -33,3 +33,11 @@ public enum ItemTypeEnum
     
 }
 
+public enum UIType
+{
+    All,
+    ItemDisplay=0,
+    descption=1,
+    Dialog=2,
+}
+
