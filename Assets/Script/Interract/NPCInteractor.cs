@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class NPCInteractor : BaseItem
 {
     public bool canInteract = false;
-    private void Update()
+    protected virtual void Update()
     {
             if (canInteract)
             {
@@ -16,11 +17,15 @@ public class NPCInteractor : BaseItem
                     RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
                     if (hit.collider != null&hit.collider.CompareTag("NPC"))
-                    {
-                        OnItemClick?.Invoke();
-                    }
+                {
+                          OnClick?.Invoke();
+                }
                 }
             }
+    }
+    public override void OnPointerClick(PointerEventData eventData) 
+    {
+
     }
     //检测玩家
     private void OnTriggerStay2D(Collider2D collision)

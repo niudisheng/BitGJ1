@@ -1577,7 +1577,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &934210266
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2377,7 +2377,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: 0
   m_CullingMask:
@@ -2424,7 +2424,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1340742101
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2855,7 +2855,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collider: {fileID: 0}
-  OnItemClick:
+  OnClick:
     m_PersistentCalls:
       m_Calls: []
   itemData: {fileID: 0}
@@ -3007,7 +3007,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1783805970446776057, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1954032890519364516, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_Name

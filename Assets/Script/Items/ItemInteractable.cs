@@ -7,7 +7,7 @@ public class ItemInteractable : NPCInteractor
 {
     private void Awake()
     {
-        OnInteract += OnInteract1;
+        
     }
 
     public void OnInteract1()

@@ -11,7 +11,7 @@ public class Move : MonoBehaviour
     private void Update()
     {
         //Debug.Log(Input.mousePosition);
-        Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition).x);
+        //Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition).x);
         move();
     }
     public void move()
