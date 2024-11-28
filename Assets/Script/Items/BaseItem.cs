@@ -11,7 +11,7 @@ public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public UnityEvent OnClick;
     public ItemSO itemData;
 
-    protected void Awake()
+    protected virtual void Awake()
     {
         itemData.InitItem();
     }

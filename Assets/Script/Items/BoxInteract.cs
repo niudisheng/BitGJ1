@@ -33,6 +33,10 @@ public class BoxInteract : NPCInteractor
         }
 
     }
+    protected override void Awake()
+    {
+        
+    }
     protected override void Update()
     {
         base.Update();

@@ -4,16 +4,16 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 /// <summary>
 /// 可交互的物品
 /// </summary>
 public class NPCInteractor : BaseItem
 {
     public bool canInteract = false;
-    protected UnityAction OnInteract;
     
 
-    private void Update()
+    protected virtual void Update()
     {
             if (canInteract)
             {
@@ -23,10 +23,14 @@ public class NPCInteractor : BaseItem
 
                     if (hit.collider != null&hit.collider.CompareTag("NPC"))
                     {
-                        OnInteract?.Invoke();
+                        OnClick?.Invoke();
                     }
                 }
             }
+    }
+    public override void OnPointerClick(PointerEventData eventData)
+    {
+        
     }
     //检测玩家
     private void OnTriggerStay2D(Collider2D collision)
