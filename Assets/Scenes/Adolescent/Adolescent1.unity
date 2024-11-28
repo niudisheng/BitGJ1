@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 497309685}
   - component: {fileID: 497309684}
   m_Layer: 0
-  m_Name: "\u996E\u6599\u7BB1  (1)"
+  m_Name: drinkBox(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 661730634}
   - component: {fileID: 661730633}
   m_Layer: 0
-  m_Name: "\u524D\u53F0-Sheet_1"
+  m_Name: frontDesk-Sheet_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 1000811647}
   - component: {fileID: 1000811646}
   m_Layer: 0
-  m_Name: "\u996E\u6599\u67DC "
+  m_Name: drinkCase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 1024242687}
   - component: {fileID: 1024242686}
   m_Layer: 0
-  m_Name: "\u996E\u6599\u67DC  (1)"
+  m_Name: drinkCase(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -554,7 +554,7 @@ GameObject:
   - component: {fileID: 1173327075}
   - component: {fileID: 1173327074}
   m_Layer: 0
-  m_Name: "\u996E\u6599\u7BB1 "
+  m_Name: drinkBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -638,7 +638,7 @@ GameObject:
   - component: {fileID: 1559704353}
   - component: {fileID: 1559704352}
   m_Layer: 0
-  m_Name: "\u524D\u53F0-Sheet_0"
+  m_Name: frontDesk-Sheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

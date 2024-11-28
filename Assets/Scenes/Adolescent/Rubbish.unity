@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 473355842}
   - component: {fileID: 473355841}
   m_Layer: 0
-  m_Name: "\u5783\u573E\u6876\u5185\u90E8"
+  m_Name: canInside
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 1661512505}
   - component: {fileID: 1661512504}
   m_Layer: 0
-  m_Name: "\u4FE1\u5C01\uFF08\u5DF2\u5F00\uFF09"
+  m_Name: envelopeOpen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 2024074016}
   - component: {fileID: 2024074015}
   m_Layer: 0
-  m_Name: "\u4FE1\u5C01\uFF08\u672A\u5F00\uFF09"
+  m_Name: envelopeClose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

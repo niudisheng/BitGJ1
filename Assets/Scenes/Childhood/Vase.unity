@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 253032070}
   - component: {fileID: 253032069}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u5531\u7247"
+  m_Name: record
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 494367592}
   - component: {fileID: 494367591}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u82B1\u74F6\u4E0A\u683C\uFF08\u4E0A\u5C42\uFF09"
+  m_Name: upcase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -262,8 +262,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 317670215
-  m_SortingLayer: 4
+  m_SortingLayerID: -1283492701
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4c165ce1cb4aa294d8f326b2400caac5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 1188490372}
   - component: {fileID: 1188490371}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u96EA\u71D5\u9E1F\u7684\u7FBD\u6BDB"
+  m_Name: feather
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 1510839730}
   - component: {fileID: 1510839729}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u82B1\u74F6\u4E0A\u683C"
+  m_Name: downcse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 1611012129}
   - component: {fileID: 1611012128}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u82B1\u74F6\u67DC\u5B50\uFF08\u4E0B\uFF09"
+  m_Name: case
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 759227323}
   - component: {fileID: 759227322}
   m_Layer: 0
-  m_Name: "\u684C\u67DC2"
+  m_Name: desk2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 936214645}
   - component: {fileID: 936214644}
   m_Layer: 0
-  m_Name: "\u8774\u8776\u7ED3"
+  m_Name: bowknot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 1395413466}
   - component: {fileID: 1395413465}
   m_Layer: 0
-  m_Name: "\u684C\u67DC1"
+  m_Name: desk1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 1966291700}
   - component: {fileID: 1966291699}
   m_Layer: 0
-  m_Name: "\u8033\u673A"
+  m_Name: headset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

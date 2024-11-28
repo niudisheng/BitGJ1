@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 219719776}
   - component: {fileID: 219719775}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u4E66\u67DC\u4E0A\u7684\u76F8\u518C"
+  m_Name: photoBook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -178,8 +178,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 317670215
-  m_SortingLayer: 4
+  m_SortingLayerID: 1992034575
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4cd4488539289a3499a7933f2d86449d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 615581721}
   - component: {fileID: 615581720}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u4E66\u67DC\u4E0B\u683C\u5B50"
+  m_Name: caseClose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 734206104}
   - component: {fileID: 734206103}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u6253\u5F00\u7684\u76F8\u518C"
+  m_Name: photoBookOpen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -386,12 +386,12 @@ GameObject:
   - component: {fileID: 964154856}
   - component: {fileID: 964154855}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u4E66\u67DC"
+  m_Name: bookcase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &964154855
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 1287100018}
   - component: {fileID: 1287100017}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u94A5\u5319"
+  m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -554,7 +554,7 @@ GameObject:
   - component: {fileID: 1365587402}
   - component: {fileID: 1365587401}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u4E66\u67DC\u4E0B\u683C\u5B50\uFF08\u6253\u5F00\u4E0A\u5C42\uFF09"
+  m_Name: caseOpen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -638,7 +638,7 @@ GameObject:
   - component: {fileID: 1431428422}
   - component: {fileID: 1431428421}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u4EA4\u4E92\u7BB14"
+  m_Name: box4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -722,7 +722,7 @@ GameObject:
   - component: {fileID: 1572640401}
   - component: {fileID: 1572640400}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u4EA4\u4E92\u7BB12"
+  m_Name: box2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -806,7 +806,7 @@ GameObject:
   - component: {fileID: 1758781109}
   - component: {fileID: 1758781108}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u4EA4\u4E92\u7BB11"
+  m_Name: box1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -890,7 +890,7 @@ GameObject:
   - component: {fileID: 2044582378}
   - component: {fileID: 2044582377}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u4EA4\u4E92\u7BB13"
+  m_Name: box3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -974,7 +974,7 @@ GameObject:
   - component: {fileID: 2144426554}
   - component: {fileID: 2144426553}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u4E66\u67DC\u4E0B\u683C\u5B50\uFF08\u6253\u5F00\uFF09"
+  m_Name: caseOpenDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

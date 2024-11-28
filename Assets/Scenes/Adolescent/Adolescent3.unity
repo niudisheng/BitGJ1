@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 473355842}
   - component: {fileID: 473355841}
   m_Layer: 0
-  m_Name: "\u5B66\u751F\u50A8\u7269\u67DC\u2014\u2014\u5F00"
+  m_Name: cabinetOpen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 1803992864}
   - component: {fileID: 1803992863}
   m_Layer: 0
-  m_Name: "\u5783\u573E\u6876"
+  m_Name: trashCan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 2091251448}
   - component: {fileID: 2091251447}
   m_Layer: 0
-  m_Name: "\u5B66\u751F\u50A8\u7269\u67DC\u2014\u2014\u5173"
+  m_Name: cabinetClose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

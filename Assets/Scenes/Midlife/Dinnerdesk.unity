@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 925092620}
   - component: {fileID: 925092619}
   m_Layer: 0
-  m_Name: "food&table 3(\u89E3\u5BC6\u5B8C)-Sheet_2"
+  m_Name: food&table 3(Finish2)-Sheet_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 1008879105}
   - component: {fileID: 1008879104}
   m_Layer: 0
-  m_Name: "food&table 3(\u89E3\u5BC6\u5B8C)-Sheet_1"
+  m_Name: food&table 3(Finish2)-Sheet_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 1180047441}
   - component: {fileID: 1180047440}
   m_Layer: 0
-  m_Name: "food&table 3(\u89E3\u5BC6\u5B8C)-Sheet_0"
+  m_Name: food&table 3(Finish2)-Sheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -470,7 +470,7 @@ GameObject:
   - component: {fileID: 2134496317}
   - component: {fileID: 2134496316}
   m_Layer: 0
-  m_Name: "food&table 2\uFF08\u89E3\u5BC6\u5B8C\uFF09"
+  m_Name: "food&table 2\uFF08Finish\uFF09"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
