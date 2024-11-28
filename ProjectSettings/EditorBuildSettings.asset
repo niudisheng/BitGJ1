@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 4a500516f6ce34f4588f242e6381b21d
   - enabled: 1
-    path: Assets/Scenes/Childhood/Childhood.unity
-    guid: c3b06c575d3537340a07cdb5e56a3887
+    path: Assets/Scenes/Childhood/Childhood1.unity
+    guid: 388f276bc5e39db4586117b07c1a1dc2
+  - enabled: 1
+    path: Assets/Scenes/Childhood/Childhood2.unity
+    guid: c9c4a957a26c18043ae1b0d61a87c522
+  - enabled: 1
+    path: Assets/Scenes/Childhood/Childhood3.unity
+    guid: f627a8a2b133c94488ba97daf9c73335
   m_configObjects: {}

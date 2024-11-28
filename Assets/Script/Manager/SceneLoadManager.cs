@@ -45,7 +45,6 @@ public class SceneLoadManager : MonoBehaviour
         GameMemento memento1 = (GameMemento)memento;
         string sceneName = memento1.sceneName;
         LoadScene(sceneName);
-        
     }
 
     static public void UnloadScene()

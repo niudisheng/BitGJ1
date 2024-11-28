@@ -13,8 +13,10 @@ public class ItemSO : ScriptableObject
     public bool isUnlocked;
     public bool isCompleted=false;
 
-    public  void InitItem()
+    public void InitItem(string name, Sprite image)
     {
         chapterData.AddNpc(this);
+        itemName = name;
+        itemImage = image;
     }
 }

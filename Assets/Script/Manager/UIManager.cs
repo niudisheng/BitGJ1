@@ -1,8 +1,7 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -16,13 +15,12 @@ public class UIManager : MonoBehaviour
             UIType uiType = (UIType)i;
             uiDictionary.Add(uiType,uiList[i]);
         }
-    }
 
-    public void ShowCanvas(bool show)
-    {
-        canvas.SetActive(show);
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            HideAllUI();
+        }
     }
-
     public void ShowAllUI()
     {
         setUIActive(UIType.All,true);
@@ -42,8 +40,17 @@ public class UIManager : MonoBehaviour
             {
                 UI.SetActive(active);
             }
+            return;
         }
         GameObject ui = uiDictionary[uiType];
         ui.SetActive(active);
+    }
+
+    public void OnChangeDescription(object obj)
+    {
+        string description = (string)obj;
+        Text text = uiDictionary[UIType.descption].GetComponent<Text>();
+        text.text = description;
+        
     }
 }

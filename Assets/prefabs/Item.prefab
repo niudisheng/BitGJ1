@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -412, y: -2}
-  m_SizeDelta: {x: 150.1541, y: 152.66}
+  m_AnchoredPosition: {x: -309, y: -4}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &936711505899718050
 CanvasRenderer:
@@ -82,8 +82,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -2.9565, y: 3.9567}
+  m_SizeDelta: {x: 81.7218, y: 76.9915}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1707987716920972362
 CanvasRenderer:
@@ -158,12 +158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bfd9343c86955d41bd315bf2ee002da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  collider: {fileID: 0}
-  OnItemClick:
-    m_PersistentCalls:
-      m_Calls: []
   itemData: {fileID: 0}
-  itemDescription: {fileID: 0}
+  ChangeDescption: {fileID: 11400000, guid: 9cc7c116969fd3843873b0501d818f6e, type: 2}
 --- !u!114 &1115056767236668624
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -63,7 +63,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.4, y: -1.28, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalScale: {x: 0.39, y: 0.39, z: 0.39}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8425863529169178599}
@@ -207,12 +207,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1474090633449437049}
-  rb: {fileID: 8227025445902508706}
   height: 0
   direction: {x: 0, y: 0}
   speed: 5
   isClick: 0
   clickTime: 0
+  rb: {fileID: 8227025445902508706}
 --- !u!114 &2215989286918274188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -234,21 +234,6 @@ MonoBehaviour:
   NpcLayer:
     serializedVersion: 2
     m_Bits: 4096
-  onInteract:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: StartDialog, Assembly-CSharp
-        m_MethodName: StartDialogs
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!95 &1474090633449437049
 Animator:
   serializedVersion: 5

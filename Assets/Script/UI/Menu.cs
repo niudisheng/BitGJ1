@@ -14,13 +14,21 @@ public class Menu : MonoBehaviour
     {
         //TODO: 没有做存档逻辑
         startButton.onClick.AddListener(StartGame);  
-        loadButton.onClick.AddListener(StartGame);  
+        loadButton.onClick.AddListener(TestLoadGame);  
+        loadButton.onClick.AddListener(Application.Quit);  
     }
 
     private void StartGame()
     {
         loadGame.RaiseEvent(null,this);
     }
+    
+    [ContextMenu("TestLoadGame")]
+    private void TestLoadGame()
+    {
+        loadGame.RaiseEvent(FileSaveManager.LoadFromFile(0),this);
+    }
+    
 
 
 

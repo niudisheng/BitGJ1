@@ -3,18 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
-/// 有回调，需要计数的交互物品
+/// 2.点击出现物品介绍但是无法进入其他场景
 /// </summary>
-public class ItemInteractable : NPCInteractor
+public class ItemToDescption : NPCInteractor
 {
+    
     private void Awake()
     {
         base.Awake();
+        
+        OnClick += OnInteract1;
         
     }
 
     public void OnInteract1()
     {
-        itemData.isCompleted = true;
+        //TODO: 调用Dialog
     }
+    
 }

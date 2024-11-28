@@ -7,23 +7,24 @@ using UnityEngine.EventSystems;
 
 public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,IPointerClickHandler
 {
-    public Collider2D collider;
-    public UnityEvent OnClick;
+    private Collider2D collider;
+    public UnityAction OnClick;
     public ItemSO itemData;
 
     protected virtual void Awake()
     {
-        itemData.InitItem();
+        collider = GetComponent<Collider2D>();
+        itemData.InitItem(this.gameObject.name,this.GetComponent<SpriteRenderer>().sprite);
     }
 
     public virtual void OnPointerEnter(PointerEventData eventData)
     {
-        this.transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
+        // this.transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
     }
 
     public virtual void OnPointerExit(PointerEventData eventData)
     {
-        this.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        // this.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
         
     }
 

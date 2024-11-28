@@ -39,5 +39,6 @@ public enum UIType
     ItemDisplay=0,
     descption=1,
     Dialog=2,
+    PauseMenu=3,
 }
 
