@@ -675,6 +675,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fff9beff69d93aa448849c246e6eb0c6, type: 2}
   - {fileID: 11400000, guid: a46c2d5a10081e14d905cb26cd6391e2, type: 2}
   currentChapter: {fileID: 0}
+  isReady: 0
 --- !u!114 &421658935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2267,6 +2268,7 @@ MonoBehaviour:
   LoadGameEvent: {fileID: 11400000, guid: aefb3d22a6ad5f74885565535f16391d, type: 2}
   chapters: []
   currentChapter: {fileID: 0}
+  isReady: 0
 --- !u!4 &1135940203
 Transform:
   m_ObjectHideFlags: 0
