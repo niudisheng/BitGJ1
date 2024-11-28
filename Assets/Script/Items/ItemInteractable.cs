@@ -10,7 +10,7 @@ public class ItemInteractable : NPCInteractor
     private void Awake()
     {
         base.Awake();
-        OnInteract += OnInteract1;
+        
     }
 
     public void OnInteract1()

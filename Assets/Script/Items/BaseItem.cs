@@ -8,10 +8,10 @@ using UnityEngine.EventSystems;
 public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,IPointerClickHandler
 {
     public Collider2D collider;
-    public UnityEvent OnItemClick;
+    public UnityEvent OnClick;
     public ItemSO itemData;
 
-    protected void Awake()
+    protected virtual void Awake()
     {
         itemData.InitItem();
     }
@@ -27,9 +27,9 @@ public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    public virtual void OnPointerClick(PointerEventData eventData)
     {
-        OnItemClick.Invoke();
+        OnClick?.Invoke();
     }
 
     protected void disable()
