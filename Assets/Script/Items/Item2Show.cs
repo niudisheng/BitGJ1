@@ -9,6 +9,12 @@ using UnityEngine.UI;
 public class Item2Show : BaseItem
 {
     public Text itemDescription;
+
+    public void Init(ItemSO itemData)
+    {
+        this.itemData = itemData;
+    }
+
     //TODO: 读取与显示物品描述功能仍未实现
     public override void OnPointerEnter(PointerEventData eventData)
     {
