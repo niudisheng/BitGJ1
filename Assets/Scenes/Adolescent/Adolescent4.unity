@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 627604321}
   - component: {fileID: 627604320}
   m_Layer: 0
-  m_Name: "\u8BFE\u684C1"
+  m_Name: desk1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 1835627785}
   - component: {fileID: 1835627784}
   m_Layer: 0
-  m_Name: "\u65E5\u5386"
+  m_Name: calender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -554,7 +554,7 @@ GameObject:
   - component: {fileID: 2058761538}
   - component: {fileID: 2058761537}
   m_Layer: 0
-  m_Name: "\u8BFE\u684C2"
+  m_Name: desk2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

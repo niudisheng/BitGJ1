@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 801155493}
   - component: {fileID: 801155492}
   m_Layer: 0
-  m_Name: "\u5E8A\u5934\u67DC-\u672A\u5F00\u706F"
+  m_Name: tableClose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 1983848659}
   - component: {fileID: 1983848658}
   m_Layer: 0
-  m_Name: "\u5E8A\u5934\u67DC-\u5F00\u706F"
+  m_Name: tableOpen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

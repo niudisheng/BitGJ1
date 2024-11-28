@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 448771729}
   - component: {fileID: 448771728}
   m_Layer: 0
-  m_Name: "\u65E5\u5386\u2014\u2014\u6495\u4E0B"
+  m_Name: calenderDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 889702818}
   - component: {fileID: 889702817}
   m_Layer: 0
-  m_Name: "\u65E5\u53862"
+  m_Name: calender2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 2036284791}
   - component: {fileID: 2036284790}
   m_Layer: 0
-  m_Name: "\u65E5\u53861"
+  m_Name: calender1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -386,7 +386,7 @@ GameObject:
   - component: {fileID: 2147055582}
   - component: {fileID: 2147055581}
   m_Layer: 0
-  m_Name: "\u94A5\u5319"
+  m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

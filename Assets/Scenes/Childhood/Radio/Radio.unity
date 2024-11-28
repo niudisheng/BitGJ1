@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 473394498}
   - component: {fileID: 473394497}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u6536\u97F3\u673A\u67B6\u5B50\uFF08\u4E0A\u5C42\uFF09"
+  m_Name: radioUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 628173916}
   - component: {fileID: 628173915}
   m_Layer: 0
-  m_Name: "\u513F\u7AE5-\u6536\u97F3\u673A\u67B6\u5B50\uFF08\u4E0B\u5C42\uFF09"
+  m_Name: radioDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

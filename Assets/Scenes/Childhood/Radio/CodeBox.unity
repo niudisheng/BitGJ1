@@ -2906,7 +2906,7 @@ GameObject:
   - component: {fileID: 1534581945}
   - component: {fileID: 1534581944}
   m_Layer: 0
-  m_Name: mimaxiang1
+  m_Name: codeBox1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
