@@ -67,7 +67,7 @@ public class NewPlayer : CharacterBase
         if (Camera.main != null)
         {
             var input = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Debug.Log(input);
+            // Debug.Log(input);
         }
 
         move();

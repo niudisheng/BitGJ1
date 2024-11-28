@@ -12,4 +12,9 @@ public class ItemSO : ScriptableObject
     public string introduction;
     public bool isUnlocked;
     public bool isCompleted=false;
+
+    public  void InitItem()
+    {
+        chapterData.AddNpc(this);
+    }
 }
