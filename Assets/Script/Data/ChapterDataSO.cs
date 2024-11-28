@@ -1,22 +1,40 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(fileName = "New Chapter Data", menuName = "Data/Chapter Data")]
 public class ChapterDataSO : ScriptableObject
 {
     public List<ItemSO> npcList=new ();
-    public int chapterNumber;
-    public Dictionary<ItemSO, bool> itemCheckDict=new ();
+    public int chapterIndex;
+    
+    // public Dictionary<ItemSO, bool> itemCheckDict=new ();
+    /// <summary>
+    /// 这个函数给NPC调用，把它自己加进来
+    /// </summary>
+    /// <param name="npc"></param>
     public void AddNpc(ItemSO npc)
     {
+        if (npcList.Contains(npc))
+        {
+            return;
+        }
         npcList.Add(npc);
-        itemCheckDict.Add(npc, false);
+        
+    }
+
+    public bool CheckAllItem()
+    {
+        foreach (var item in npcList)
+        {
+            if (!item.isCompleted)
+            {
+                return false;
+            }
+        }
+        return true;
     }
 
     public void Reset()
     {
-        itemCheckDict.Clear();
         npcList.Clear();
     }
 }

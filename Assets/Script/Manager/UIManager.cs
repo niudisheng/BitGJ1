@@ -8,7 +8,7 @@ public class UIManager : MonoBehaviour
 {
     public GameObject canvas;
     public List<GameObject> uiList;
-    Dictionary<UIType,GameObject> uiDictionary;
+    Dictionary<UIType,GameObject> uiDictionary=new();
     private void Awake()
     {
         for (int i = 0; i < uiList.Count; i++)

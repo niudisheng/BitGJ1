@@ -1,14 +1,19 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.EventSystems;
-
+/// <summary>
+/// 可交互的物品
+/// </summary>
 public class NPCInteractor : BaseItem
 {
     public bool canInteract = false;
-    protected virtual void Update()
+    protected UnityAction OnInteract;
+    
+
+    private void Update()
     {
             if (canInteract)
             {
@@ -17,15 +22,11 @@ public class NPCInteractor : BaseItem
                     RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
 
                     if (hit.collider != null&hit.collider.CompareTag("NPC"))
-                {
-                          OnClick?.Invoke();
-                }
+                    {
+                        OnInteract?.Invoke();
+                    }
                 }
             }
-    }
-    public override void OnPointerClick(PointerEventData eventData) 
-    {
-
     }
     //检测玩家
     private void OnTriggerStay2D(Collider2D collision)
@@ -42,4 +43,6 @@ public class NPCInteractor : BaseItem
             canInteract = false;
         }
     }
+
+    
 }

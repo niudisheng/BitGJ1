@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Chapter1-1
   m_EditorClassIdentifier: 
   npcList:
+  - {fileID: 11400000, guid: 367fa5c4acc7368418e763720d982cbc, type: 2}
   - {fileID: 0}
-  - {fileID: 0}
-  chapterNumber: 1
+  chapterIndex: 2
