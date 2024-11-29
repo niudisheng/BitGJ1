@@ -12,8 +12,8 @@ public class ItemDisplay : MonoBehaviour
     {
         Vector3 startPos = itemPrefab.transform.localPosition;
         Vector3 newPos = startPos + new Vector3(spaceing * index,0, 0);
-        Debug.Log("Start position: " + startPos);
-        Debug.Log("New position: " + newPos);
+        // Debug.Log("Start position: " + startPos);
+        // Debug.Log("New position: " + newPos);
         return newPos;
     }
     

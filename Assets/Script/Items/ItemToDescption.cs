@@ -18,6 +18,7 @@ public class ItemToDescption : NPCInteractor
 
     public void OnInteract1()
     {
+        Debug.Log("ItemToDescption:OnInteract1");
         //TODO: 调用Dialog
     }
     

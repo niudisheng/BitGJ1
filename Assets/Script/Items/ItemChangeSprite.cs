@@ -7,9 +7,10 @@ using UnityEngine;
 /// </summary>
 public class ItemChangeSprite : NPCInteractor
 {
-    public List<Sprite> sprites;
     public int currentIndex = 0;
     public SpriteRenderer spriteRenderer;
+    [Header("需要切换的图片")]
+    public List<Sprite> sprites;
     private void Awake()
     {
         base.Awake();

@@ -13,13 +13,8 @@ public class ItemToDisplay : NPCInteractor
     private void Awake()
     {
         base.Awake();
-        
         OnClick += OnInteract1;
         
-    }
-    public override void OnPointerClick(PointerEventData eventData)
-    {
-        OnClick?.Invoke();
     }
 
     public void OnInteract1()
