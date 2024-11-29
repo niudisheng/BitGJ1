@@ -12,6 +12,13 @@ public class GameManager : MonoBehaviour
 
     public bool isReady = false;
 
+    public float itemRate
+    {
+        get
+        {
+            return currentChapter.CheckItems();
+        }
+    }
 
     [ContextMenu("CreateMemento")]
     // 创建备忘录（保存游戏状态）

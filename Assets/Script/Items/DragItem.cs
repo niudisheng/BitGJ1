@@ -28,17 +28,8 @@ public class DragItem : BaseItem,IBeginDragHandler, IDragHandler, IEndDragHandle
 
     public virtual void OnEndDrag(PointerEventData eventData)
     {
-        bool result = CheckCollision();
-        if (result)
-        {
-            
-        }
-        //回到原来的位置
-        else
-        {
-            this.transform.position = endPos;
-            isDragging = false;
-        }
+        this.transform.position = endPos;
+        isDragging = false;
         
     }
     

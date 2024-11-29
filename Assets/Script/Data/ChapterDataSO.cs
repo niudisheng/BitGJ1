@@ -32,6 +32,18 @@ public class ChapterDataSO : ScriptableObject
         }
         return true;
     }
+    public float CheckItems()
+    {
+        float count = 0;
+        foreach (var item in npcList)
+        {
+            if (!item.isCompleted)
+            {
+                count++;
+            }
+        }
+        return (float)count / npcList.Count;
+    }
 
     public void Reset()
     {
