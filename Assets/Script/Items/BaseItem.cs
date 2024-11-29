@@ -10,32 +10,34 @@ public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     private Collider2D collider;
     public UnityAction OnClick;
     public ItemSO itemData;
-
+    private Vector3 originalScale;
     protected virtual void Awake()
     {
         collider = GetComponent<Collider2D>();
         itemData.InitItem(this.gameObject.name,this.GetComponent<SpriteRenderer>().sprite);
     }
 
+    private void Start()
+    {
+        originalScale = this.transform.localScale;
+        
+    }
+
     public virtual void OnPointerEnter(PointerEventData eventData)
     {
-        // this.transform.localScale = new Vector3(1.2f, 1.2f, 1.2f);
+        this.transform.localScale = originalScale* 1.2f;
+        
     }
 
     public virtual void OnPointerExit(PointerEventData eventData)
     {
-        // this.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+        this.transform.localScale = originalScale* 1.0f;
         
     }
 
     public virtual void OnPointerClick(PointerEventData eventData)
     {
         OnClick?.Invoke();
-    }
-
-    protected void disable()
-    {
-        collider.enabled = false;
     }
 
 }

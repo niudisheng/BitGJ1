@@ -20,13 +20,14 @@ public class DragItem : BaseItem,IBeginDragHandler, IDragHandler, IEndDragHandle
         this.transform.position = worldPos;
     }
 
-    public virtual void OnBeginDrag(PointerEventData eventData)
+    public void OnBeginDrag(PointerEventData eventData)
     {
+        Debug.Log("OnBeginDrag");
         startPos = this.transform.position;
         isDragging = true;
     }
 
-    public virtual void OnEndDrag(PointerEventData eventData)
+    public void OnEndDrag(PointerEventData eventData)
     {
         this.transform.position = endPos;
         isDragging = false;
@@ -44,7 +45,7 @@ public class DragItem : BaseItem,IBeginDragHandler, IDragHandler, IEndDragHandle
             {
                 Debug.Log($"碰撞到物体：{hit.gameObject.name}");
                 this.transform.position = hit.transform.position;
-                disable();
+                
                 return true;
             }
         }

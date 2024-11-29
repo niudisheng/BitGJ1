@@ -24,6 +24,7 @@ public class Item2Show : BaseItem
     
     public override void OnPointerEnter(PointerEventData eventData)
     {
+        base.OnPointerEnter(eventData);
         showDescription();
     }
 
