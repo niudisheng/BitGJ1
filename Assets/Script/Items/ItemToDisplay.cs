@@ -16,10 +16,14 @@ public class ItemToDisplay : NPCInteractor
         OnClick += OnInteract1;
         
     }
-
-    public void OnInteract1()
+    public override void OnPointerClick(PointerEventData eventData)
+    {
+          OnClick?.Invoke();
+    }
+        public void OnInteract1()
     {
         AddTOItemDisplay.RaiseEvent(this.itemData,this);
+        Destroy(gameObject);
     }
     
 }

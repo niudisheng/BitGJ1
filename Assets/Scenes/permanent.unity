@@ -1959,7 +1959,7 @@ MonoBehaviour:
   dialogue: {fileID: 1340742100}
   nPCName: {fileID: 1130843618}
   dialog: {fileID: 2077162528}
-  sprite: {fileID: 1003518012}
+  sprite: {fileID: 0}
   nextButton: {fileID: 56592242}
   isPause: 0
   oneName: 

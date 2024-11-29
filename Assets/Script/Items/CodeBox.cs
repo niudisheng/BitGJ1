@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CodeBox : MonoBehaviour
 {
+    public BoolSO BoolSO;
     public List<GameObject> gameObjects = new List<GameObject>();
     public List<Sprite> nowSprite = new List<Sprite>();
     public List<Sprite> answer = new List<Sprite>();
@@ -16,6 +17,7 @@ public class CodeBox : MonoBehaviour
         if (nowSprite[0] == answer[0] & nowSprite[1] == answer[1] & nowSprite[2] == answer[2] & nowSprite[3] == answer[3])
         {
             SceneLoadManager.LoadScene("CodeBox2");
+            BoolSO.isDone = true;
         }
     }
 }

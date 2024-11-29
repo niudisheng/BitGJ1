@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fe9dcd18ef38634d88d85ed1665eb62, type: 3}
-  m_Name: Headset
+  m_Name: headset
   m_EditorClassIdentifier: 
   chapterData: {fileID: 11400000, guid: a46c2d5a10081e14d905cb26cd6391e2, type: 2}
-  itemName: Headset
+  itemName: headset
   itemImage: {fileID: 21300000, guid: 20296f9cf2ab29e41b92ebe4c3b15acb, type: 3}
   itemCounter: 0
   introduction: 

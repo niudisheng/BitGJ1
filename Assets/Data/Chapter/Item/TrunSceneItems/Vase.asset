@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fe9dcd18ef38634d88d85ed1665eb62, type: 3}
-  m_Name: Vase
+  m_Name: cabinet
   m_EditorClassIdentifier: 
   chapterData: {fileID: 11400000, guid: fff9beff69d93aa448849c246e6eb0c6, type: 2}
   itemName: cabinet
