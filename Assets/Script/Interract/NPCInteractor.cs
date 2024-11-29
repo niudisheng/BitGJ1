@@ -9,28 +9,32 @@ public class NPCInteractor : BaseItem
     public bool canInteract = false;
     
 
-    protected virtual void Update()
-    {
-            if (canInteract)
-            {
-                if(Input.GetMouseButtonDown(0))
-                {
-                    RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
-                    if (hit.collider == null)
-                    {
-                        Debug.Log("没有碰撞到任何物体");
-                    }
-                    if (hit.collider != null&hit.collider.CompareTag("NPC"))
-                    {
+    //protected virtual void Update()
+    //{
+    //        if (canInteract)
+    //        {
+    //            if(Input.GetMouseButtonDown(0))
+    //            {
+    //                RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+    //                if (hit.collider == null)
+    //                {
+    //                    Debug.Log("没有碰撞到任何物体");
+    //                }
+    //                if (hit.collider != null&hit.collider.CompareTag("NPC"))
+    //                {
                         
-                    }
-                }
-            }
-    }
+    //                }
+    //            }
+    //        }
+    //}
     public override void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("点击了NPC");
-        OnClick?.Invoke();
+        if (canInteract)
+        {
+            Debug.Log("点击了NPC");
+            OnClick?.Invoke();
+        }
+
     }
     //检测玩家
     private void OnTriggerStay2D(Collider2D collision)

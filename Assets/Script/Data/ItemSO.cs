@@ -15,8 +15,9 @@ public class ItemSO : ScriptableObject
 
     public void InitItem(string name, Sprite image)
     {
-        chapterData.AddNpc(this);
-        itemName = name;
-        itemImage = image;
+            itemImage = image;
+            chapterData.AddNpc(this);
+            itemName = name;
+
     }
 }

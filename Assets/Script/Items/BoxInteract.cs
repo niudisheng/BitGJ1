@@ -37,9 +37,9 @@ public class BoxInteract : NPCInteractor
     {
         
     }
-    protected override void Update()
-    {
-        base.Update();
-        TrunSprite();
-    }
+    //protected override void Update()
+    //{
+    //    base.Update();
+    //    TrunSprite();
+    //}
 }

@@ -8,7 +8,7 @@ using UnityEngine;
 public class ItemChangeSprite : NPCInteractor
 {
     public List<Sprite> sprites;
-    private int currentIndex = 0;
+    public int currentIndex = 0;
     private SpriteRenderer spriteRenderer;
     private void Awake()
     {
