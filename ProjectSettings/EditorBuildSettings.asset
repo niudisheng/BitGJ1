@@ -20,4 +20,88 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Childhood/Childhood3.unity
     guid: f627a8a2b133c94488ba97daf9c73335
+  - enabled: 1
+    path: Assets/Scenes/decrypt.unity
+    guid: e99fd1aa311612d47bac297b54e503a4
+  - enabled: 1
+    path: Assets/Scenes/Childhood/Vase.unity
+    guid: 101c54636b458eb449cd55663b16182d
+  - enabled: 1
+    path: Assets/Scenes/Childhood/Record.unity
+    guid: e608613938339364481c6e0fd5eb6742
+  - enabled: 1
+    path: Assets/Scenes/Childhood/Puzzle1.unity
+    guid: 16b1b252f3dcef643a60bc4e217685e3
+  - enabled: 1
+    path: Assets/Scenes/Childhood/TVInteration.unity
+    guid: a3ca27507110e664c9df203cdc9f4831
+  - enabled: 1
+    path: Assets/Scenes/Childhood/Bookset.unity
+    guid: d2f967bbb2593bf4a8066d9aae4a06bb
+  - enabled: 1
+    path: Assets/Scenes/Midlife/Midlife1.unity
+    guid: 9d90848cc8c1e50489675bbbbbcc4423
+  - enabled: 1
+    path: Assets/Scenes/Midlife/Mildlife2.unity
+    guid: 667f1225ab873dc47b1a068e35ff102c
+  - enabled: 1
+    path: Assets/Scenes/Midlife/Mildlife3.unity
+    guid: 079afae6cdcc6014d84593b3b0451a5a
+  - enabled: 1
+    path: Assets/Scenes/Adolescent/Adolescent1.unity
+    guid: 9502c1c744247c1468172400def90fa2
+  - enabled: 1
+    path: Assets/Scenes/Adolescent/Adolescent2.unity
+    guid: 794cb6416a7a7184dacf19984e64acaf
+  - enabled: 1
+    path: Assets/Scenes/Adolescent/Adolescent3.unity
+    guid: 0ceef75b7a135f14f94450f9c4eff3d7
+  - enabled: 1
+    path: Assets/Scenes/Adolescent/Adolescent4.unity
+    guid: 637d3b2e35d5b3c45a0fe9f2ec649550
+  - enabled: 1
+    path: Assets/Scenes/Childhood/Radio/CodeBox2.unity
+    guid: 1bf75f6d108b2124a9449f1e98d980b5
+  - enabled: 1
+    path: Assets/Scenes/Childhood/Radio/CodeBox.unity
+    guid: 92d2620abbc3c96498d747a18e26220b
+  - enabled: 1
+    path: Assets/Scenes/Adolescent/calendar.unity
+    guid: 44cb08095dcee974db851c41ee501820
+  - enabled: 1
+    path: Assets/Scenes/Adolescent/Computer.unity
+    guid: a891b72f27c5cbc47b226097383f5f24
+  - enabled: 1
+    path: Assets/Scenes/Adolescent/Lock.unity
+    guid: fbad9bffd4e833a4e85c62a5e1d6e5bd
+  - enabled: 1
+    path: Assets/Scenes/Adolescent/Rubbish.unity
+    guid: 7d405184386eb594bab60103e2677293
+  - enabled: 1
+    path: Assets/Scenes/Adolescent/Table.unity
+    guid: 7d29b8b3d8f8ad14c9f80b8b42683070
+  - enabled: 1
+    path: Assets/Scenes/Midlife/bedsideTable.unity
+    guid: f94447c3269cfb4489ad73a8486f053b
+  - enabled: 1
+    path: Assets/Scenes/Midlife/Briefcase.unity
+    guid: 25731b15e0a6a66469238dbf3cc3c266
+  - enabled: 1
+    path: Assets/Scenes/Midlife/Code.unity
+    guid: 00867b65587fdd946b722d1d4b115c7f
+  - enabled: 1
+    path: Assets/Scenes/Midlife/Dinnerdesk.unity
+    guid: 1c3257570d9d0984d86dafae9028981a
+  - enabled: 1
+    path: Assets/Scenes/Midlife/Document.unity
+    guid: 05e302cbcee3a6c418c17a181e97f253
+  - enabled: 1
+    path: Assets/Scenes/Midlife/Hearth.unity
+    guid: 55a0ad1e091fe514caf6e81b8d2989bd
+  - enabled: 1
+    path: Assets/Scenes/Old/Old1.unity
+    guid: 453da88db3e5b714e9a61ac1f9e0a04c
+  - enabled: 1
+    path: Assets/Scenes/Old/Old2.unity
+    guid: ab15989621f07aa45a8d006c536ad53f
   m_configObjects: {}
