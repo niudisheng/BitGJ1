@@ -141,7 +141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8224897998075379350, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.68
+      value: 1.99
       objectReference: {fileID: 0}
     - target: {fileID: 8224897998075379350, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -833,6 +833,8 @@ MonoBehaviour:
   sprites:
   - {fileID: -225436485, guid: b615801fc0b7b2443a9c1c09e5916d18, type: 3}
   - {fileID: -2101848129, guid: b615801fc0b7b2443a9c1c09e5916d18, type: 3}
+  currentIndex: 0
+  spriteRenderer: {fileID: 0}
 --- !u!61 &1559704355
 BoxCollider2D:
   m_ObjectHideFlags: 0
