@@ -268,6 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 33f29060da9670f4db2ecc10f2cbbb69, type: 2}
   canInteract: 0
+  BoolSO: {fileID: 0}
   sceneName: Vase
 --- !u!1 &734893773
 GameObject:
@@ -369,6 +370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 85f42a3e7fb810b449d0389715659c59, type: 2}
   canInteract: 0
+  BoolSO: {fileID: 0}
   sceneName: Record
 --- !u!61 &734893777
 BoxCollider2D:
@@ -819,7 +821,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8224897998075379350, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.38
+      value: 2.29
       objectReference: {fileID: 0}
     - target: {fileID: 8224897998075379350, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_LocalPosition.z

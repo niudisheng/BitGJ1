@@ -114,4 +114,8 @@ public class DialogManager : MonoBehaviour
             ShowDialogRow();
         }
     }
+    public void ShouDialogue()
+    {
+
+    }
 }

@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 
 public class ItemChangeSpriteWithoutPlayer : NPCInteractor
 {
+    public bool isCircle;
     public List<Sprite> sprites;
     protected int currentIndex = 0;
     protected SpriteRenderer spriteRenderer;
@@ -27,6 +28,11 @@ public class ItemChangeSpriteWithoutPlayer : NPCInteractor
     
             spriteRenderer.sprite = sprites[++currentIndex];
 
+        }
+        if (isCircle& currentIndex == sprites.Count-1)
+        {
+            spriteRenderer.sprite = sprites[0];
+            currentIndex = 0;
         }
     }
 }

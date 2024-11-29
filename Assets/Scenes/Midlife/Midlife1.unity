@@ -216,6 +216,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 7ab38897c31c076419ae18f315e0edd1, type: 2}
   canInteract: 0
+  BoolSO: {fileID: 0}
   sceneName: Briefcase
 --- !u!212 &358820465
 SpriteRenderer:
@@ -583,6 +584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 58bc2615575747541acaa444b65464fb, type: 2}
   canInteract: 0
+  BoolSO: {fileID: 0}
   sceneName: Document
 --- !u!1 &1153203761
 GameObject:
@@ -980,11 +982,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8224897998075379350, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.4
+      value: -6.5
       objectReference: {fileID: 0}
     - target: {fileID: 8224897998075379350, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.54
+      value: 2.08
       objectReference: {fileID: 0}
     - target: {fileID: 8224897998075379350, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_LocalPosition.z
