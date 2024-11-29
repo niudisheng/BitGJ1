@@ -9,7 +9,7 @@ public class ItemChangeSprite : NPCInteractor
 {
     public List<Sprite> sprites;
     public int currentIndex = 0;
-    private SpriteRenderer spriteRenderer;
+    public SpriteRenderer spriteRenderer;
     private void Awake()
     {
         base.Awake();
@@ -18,7 +18,7 @@ public class ItemChangeSprite : NPCInteractor
         
     }
 
-    public void OnInteract1()
+    public virtual void OnInteract1()
     {
         itemData.isCompleted = true;
         if (currentIndex < sprites.Count - 1)
