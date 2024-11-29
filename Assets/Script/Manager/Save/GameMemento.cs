@@ -6,8 +6,6 @@ public class GameMemento
 {
     private Vector2 playerPosition; // 玩家位置
     public string sceneName; // 当前场景
-    
-    //TODO:加入更多状态变量：
     //道具列表，解谜数据，道具栏状态
     private ChapterDataSO chapterData; // 当前章节数据
     // 构造函数，用于初始化状态
