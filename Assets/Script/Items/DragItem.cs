@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragItem : BaseItem,IBeginDragHandler, IDragHandler, IEndDragHandler
+public class DragItem : MonoBehaviour,IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     public Sprite icon;
     public bool isDragging = false;
@@ -29,7 +29,7 @@ public class DragItem : BaseItem,IBeginDragHandler, IDragHandler, IEndDragHandle
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        this.transform.position = endPos;
+        this.transform.position = startPos;
         isDragging = false;
         
     }
