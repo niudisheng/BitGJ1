@@ -24,7 +24,6 @@ public class ItemToDisplay : NPCInteractor
 
     public void OnInteract1()
     {
-        Debug.Log("ItemToDisplay Interact");
         AddTOItemDisplay.RaiseEvent(this.itemData,this);
     }
     
