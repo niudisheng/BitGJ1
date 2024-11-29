@@ -38,23 +38,35 @@ public class NewPlayer : CharacterBase
             isClick = true;
         }
         if(Input.GetMouseButtonUp(0))
+        {
+            anim.SetBool("move",false);
+            anim.SetBool("idle", true);
+            rb.velocity = Vector2.zero;
             isClick = false;
+        }
         if (isClick)
         {
             clickTime += Time.deltaTime;
             if (clickTime >= 0.15)
             {
-                if( Camera.main.ScreenToWorldPoint(Input.mousePosition).x > transform.position.x)
+                if( Camera.main.ScreenToWorldPoint(Input.mousePosition).x -transform.position.x > 0.1)
                 {
+                    anim.SetBool("idle",false );
+                    anim.SetBool("move",true);
                     direction = Vector2.right;
-                   
+                    transform.localScale = new Vector3(1, 1, 1);
                 }
-                else if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x < transform.position.x)
+                else if (Camera.main.ScreenToWorldPoint(Input.mousePosition).x - transform.position.x < -0.1)
                 {
+                    anim.SetBool("idle", false);
+                    anim.SetBool("move", true);
                     direction = Vector2.left;
+                    transform.localScale = new Vector3(-1, 1, 1);
                 }
                 else 
                 {
+                    anim.SetBool("move", false);
+                    anim.SetBool("idle", true);
                     direction = Vector2.zero;
                 }
                 rb.velocity = direction * speed;
@@ -68,9 +80,8 @@ public class NewPlayer : CharacterBase
         {
             var input = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             // Debug.Log(input);
-        }
-
-        move();
+        } 
+          move();
     }
 
     private void FixedUpdate()
