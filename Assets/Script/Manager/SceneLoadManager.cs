@@ -7,11 +7,13 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoadManager : MonoBehaviour
 {
+    static public bool isready = false;
     static public string CurrentSceneName
     {
         get { return SceneManager.GetActiveScene().name; }
     }
 
+    static public GameObject Trans;
     [ContextMenu("LoadScene")]
     public void LoadScene()
     {
@@ -20,22 +22,30 @@ public class SceneLoadManager : MonoBehaviour
 
     static public void LoadScene(string sceneName)
     {
-        UnloadScene();
-        //TODO: 加入场景加载进度条
-        SceneManager.LoadSceneAsync(sceneName,LoadSceneMode.Additive).completed += (op) =>
+        
+        Trans.SetActive(true);
+        
+        DelayedAction.instance.StartDelayedAction(0.5f, delegate()
         {
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
-        };
+            UnloadScene();
+            SceneManager.LoadSceneAsync(sceneName,LoadSceneMode.Additive).completed += (op) =>
+            {
+                SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
+            };
+        });
     }
     static public void LoadScene(int index)
     {
-        UnloadScene();
-        
-        //TODO: 加入场景加载进度条
-        SceneManager.LoadSceneAsync(index,LoadSceneMode.Additive).completed += (op) =>
+        Trans.SetActive(true);
+        DelayedAction.instance.StartDelayedAction(0.5f, delegate()
         {
-            SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(index));
-        };
+            UnloadScene();
+            SceneManager.LoadSceneAsync(index,LoadSceneMode.Additive).completed += (op) =>
+            {
+                SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(index));
+            };
+        });
+        
 
     }
     

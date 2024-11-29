@@ -20,6 +20,8 @@ public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     private void Start()
     {
         originalScale = this.transform.localScale;
+        if(originalScale == Vector3.zero)
+            originalScale=Vector3.one;
         
     }
 

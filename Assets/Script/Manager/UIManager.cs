@@ -8,7 +8,12 @@ public class UIManager : MonoBehaviour
     public GameObject canvas;
     public List<GameObject> uiList;
     Dictionary<UIType,GameObject> uiDictionary=new();
+    public GameObject trans;
     private void Awake()
+    {
+        SceneLoadManager.Trans = trans;
+    }
+    private void Start()
     {
         for (int i = 0; i < uiList.Count; i++)
         {
@@ -49,7 +54,7 @@ public class UIManager : MonoBehaviour
     public void OnChangeDescription(object obj)
     {
         string description = (string)obj;
-        Text text = uiDictionary[UIType.descption].GetComponent<Text>();
+        Text text = uiDictionary[UIType.descption].GetComponentInChildren<Text>();
         text.text = description;
         
     }

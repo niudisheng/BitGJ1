@@ -9,10 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f2e3a19d0fa0c74aab261bfe3bc84f9, type: 3}
-  m_Name: Chapter2-1
+  m_Script: {fileID: 11500000, guid: c65744acaf1e7324a826d535244370f0, type: 3}
+  m_Name: GoNextSceneEvent
   m_EditorClassIdentifier: 
-  npcList:
-  - {fileID: 0}
-  - {fileID: 0}
-  chapterIndex: 3
+  description: 
+  lastSender: 

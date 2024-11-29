@@ -867,7 +867,7 @@ MonoBehaviour:
   loadButton: {fileID: 1858547914}
   helpButton: {fileID: 0}
   exitButton: {fileID: 1102430512}
-  loadGame: {fileID: 11400000, guid: aefb3d22a6ad5f74885565535f16391d, type: 2}
+  loadGame: {fileID: 11400000, guid: 88fcb726c0092bb418980e736d355023, type: 2}
 --- !u!1 &1738355717
 GameObject:
   m_ObjectHideFlags: 0

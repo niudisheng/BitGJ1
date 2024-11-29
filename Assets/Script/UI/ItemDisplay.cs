@@ -30,4 +30,9 @@ public class ItemDisplay : MonoBehaviour
         
     }
 
+    public void CheckItem(object itemData1)
+    {
+        
+    }
+
 }

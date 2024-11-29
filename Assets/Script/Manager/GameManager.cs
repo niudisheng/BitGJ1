@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     {
         get
         {
-            return currentChapter.CheckItems();
+            return currentChapter.CheckItemRate();
         }
     }
 
@@ -54,17 +54,32 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0.1f;
     }
 
+    public void OnStartGame()
+    {
+        StartCoroutine(updateChapter());
+    }
+
     public void OnloadGame()
     {
         StartCoroutine(updateChapter());
     }
 
-    [ContextMenu("Move To Next Chapter")]
-    public void MoveToNextChapter()
+    /// <summary>
+    /// 移动到下一个章节
+    /// </summary>
+    public void MoveToNextChapter(string chapterName)
     {
-        isReady = true;
+        if (chapterName == "Childhood1")
+        {
+            isReady = true;
+            
+        }
     }
-
+    
+    /// <summary>
+    /// 更新章节,也有初始化的作用
+    /// </summary>
+    /// <returns></returns>
     public IEnumerator updateChapter()
     {
         
@@ -84,9 +99,7 @@ public class GameManager : MonoBehaviour
     /// <returns></returns>
     public bool CheckToNextChapter()
     {
-        
-        //TODO: 需要优化逻辑，当前只是简单实现，后续需要根据章节的条件判断是否进入下一章节
-        if (currentChapter.CheckAllItem() &&isReady)
+        if (isReady)
         {
             return false;
         }

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c65744acaf1e7324a826d535244370f0, type: 3}
-  m_Name: LoadGame
+  m_Name: LoadMemento
   m_EditorClassIdentifier: 
   description: "\u8BFB\u6863\u529F\u80FD"
   lastSender: 

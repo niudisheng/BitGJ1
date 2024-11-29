@@ -7,12 +7,14 @@ using UnityEngine.SceneManagement;
 public class TurnScene : MonoBehaviour
 {
     public string sceneName;
+    public ObjectEventSO GoNextSceneEvent;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         GoNextScene();
     }
     public void GoNextScene()
     {
-        SceneLoadManager.LoadScene(sceneName);
+        GoNextSceneEvent.RaiseEvent(sceneName,this);
+        // SceneLoadManager.LoadScene(sceneName);
     }
 }

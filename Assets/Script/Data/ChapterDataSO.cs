@@ -32,7 +32,7 @@ public class ChapterDataSO : ScriptableObject
         }
         return true;
     }
-    public float CheckItems()
+    public float CheckItemRate()
     {
         float count = 0;
         foreach (var item in npcList)

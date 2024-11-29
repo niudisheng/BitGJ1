@@ -27,19 +27,20 @@ public class Item2Show : BaseItem
         base.OnPointerEnter(eventData);
         showDescription();
     }
+    public override void OnPointerExit(PointerEventData eventData)
+    {
+        base.OnPointerExit(eventData);
+        
+    }
 
     private void showDescription()
     {
-        string description = itemData.introduction;
+        string description = itemData?.introduction;
         ChangeDescption.RaiseEvent(description,this);
         
     }
 
-    public override void OnPointerExit(PointerEventData eventData)
-    {
-        this.transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
-        
-    }
+    
 
     private void animationShow()
     {
