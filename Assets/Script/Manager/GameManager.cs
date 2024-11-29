@@ -67,9 +67,10 @@ public class GameManager : MonoBehaviour
     /// <summary>
     /// 移动到下一个章节
     /// </summary>
-    public void MoveToNextChapter(string chapterName)
+    public void MoveToNextChapter(object chapterName)
     {
-        if (chapterName == "Childhood1")
+        string chapterNameStr = chapterName.ToString();
+        if (chapterNameStr == "Childhood1"||chapterNameStr == "Adolescent1"||chapterNameStr == "Midlife1")
         {
             isReady = true;
             
