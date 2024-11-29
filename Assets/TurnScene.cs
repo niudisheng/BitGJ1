@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class TurnScene : MonoBehaviour
 {
     public string sceneName;
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
         GoNextScene();
     }

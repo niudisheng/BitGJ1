@@ -39,6 +39,7 @@ public class DialogManager : MonoBehaviour
     //对话全部内容
     private string[] cell;
     //单次对话内容
+    public UnityAction UnityAction;
     private void Awake()
     {
         //重置
@@ -67,7 +68,7 @@ public class DialogManager : MonoBehaviour
     //从文档中获取文字
     public void ShowDialogRow()
     {
-
+        UnityAction = null;
         foreach (var row in dialogRows)
         {
             imageDir[oneName] = sprites[0];
@@ -99,6 +100,7 @@ public class DialogManager : MonoBehaviour
                 dialogue.gameObject.SetActive(false);
                 dialogIndex = 1;
                 Time.timeScale = 1;
+                UnityAction?.Invoke();
             }
         }
     }
@@ -113,9 +115,5 @@ public class DialogManager : MonoBehaviour
             }
             ShowDialogRow();
         }
-    }
-    public void ShouDialogue()
-    {
-
     }
 }

@@ -262,6 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1335393500}
   - component: {fileID: 1335393499}
+  - component: {fileID: 1335393501}
   m_Layer: 0
   m_Name: Bag 1
   m_TagString: Untagged
@@ -336,6 +337,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1335393501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1335393498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9197c7a10e113c4497056f99d4f42c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: 8381247a3aa050f459b8bb1f6f531394, type: 2}
+  canInteract: 0
+  progress: {fileID: 11400000, guid: ab730793d508b554fbf20418d38d8058, type: 2}
+  AddTOItemDisplay: {fileID: 11400000, guid: e16e622b9e0717b43b803c8695e63414, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

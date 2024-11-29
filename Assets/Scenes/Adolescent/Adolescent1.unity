@@ -507,11 +507,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d641e76195ec547b4df7ca9bed1440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLaod: 
   isStartFirst: 1
   dialogue: {fileID: 0}
   DIalogDataSO: {fileID: 11400000, guid: 4b0af0551521db046b17fbd76ca21796, type: 2}
   DialogManager: {fileID: 0}
   isRead: 0
+  dialog: {fileID: 0}
 --- !u!4 &895737870
 Transform:
   m_ObjectHideFlags: 0
@@ -1245,6 +1247,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 895737870}
   - {fileID: 133822902}
   - {fileID: 1628829652}
   - {fileID: 1559704353}
@@ -1255,5 +1258,4 @@ SceneRoots:
   - {fileID: 703995639}
   - {fileID: 1024242687}
   - {fileID: 1621676469}
-  - {fileID: 895737870}
   - {fileID: 911953493}

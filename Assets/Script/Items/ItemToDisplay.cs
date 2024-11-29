@@ -9,6 +9,7 @@ using UnityEngine.EventSystems;
 /// </summary>
 public class ItemToDisplay : NPCInteractor
 {
+    public DoubleSO progress;
     public ObjectEventSO AddTOItemDisplay;
     private void Awake()
     {
@@ -23,6 +24,7 @@ public class ItemToDisplay : NPCInteractor
         public void OnInteract1()
     {
         AddTOItemDisplay.RaiseEvent(this.itemData,this);
+        progress.progress++;
         Destroy(gameObject);
     }
     
