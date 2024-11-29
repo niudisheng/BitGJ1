@@ -6,8 +6,8 @@ using UnityEngine.EventSystems;
 public class ItemChangeSpriteWithoutPlayer : NPCInteractor
 {
     public List<Sprite> sprites;
-    private int currentIndex = 0;
-    private SpriteRenderer spriteRenderer;
+    protected int currentIndex = 0;
+    protected SpriteRenderer spriteRenderer;
     private void Awake()
     {
         base.Awake();
@@ -19,11 +19,12 @@ public class ItemChangeSpriteWithoutPlayer : NPCInteractor
     {
         OnClick?.Invoke();
     }
-    public void OnInteract1()
+    public virtual void OnInteract1()
     {
         itemData.isCompleted = true;
         if (currentIndex < sprites.Count - 1)
         {
+    
             spriteRenderer.sprite = sprites[++currentIndex];
 
         }
