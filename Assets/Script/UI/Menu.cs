@@ -9,7 +9,7 @@ public class Menu : MonoBehaviour
     public Button loadButton;
     public Button helpButton;
     public Button exitButton;
-    public ObjectEventSO loadGame;
+    public ObjectEventSO startGame;
     private void OnEnable()
     {
         //TODO: 没有做存档逻辑
@@ -20,13 +20,13 @@ public class Menu : MonoBehaviour
 
     private void StartGame()
     {
-        loadGame.RaiseEvent(null,this);
+        startGame.RaiseEvent(null,this);
     }
     
     [ContextMenu("TestLoadGame")]
     private void TestLoadGame()
     {
-        loadGame.RaiseEvent(FileSaveManager.LoadFromFile(0),this);
+        startGame.RaiseEvent(FileSaveManager.LoadFromFile(0),this);
     }
     
 

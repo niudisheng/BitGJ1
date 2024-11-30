@@ -9,9 +9,15 @@ public class UIManager : MonoBehaviour
     public List<GameObject> uiList;
     Dictionary<UIType,GameObject> uiDictionary=new();
     public GameObject trans;
+    static public UIManager instance;
     private void Awake()
     {
         SceneLoadManager.Trans = trans;
+        if (instance == null)
+        {
+            return;
+        }
+        instance = this;
     }
     private void Start()
     {
