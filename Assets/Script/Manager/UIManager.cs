@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            
+            HideAllUI();
         }
         return;
     }
@@ -46,6 +46,7 @@ public class UIManager : MonoBehaviour
 
     public void setUIActive(UIType uiType,bool active)
     {
+        Debug.Log("setUIActive "+uiType+" "+active);
         if (uiType == UIType.All)
         {
             foreach (var UI in uiList)

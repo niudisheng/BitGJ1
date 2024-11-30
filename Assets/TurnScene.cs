@@ -50,6 +50,6 @@ public class TurnScene : MonoBehaviour
     public void GoNextScene(string sceneName)
     {
         GoNextSceneEvent.RaiseEvent(sceneName,this);
-        // SceneLoadManager.LoadScene(sceneName);
+        
     }
 }
