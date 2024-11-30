@@ -70,8 +70,11 @@ public class GameManager : MonoBehaviour
     public void MoveToNextChapter(object chapterName)
     {
         string chapterNameStr = chapterName.ToString();
+        UIManager.instance.setUIActive(UIType.All,false);
         if (chapterNameStr == "Childhood1"||chapterNameStr == "Adolescent1"||chapterNameStr == "Midlife1")
         {
+            UIManager.instance.setUIActive(UIType.descption, true);
+            UIManager.instance.setUIActive(UIType.ItemDisplay, true);
             isReady = true;
             
         }
