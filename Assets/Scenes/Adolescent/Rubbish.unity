@@ -329,6 +329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2024074016}
   - component: {fileID: 2024074015}
+  - component: {fileID: 2024074019}
   - component: {fileID: 2024074017}
   - component: {fileID: 2024074018}
   m_Layer: 0
@@ -423,6 +424,7 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: b1805b56fb3499f468630032f6dfe95e, type: 3}
   - {fileID: 21300000, guid: fe2f319a9bde7ad4bb110660c2b9a922, type: 3}
+  currentIndex: 0
 --- !u!60 &2024074018
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -494,6 +496,27 @@ PolygonCollider2D:
       - {x: 0.545, y: -0.19999999}
       - {x: 0.645, y: 0.13}
   m_UseDelaunayMesh: 0
+--- !u!114 &2024074019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024074014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18f4fc3d0ac04624598783a6df3c6496, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: 8a05ecc607a69ee468a21d9aa0f1c30f, type: 2}
+  canInteract: 0
+  dialogue: {fileID: 0}
+  DialogManager: {fileID: 0}
+  descption: {fileID: 0}
+  asset: {fileID: 0}
+  assetName: {fileID: 0}
+  Sprite: {fileID: 0}
+  ItemChangeSpriteWithoutPlayer: {fileID: 2024074017}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

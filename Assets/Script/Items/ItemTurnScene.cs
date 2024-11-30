@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class ItemTurnScene : NPCInteractor
 {
     public bool isNeedFinish;
-    public BoolSO isFinish;
+    public BoolSO isNotFinish;
     [Header("切换到的场景")]
     public string sceneName1;
     public string sceneName2;
@@ -18,13 +18,14 @@ public class ItemTurnScene : NPCInteractor
         base.Awake();
         if (isNeedFinish)
         {
-            if (!isFinish.isDone)
+            if (isNotFinish.isDone)
             {
                 OnClick += OnInteract1;
             }
-            else if(isFinish.isDone)
+            else if(!isNotFinish.isDone)
             {
-                OnClick += OnInteract2;
+                if (sceneName2 != null)
+                    OnClick += OnInteract2;
             }
         }
         else

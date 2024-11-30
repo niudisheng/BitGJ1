@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fe9dcd18ef38634d88d85ed1665eb62, type: 3}
+  m_Name: frontDesk-Sheet_0
+  m_EditorClassIdentifier: 
+  chapterData: {fileID: 11400000, guid: 7f5a910a25a027a4583d07600ecba189, type: 2}
+  itemName: frontDesk-Sheet_0
+  itemImage: {fileID: -225436485, guid: b615801fc0b7b2443a9c1c09e5916d18, type: 3}
+  itemCounter: 0
+  introduction: "\u672C\u5E94\u8BE5\u6709\u4EBA\u5728\u8FD9\u7684\uFF0C\u600E\u4E48\u4F1A\u6CA1\u4EBA\u5462\u3002\u6CF0\u8C6A\u8FA3\uFF0C\u662F\u65E0\u4EBA\u552E\u7968\uFF0C\u6211\u4EEC\u6709\u6551\u5566\u3002"
+  isUnlocked: 1
+  isCompleted: 0

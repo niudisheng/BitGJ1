@@ -158,7 +158,7 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   DIalogDataSO: {fileID: 11400000, guid: 27b0e9d4ba3c0354b9599482f9572a01, type: 2}
   DialogManager: {fileID: 0}
-  isRead: 0
+  isRead: {fileID: 0}
   dialog: {fileID: 0}
 --- !u!4 &137662131
 Transform:
@@ -321,10 +321,9 @@ MonoBehaviour:
   itemData: {fileID: 11400000, guid: 33f29060da9670f4db2ecc10f2cbbb69, type: 2}
   canInteract: 0
   isNeedFinish: 0
-  isFinish: {fileID: 0}
+  isNotFinish: {fileID: 0}
   sceneName1: Vase
   sceneName2: 
-  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!1 &734893773
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,10 +425,9 @@ MonoBehaviour:
   itemData: {fileID: 11400000, guid: 85f42a3e7fb810b449d0389715659c59, type: 2}
   canInteract: 0
   isNeedFinish: 0
-  isFinish: {fileID: 0}
+  isNotFinish: {fileID: 0}
   sceneName1: Record
   sceneName2: 
-  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!61 &734893777
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -724,7 +722,7 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   DIalogDataSO: {fileID: 11400000, guid: 1d767319fec7e6549ac4a318b1c943d7, type: 2}
   DialogManager: {fileID: 0}
-  isRead: 0
+  isRead: {fileID: 0}
   dialog: {fileID: 137662130}
 --- !u!4 &983727272
 Transform:
@@ -881,11 +879,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1017054272}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed8ce71aa14cb9e4d9cdd238e68004f1, type: 3}
+  m_Script: {fileID: 11500000, guid: f93cec91bab42c24386e7d0da827867d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Childhood2
-  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!1 &1487920521
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,6 +981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4f26f38f9673974cb49446d0d635adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDoor3: 0
   Dialog1: {fileID: 1508380398}
   Dialog2: {fileID: 983727271}
   Dialog3: {fileID: 1607808108}
@@ -1071,7 +1069,7 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   DIalogDataSO: {fileID: 11400000, guid: 891cbd8d19f5e3d43884812261c64c02, type: 2}
   DialogManager: {fileID: 0}
-  isRead: 0
+  isRead: {fileID: 0}
   dialog: {fileID: 0}
 --- !u!4 &1508380399
 Transform:
@@ -1123,7 +1121,7 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   DIalogDataSO: {fileID: 11400000, guid: 5b4780ae9bca54d4fb57bb3398260bb5, type: 2}
   DialogManager: {fileID: 0}
-  isRead: 0
+  isRead: {fileID: 0}
   dialog: {fileID: 137662130}
 --- !u!4 &1607808109
 Transform:

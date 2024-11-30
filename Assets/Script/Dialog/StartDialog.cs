@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class StartDialog : MonoBehaviour
 {
@@ -13,21 +14,34 @@ public class StartDialog : MonoBehaviour
     public DialogManager DialogManager;
     public BoolSO isRead;
     public StartDialog dialog;
-    private void Awake()
-    {
-
-        //WaitTime(0.3f);
-    }
     private void Update()
     {
-        if (dialogue == null)
+        if (isRead != null)
         {
+            if (dialogue == null&!isRead.isDone)
+            {
             dialogue = GameObject.FindWithTag("DialogManager");
             DialogManager = dialogue.GetComponent<DialogManager>();
-            if (isStartFirst &!isRead.isDone)
+            
+                if (isStartFirst)
+                {
+                    StartDialogs();
+                    isRead.isDone = true;
+                }
+            }
+        }
+        else
+        {
+            if (dialogue == null)
             {
-                StartDialogs();
-                isRead.isDone = true;
+                dialogue = GameObject.FindWithTag("DialogManager");
+                DialogManager = dialogue.GetComponent<DialogManager>();
+
+                if (isStartFirst)
+                {
+                    StartDialogs();
+                    isRead.isDone = true;
+                }
             }
         }
 
@@ -62,7 +76,12 @@ public class StartDialog : MonoBehaviour
     }
     public void TurnScene()
     {
-         GoNextSceneEvent.RaiseEvent(sceneToLaod, this);
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadSceneAsync(sceneToLaod, LoadSceneMode.Additive).completed += (op) =>
+        {
+            SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneToLaod));
+        };
+        Debug.Log("trun");
     }
     //private IEnumerator WaitTime(float delayTime)
     //{

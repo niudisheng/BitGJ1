@@ -15,10 +15,9 @@ public class Password : MonoBehaviour
     public List<GameObject> inputNumber = new List<GameObject>();
     public List<SpriteRenderer> inputNumberSprite = new List<SpriteRenderer>();
     public List<Sprite> realNumber = new List<Sprite>();
-    public BoolSO isLock;
+    public BoolSO isNotLock;
     private void Awake()
     {
-        isLock.isDone = true;
         SpriteRenderer.sprite = PasswordImageBefore;
         foreach (var item in inputNumber)
         {
@@ -76,7 +75,7 @@ public class Password : MonoBehaviour
                     {
                         SpriteRenderer.sprite = PasswordImageAfter;
                         Debug.Log("win");
-                        isLock.isDone = false;
+                        isNotLock.isDone = true;
                     }
                     else
                     {

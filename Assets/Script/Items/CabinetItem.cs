@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class CabinetItem : ItemChangeSprite
 {
-    public BoolSO isLock;
+    public BoolSO isNotLock;
     private void Awake()
     {
-        if (isLock.isDone)
+        if (!isNotLock.isDone)
         {
             spriteRenderer.sprite = sprites[0];
         }
@@ -20,7 +20,7 @@ public class CabinetItem : ItemChangeSprite
     public override void OnInteract1()
     {
         itemData.isCompleted = true;
-        if (currentIndex < sprites.Count - 1 &!isLock.isDone)
+        if (currentIndex < sprites.Count - 1 &!isNotLock.isDone)
         {
             spriteRenderer.sprite = sprites[++currentIndex];
 

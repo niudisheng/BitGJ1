@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fe9dcd18ef38634d88d85ed1665eb62, type: 3}
-  m_Name: ItemSO 11
+  m_Name: poster
   m_EditorClassIdentifier: 
-  chapterData: {fileID: 0}
-  itemName: 
-  itemImage: {fileID: 0}
-  descriptions: 
+  chapterData: {fileID: 11400000, guid: 7f5a910a25a027a4583d07600ecba189, type: 2}
+  itemName: poster
+  itemImage: {fileID: 21300000, guid: 23c20bce7db26ef4aa667f893c04f218, type: 3}
   itemCounter: 0
-  introduction: 
+  introduction: "\u6447\u6EDA\u4E50\u961F\u201Ccoin\u201D\u6700\u65B0\u7684\u6D77\u62A5\uFF0C\u70AB\u9177\u7684\u8D5B\u535A\u98CE\u683C\u7ED9\u4EBA\u4E00\u79CD\u72EC\u7279\u7684\u4F53\u9A8C\u3002"
   isUnlocked: 1
   isCompleted: 0

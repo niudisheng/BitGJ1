@@ -87,4 +87,10 @@ public class NumberItem : NPCInteractor
     {
         Password.PasswordInput9();
     }
+    public override void OnPointerEnter(PointerEventData eventData)
+    {
+        this.transform.localScale = originalScale * 1.0f;
+
+    }
+
 }

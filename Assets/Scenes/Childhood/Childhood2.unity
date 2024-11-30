@@ -628,11 +628,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 989450156}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed8ce71aa14cb9e4d9cdd238e68004f1, type: 3}
+  m_Script: {fileID: 11500000, guid: f93cec91bab42c24386e7d0da827867d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Childhood1
-  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!1 &1097946281
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,11 +772,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1097946281}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed8ce71aa14cb9e4d9cdd238e68004f1, type: 3}
+  m_Script: {fileID: 11500000, guid: f93cec91bab42c24386e7d0da827867d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Childhood3
-  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!1001 &1282034324
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1029,7 +1027,7 @@ MonoBehaviour:
   itemData: {fileID: 11400000, guid: 9e64d971655a8574baf842a842031910, type: 2}
   canInteract: 0
   isNeedFinish: 0
-  isFinish: {fileID: 0}
+  isNotFinish: {fileID: 0}
   sceneName1: BooksetDown
   sceneName2: 
 --- !u!1 &1633383996
@@ -1043,7 +1041,7 @@ GameObject:
   - component: {fileID: 1633383998}
   - component: {fileID: 1633383997}
   - component: {fileID: 1633384000}
-  - component: {fileID: 1633383999}
+  - component: {fileID: 1633384001}
   m_Layer: 0
   m_Name: radio&toybox
   m_TagString: Untagged
@@ -1118,8 +1116,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &1633383999
-PolygonCollider2D:
+--- !u!114 &1633384000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633383996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf603bb029be464a8d2efaf49f8380d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: f16f3477cfa5dbc4295f43ab396add60, type: 2}
+  canInteract: 0
+  isNeedFinish: 1
+  isNotFinish: {fileID: 0}
+  sceneName1: CodeBox
+  sceneName2: CodeBox2
+--- !u!61 &1633384001
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1150,7 +1166,7 @@ PolygonCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0032028407, y: 0.06743288}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1160,36 +1176,9 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.089999996, y: 0.51}
-      - {x: -0.01, y: 0.51}
-      - {x: -0.19, y: 0.45999998}
-      - {x: -0.25, y: 0.22}
-      - {x: -0.25, y: -0.39999998}
-      - {x: -0.22999999, y: -0.55}
-      - {x: 0.25, y: -0.55}
-      - {x: 0.25, y: 0.29999998}
-      - {x: 0.14, y: 0.44}
-  m_UseDelaunayMesh: 0
---- !u!114 &1633384000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1633383996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faf603bb029be464a8d2efaf49f8380d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: 9e64d971655a8574baf842a842031910, type: 2}
-  canInteract: 0
-  isNeedFinish: 1
-  isFinish: {fileID: 11400000, guid: d5058df8adfcc48499d0a50765317e69, type: 2}
-  sceneName1: CodeBox
-  sceneName2: CodeBox2
+  serializedVersion: 2
+  m_Size: {x: 0.7488992, y: 1.28}
+  m_EdgeRadius: 0
 --- !u!1 &1951255041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,7 +1273,7 @@ MonoBehaviour:
   itemData: {fileID: 11400000, guid: 9e64d971655a8574baf842a842031910, type: 2}
   canInteract: 0
   isNeedFinish: 0
-  isFinish: {fileID: 0}
+  isNotFinish: {fileID: 0}
   sceneName1: Bookset
   sceneName2: 
 --- !u!212 &1951255045
@@ -1433,7 +1422,7 @@ SceneRoots:
   - {fileID: 501583752}
   - {fileID: 2119842929}
   - {fileID: 776432884}
+  - {fileID: 739210887}
   - {fileID: 1282034324}
   - {fileID: 989450160}
   - {fileID: 1097946285}
-  - {fileID: 739210887}

@@ -9,14 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fe9dcd18ef38634d88d85ed1665eb62, type: 3}
-  m_Name: ItemSO 8
+  m_Script: {fileID: 11500000, guid: 793450d92e472f847a78b34d9c5dddb4, type: 3}
+  m_Name: IsNotLock
   m_EditorClassIdentifier: 
-  chapterData: {fileID: 0}
-  itemName: 
-  itemImage: {fileID: 0}
-  descriptions: 
-  itemCounter: 0
-  introduction: 
-  isUnlocked: 1
-  isCompleted: 0
+  isDone: 1

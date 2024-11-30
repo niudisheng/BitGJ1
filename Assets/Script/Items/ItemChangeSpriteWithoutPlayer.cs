@@ -7,7 +7,7 @@ public class ItemChangeSpriteWithoutPlayer : NPCInteractor
 {
     public bool isCircle;
     public List<Sprite> sprites;
-    protected int currentIndex = 0;
+    [HideInInspector]public int currentIndex = 0;
     protected SpriteRenderer spriteRenderer;
     private void Awake()
     {

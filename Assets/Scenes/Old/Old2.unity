@@ -217,6 +217,8 @@ GameObject:
   m_Component:
   - component: {fileID: 366027720}
   - component: {fileID: 366027719}
+  - component: {fileID: 366027722}
+  - component: {fileID: 366027721}
   m_Layer: 0
   m_Name: bed
   m_TagString: Untagged
@@ -291,6 +293,70 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &366027721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366027718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8ce71aa14cb9e4d9cdd238e68004f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  childScene: Childhood1
+  adoScene: Adolescent1
+  midScene: Midlife1
+  isChild: {fileID: 11400000, guid: 2c77bcdc47724484a92fc4bc798a4129, type: 2}
+  isAdo: {fileID: 11400000, guid: 1e6f72dd5fd6616419d91b0d7c8899ac, type: 2}
+  isMld: {fileID: 11400000, guid: 642e899f75aabf14b881ddb2ae9e8b23, type: 2}
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
+--- !u!61 &366027722
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366027718}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.09295833, y: -0.26586848}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.28}
+    newSize: {x: 1.28, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.7874837, y: 0.748263}
+  m_EdgeRadius: 0
 --- !u!1 &918058710
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,7 +723,7 @@ GameObject:
   - component: {fileID: 1345295336}
   - component: {fileID: 1345295335}
   - component: {fileID: 1345295334}
-  - component: {fileID: 1345295333}
+  - component: {fileID: 1345295337}
   m_Layer: 0
   m_Name: TurnLeftSceneOld2
   m_TagString: Untagged
@@ -665,20 +731,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1345295333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1345295332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed8ce71aa14cb9e4d9cdd238e68004f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Old1
-  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!212 &1345295334
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -791,6 +843,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1345295337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1345295332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93cec91bab42c24386e7d0da827867d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Old1
 --- !u!1 &1900471668
 GameObject:
   m_ObjectHideFlags: 0

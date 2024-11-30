@@ -23,7 +23,12 @@ public class ItemToDescption : NPCInteractor
         
     }
     private void Update()
-    {   if (dialogue == null)
+    {   
+        
+    }
+    public virtual void OnInteract1()
+    {
+        if (dialogue == null)
         {
             dialogue = GameObject.FindWithTag("DialogManager");
             DialogManager = dialogue.GetComponent<DialogManager>();
@@ -32,13 +37,8 @@ public class ItemToDescption : NPCInteractor
             assetName = DialogManager.itemName;
             Sprite = DialogManager.Image;
         }
-        
-    }
-    public void OnInteract1()
-    {
-        Debug.Log("ok");
+        asset.fontSize = 36;
         descption.SetActive(true);
-        //TODO: 调用Dialog
         asset.text = itemData.introduction;
         Sprite.sprite = itemData.itemImage;
         assetName.text = itemData.itemName;

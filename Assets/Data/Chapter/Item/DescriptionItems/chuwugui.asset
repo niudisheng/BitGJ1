@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fe9dcd18ef38634d88d85ed1665eb62, type: 3}
-  m_Name: ItemSO 9
+  m_Name: GameObject
   m_EditorClassIdentifier: 
-  chapterData: {fileID: 0}
-  itemName: 
+  chapterData: {fileID: 11400000, guid: 7f5a910a25a027a4583d07600ecba189, type: 2}
+  itemName: GameObject
   itemImage: {fileID: 0}
-  descriptions: 
   itemCounter: 0
-  introduction: 
+  introduction: "\u653E\u5B66\u751F\u4E1C\u897F\u7684\u50A8\u7269\u67DC\uFF0C\u597D\u50CF\u5979\uFF1F\u7684\u67DC\u5B50\uFF0C\u597D\u50CF\u4E5F\u5728\u8FD9\u91CC\uFF1F"
   isUnlocked: 1
   isCompleted: 0

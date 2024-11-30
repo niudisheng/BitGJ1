@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fe9dcd18ef38634d88d85ed1665eb62, type: 3}
-  m_Name: ItemSO 12
+  m_Name: drinkCase
   m_EditorClassIdentifier: 
-  chapterData: {fileID: 0}
-  itemName: 
-  itemImage: {fileID: 0}
-  descriptions: 
+  chapterData: {fileID: 11400000, guid: 7f5a910a25a027a4583d07600ecba189, type: 2}
+  itemName: drinkCase
+  itemImage: {fileID: 21300000, guid: 77e0e875af23fef4ab24f0d12bd823ad, type: 3}
   itemCounter: 0
-  introduction: 
+  introduction: "\u901A\u7535\u7684\u996E\u6599\u67DC\uFF0C\u91CC\u9762\u653E\u7740\u5F88\u591A\u65B0\u5947\u7684\u996E\u6599\u3002\u611F\u89C9\u5176\u5B9E\u6CA1\u6709\u770B\u8D77\u6765\u90A3\u4E48\u597D\u559D\u3002"
   isUnlocked: 1
   isCompleted: 0

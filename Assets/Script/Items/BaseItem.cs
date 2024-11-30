@@ -10,7 +10,7 @@ public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     private Collider2D collider;
     public UnityAction OnClick;
     public ItemSO itemData;
-    private Vector3 originalScale;
+    protected Vector3 originalScale;
     protected virtual void Awake()
     {
         collider = GetComponent<Collider2D>();

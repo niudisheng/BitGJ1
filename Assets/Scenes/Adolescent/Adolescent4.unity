@@ -158,7 +158,7 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   DIalogDataSO: {fileID: 11400000, guid: f7e4090483650bb499d5c09045b40ccb, type: 2}
   DialogManager: {fileID: 0}
-  isRead: 0
+  isRead: {fileID: 0}
   dialog: {fileID: 1584990136}
 --- !u!4 &226127219
 Transform:
@@ -210,7 +210,7 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   DIalogDataSO: {fileID: 11400000, guid: 8cf883982947ac34592488a27415c19c, type: 2}
   DialogManager: {fileID: 0}
-  isRead: 0
+  isRead: {fileID: 0}
   dialog: {fileID: 1584990136}
 --- !u!4 &405215224
 Transform:
@@ -476,7 +476,7 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   DIalogDataSO: {fileID: 11400000, guid: e6f50a9c65f26c44fb0c59b90d4fff55, type: 2}
   DialogManager: {fileID: 0}
-  isRead: 0
+  isRead: {fileID: 0}
   dialog: {fileID: 0}
 --- !u!4 &1144268795
 Transform:
@@ -612,7 +612,7 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   DIalogDataSO: {fileID: 11400000, guid: 06f7666ef89c31d4488a0de971fd283e, type: 2}
   DialogManager: {fileID: 0}
-  isRead: 0
+  isRead: {fileID: 0}
   dialog: {fileID: 0}
 --- !u!4 &1584990137
 Transform:
@@ -769,11 +769,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1593032503}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed8ce71aa14cb9e4d9cdd238e68004f1, type: 3}
+  m_Script: {fileID: 11500000, guid: f93cec91bab42c24386e7d0da827867d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Adolescent3
-  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!1 &1835627783
 GameObject:
   m_ObjectHideFlags: 0
@@ -875,7 +874,7 @@ MonoBehaviour:
   itemData: {fileID: 11400000, guid: 3b80b4568c792a04fac2ba3f87d1c7f8, type: 2}
   canInteract: 0
   isNeedFinish: 0
-  isFinish: {fileID: 0}
+  isNotFinish: {fileID: 0}
   sceneName1: calendar
   sceneName2: 
 --- !u!61 &1835627787
@@ -1021,12 +1020,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4f26f38f9673974cb49446d0d635adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDoor3: 0
   Dialog1: {fileID: 1144268794}
   Dialog2: {fileID: 226127218}
   Dialog3: {fileID: 405215223}
   isSpecial: {fileID: 11400000, guid: f9251fa356a987143b7a176e5f31170e, type: 2}
   isKey: {fileID: 11400000, guid: 3f3ce94cf1757f14d84e59ab41de1fc2, type: 2}
-  total: 8
+  total: 10
   progress: {fileID: 11400000, guid: fe8f0ba5fdd682f4cbac668f3d8fa33a, type: 2}
 --- !u!61 &2007037502
 BoxCollider2D:
@@ -1231,7 +1231,7 @@ MonoBehaviour:
   itemData: {fileID: 11400000, guid: 58bc2615575747541acaa444b65464fb, type: 2}
   canInteract: 0
   isNeedFinish: 0
-  isFinish: {fileID: 0}
+  isNotFinish: {fileID: 0}
   sceneName1: Table
   sceneName2: 
 --- !u!61 &2058761540
