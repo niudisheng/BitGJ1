@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour
             isReady = true;
             
         }
+        SceneLoadManager.LoadScene(chapterNameStr);
     }
     
     /// <summary>

@@ -9,7 +9,7 @@ public class ItemTurnScene : NPCInteractor
     [Header("切换到的场景")]
     public string sceneName1;
     public string sceneName2;
-    // Start is called before the first frame update
+    public ObjectEventSO GoNextSceneEvent;
     private void Awake()
     {
         base.Awake();
@@ -41,7 +41,7 @@ public class ItemTurnScene : NPCInteractor
         else
         {
             //TODO:应该也需要调用描述
-            SceneLoadManager.LoadScene(sceneName1);
+            GoNextSceneEvent.RaiseEvent(sceneName1,this);
             Debug.Log("trun");
         }
     }
@@ -54,7 +54,7 @@ public class ItemTurnScene : NPCInteractor
         else
         {
             //TODO:应该也需要调用描述
-            SceneLoadManager.LoadScene(sceneName2);
+            GoNextSceneEvent.RaiseEvent(sceneName2,this);
             Debug.Log("trun");
         }
     }

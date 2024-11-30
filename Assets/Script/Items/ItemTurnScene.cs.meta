@@ -3,7 +3,10 @@ guid: faf603bb029be464a8d2efaf49f8380d
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - itemData: {instanceID: 0}
+  - isFinish: {instanceID: 0}
+  - GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
