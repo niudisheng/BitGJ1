@@ -5,6 +5,8 @@ using UnityEngine.EventSystems;
 
 public class Envelops : ItemToDescption
 {
+    public DoubleSO progress;
+    public BoolSO isRead;
     public ItemChangeSpriteWithoutPlayer ItemChangeSpriteWithoutPlayer;
     public override void OnInteract1()
     {
@@ -22,6 +24,11 @@ public class Envelops : ItemToDescption
         Sprite.sprite = itemData.itemImage;
         assetName.text = itemData.itemName;
         asset.fontSize = 25;
+        if (!isRead.isDone)
+        {
+            isRead.isDone = true;
+            progress.progress++;
+        }
     }
     public override void OnPointerClick(PointerEventData eventData)
     {

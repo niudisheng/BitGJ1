@@ -305,6 +305,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8ce71aa14cb9e4d9cdd238e68004f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  child: {fileID: 11400000, guid: ab730793d508b554fbf20418d38d8058, type: 2}
+  ado: {fileID: 11400000, guid: fe8f0ba5fdd682f4cbac668f3d8fa33a, type: 2}
+  mid: {fileID: 11400000, guid: a25a7e200d99cd747ad7bda5c2ef7e3c, type: 2}
+  end1: {fileID: 2115947476}
+  end2: {fileID: 1456739984}
   childScene: Childhood1
   adoScene: Adolescent1
   midScene: Midlife1
@@ -856,6 +861,58 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Old1
+--- !u!1 &1456739983
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1456739985}
+  - component: {fileID: 1456739984}
+  m_Layer: 0
+  m_Name: End2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1456739984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456739983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d641e76195ec547b4df7ca9bed1440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoNextSceneEvent: {fileID: 0}
+  sceneToLaod: 
+  isStartFirst: 0
+  dialogue: {fileID: 0}
+  DIalogDataSO: {fileID: 11400000, guid: 8a7b378208c62ab4c83a2bf28ceb5afc, type: 2}
+  DialogManager: {fileID: 0}
+  isRead: {fileID: 0}
+  dialog: {fileID: 0}
+--- !u!4 &1456739985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1456739983}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1900471668
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,6 +997,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2115947475
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2115947477}
+  - component: {fileID: 2115947476}
+  m_Layer: 0
+  m_Name: End1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2115947476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115947475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93d641e76195ec547b4df7ca9bed1440, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GoNextSceneEvent: {fileID: 0}
+  sceneToLaod: 
+  isStartFirst: 0
+  dialogue: {fileID: 0}
+  DIalogDataSO: {fileID: 11400000, guid: 2f971e9238a7eeb418720d3c4110d62a, type: 2}
+  DialogManager: {fileID: 0}
+  isRead: {fileID: 0}
+  dialog: {fileID: 0}
+--- !u!4 &2115947477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115947475}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -952,3 +1061,5 @@ SceneRoots:
   - {fileID: 366027720}
   - {fileID: 1345295336}
   - {fileID: 1286814417}
+  - {fileID: 2115947477}
+  - {fileID: 1456739985}

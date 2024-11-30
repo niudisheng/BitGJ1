@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 793450d92e472f847a78b34d9c5dddb4, type: 3}
-  m_Name: IsKeyAdo
+  m_Script: {fileID: 11500000, guid: 40e0f2c721a7fef4a858236c775cb44b, type: 3}
+  m_Name: AdoProgress
   m_EditorClassIdentifier: 
-  isDone: 0
+  progress: 0

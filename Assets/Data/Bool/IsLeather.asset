@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 793450d92e472f847a78b34d9c5dddb4, type: 3}
   m_Name: IsLeather
   m_EditorClassIdentifier: 
-  isDone: 1
+  isDone: 0

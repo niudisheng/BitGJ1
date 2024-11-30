@@ -279,6 +279,8 @@ MonoBehaviour:
   asset: {fileID: 0}
   assetName: {fileID: 0}
   Sprite: {fileID: 0}
+  progress: {fileID: 11400000, guid: fe8f0ba5fdd682f4cbac668f3d8fa33a, type: 2}
+  isRead: {fileID: 11400000, guid: 37f479e46faa4e6409841bd2ca1b18e0, type: 2}
 --- !u!1 &1386294319
 GameObject:
   m_ObjectHideFlags: 0

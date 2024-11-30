@@ -516,6 +516,8 @@ MonoBehaviour:
   asset: {fileID: 0}
   assetName: {fileID: 0}
   Sprite: {fileID: 0}
+  progress: {fileID: 11400000, guid: fe8f0ba5fdd682f4cbac668f3d8fa33a, type: 2}
+  isRead: {fileID: 11400000, guid: 8c8d33ff8c8fa314e9d76aa60da1e228, type: 2}
   ItemChangeSpriteWithoutPlayer: {fileID: 2024074017}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

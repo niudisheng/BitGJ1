@@ -4,9 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEditor;
 
 public class Password : MonoBehaviour
 {
+    public DoubleSO progress;
     public int currentIndex = 0;
     public SpriteRenderer SpriteRenderer;
     public Sprite PasswordImageBefore;
@@ -75,7 +77,12 @@ public class Password : MonoBehaviour
                     {
                         SpriteRenderer.sprite = PasswordImageAfter;
                         Debug.Log("win");
+                        if (!isNotLock)
+                        {
+                            progress.progress++;
+                        }
                         isNotLock.isDone = true;
+                        
                     }
                     else
                     {

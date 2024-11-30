@@ -16,11 +16,11 @@ public class Door : MonoBehaviour
     {
         if (isDoor3)
         {
-            if(total*0.5< progress.progress&progress.progress<total*0.8)
+            if(progress.progress==2)
             {
                 Dialog1.StartDialogs();
             }
-            else if (progress.progress >= total * 0.8)
+            else if (progress.progress ==3)
             {
                 Dialog2.StartDialogs();
             }

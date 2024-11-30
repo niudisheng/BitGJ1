@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class StartDialog : MonoBehaviour
 {
+    
+
     public ObjectEventSO GoNextSceneEvent;
     public string sceneToLaod;
     public bool isStartFirst;
@@ -25,8 +27,9 @@ public class StartDialog : MonoBehaviour
             
                 if (isStartFirst)
                 {
-                    StartDialogs();
                     isRead.isDone = true;
+                    StartDialogs();
+
                 }
             }
         }
@@ -40,14 +43,13 @@ public class StartDialog : MonoBehaviour
                 if (isStartFirst)
                 {
                     StartDialogs();
-                    isRead.isDone = true;
                 }
             }
         }
-
     }
     public void StartDialogs()
     {
+        DialogManager.UnityAction = null;
         DialogManager.isOver = false;
         if (dialog != null)
         {
@@ -64,15 +66,6 @@ public class StartDialog : MonoBehaviour
         DialogManager.ReadText(DIalogDataSO.TextAsset);
         DialogManager.ShowDialogRow();
         isStartFirst = false;
-        if (dialog != null&DialogManager.isOver)
-        {
-            DialogManager.UnityAction -= dialog.StartDialogs;
-        }
-        if (GoNextSceneEvent != null & DialogManager.isOver)
-        {
-            DialogManager.UnityAction -= TurnScene;
-        }
-
     }
     public void TurnScene()
     {

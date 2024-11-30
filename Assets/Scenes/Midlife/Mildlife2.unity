@@ -224,7 +224,7 @@ MonoBehaviour:
   itemData: {fileID: 11400000, guid: d7569c1ff8e830d419fd01f1d1b5d140, type: 2}
   canInteract: 0
   isNeedFinish: 0
-  isFinish: {fileID: 0}
+  isNotFinish: {fileID: 0}
   sceneName1: bedsideTable
   sceneName2: 
 --- !u!61 &5566786
@@ -348,7 +348,7 @@ GameObject:
   - component: {fileID: 490662232}
   - component: {fileID: 490662231}
   - component: {fileID: 490662230}
-  - component: {fileID: 490662229}
+  - component: {fileID: 490662233}
   m_Layer: 0
   m_Name: TurnRightSceneMid2
   m_TagString: Untagged
@@ -356,20 +356,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &490662229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490662228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed8ce71aa14cb9e4d9cdd238e68004f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Mildlife3
-  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!212 &490662230
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -482,6 +468,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &490662233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490662228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93cec91bab42c24386e7d0da827867d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Mildlife3
 --- !u!1 &786425183
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,7 +576,7 @@ GameObject:
   - component: {fileID: 799012385}
   - component: {fileID: 799012384}
   - component: {fileID: 799012383}
-  - component: {fileID: 799012382}
+  - component: {fileID: 799012386}
   m_Layer: 0
   m_Name: TurnLeftSceneMid2
   m_TagString: Untagged
@@ -585,20 +584,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &799012382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 799012381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed8ce71aa14cb9e4d9cdd238e68004f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Midlife1
-  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!212 &799012383
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -711,6 +696,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &799012386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799012381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f93cec91bab42c24386e7d0da827867d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Midlife1
 --- !u!1 &1048495953
 GameObject:
   m_ObjectHideFlags: 0

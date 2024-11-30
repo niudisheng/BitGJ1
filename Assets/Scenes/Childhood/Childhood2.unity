@@ -1130,8 +1130,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: f16f3477cfa5dbc4295f43ab396add60, type: 2}
   canInteract: 0
-  isNeedFinish: 1
-  isNotFinish: {fileID: 0}
+  isNeedFinish: 0
+  isNotFinish: {fileID: 11400000, guid: d5058df8adfcc48499d0a50765317e69, type: 2}
   sceneName1: CodeBox
   sceneName2: CodeBox2
 --- !u!61 &1633384001
@@ -1166,7 +1166,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0032028407, y: 0.06743288}
+  m_Offset: {x: 0.0032029748, y: 0.013830155}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1177,7 +1177,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7488992, y: 1.28}
+  m_Size: {x: 0.59881854, y: 1.1050858}
   m_EdgeRadius: 0
 --- !u!1 &1951255041
 GameObject:

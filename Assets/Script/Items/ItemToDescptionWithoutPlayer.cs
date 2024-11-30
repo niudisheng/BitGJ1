@@ -5,8 +5,19 @@ using UnityEngine.EventSystems;
 
 public class ItemToDescptionWithoutPlayer : ItemToDescption
 {
+    public DoubleSO progress;
+    public BoolSO isRead;
     public override void OnPointerClick(PointerEventData eventData)
     {
         OnClick?.Invoke();
+    }
+    public override void OnInteract1()
+    {
+        base.OnInteract1();
+        if (!isRead.isDone)
+        {
+            isRead.isDone = true;
+            progress.progress++;
+        }
     }
 }
