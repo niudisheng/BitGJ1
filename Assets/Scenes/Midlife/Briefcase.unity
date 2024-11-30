@@ -327,6 +327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 686d974957784f54ca6322e5e271cf48, type: 2}
   canInteract: 0
+  progress: {fileID: 11400000, guid: a25a7e200d99cd747ad7bda5c2ef7e3c, type: 2}
   AddTOItemDisplay: {fileID: 11400000, guid: e16e622b9e0717b43b803c8695e63414, type: 2}
 --- !u!1 &581670387
 GameObject:

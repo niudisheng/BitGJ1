@@ -507,6 +507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d641e76195ec547b4df7ca9bed1440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GoNextSceneEvent: {fileID: 0}
   sceneToLaod: 
   isStartFirst: 1
   dialogue: {fileID: 0}
@@ -673,6 +674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Adolescent2
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!1 &1000811645
 GameObject:
   m_ObjectHideFlags: 0

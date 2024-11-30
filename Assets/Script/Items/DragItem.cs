@@ -27,7 +27,7 @@ public class DragItem : MonoBehaviour,IBeginDragHandler, IDragHandler, IEndDragH
         isDragging = true;
     }
 
-    public void OnEndDrag(PointerEventData eventData)
+    public virtual void OnEndDrag(PointerEventData eventData)
     {
         this.transform.position = startPos;
         isDragging = false;

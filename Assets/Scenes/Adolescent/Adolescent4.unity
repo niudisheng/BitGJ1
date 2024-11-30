@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d641e76195ec547b4df7ca9bed1440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GoNextSceneEvent: {fileID: 0}
   sceneToLaod: 
   isStartFirst: 0
   dialogue: {fileID: 0}
@@ -203,6 +204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d641e76195ec547b4df7ca9bed1440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
   sceneToLaod: 
   isStartFirst: 0
   dialogue: {fileID: 0}
@@ -468,6 +470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d641e76195ec547b4df7ca9bed1440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
   sceneToLaod: Midlife1
   isStartFirst: 0
   dialogue: {fileID: 0}
@@ -603,6 +606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d641e76195ec547b4df7ca9bed1440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
   sceneToLaod: Midlife1
   isStartFirst: 0
   dialogue: {fileID: 0}
@@ -769,6 +773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Adolescent3
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!1 &1835627783
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,6 +878,7 @@ MonoBehaviour:
   isFinish: {fileID: 0}
   sceneName1: calendar
   sceneName2: 
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!61 &1835627787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1015,13 +1021,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4f26f38f9673974cb49446d0d635adf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Dialog1: {fileID: 0}
-  Dialog2: {fileID: 0}
-  Dialog3: {fileID: 0}
-  isLeather: 0
-  isKey: 0
+  Dialog1: {fileID: 1144268794}
+  Dialog2: {fileID: 226127218}
+  Dialog3: {fileID: 405215223}
+  isSpecial: {fileID: 0}
+  isKey: {fileID: 11400000, guid: 3f3ce94cf1757f14d84e59ab41de1fc2, type: 2}
   total: 0
-  progress: {fileID: 0}
+  progress: {fileID: 11400000, guid: fe8f0ba5fdd682f4cbac668f3d8fa33a, type: 2}
 --- !u!1001 &2016860623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1183,6 +1189,7 @@ MonoBehaviour:
   isFinish: {fileID: 0}
   sceneName1: Table
   sceneName2: 
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!61 &2058761540
 BoxCollider2D:
   m_ObjectHideFlags: 0

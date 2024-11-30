@@ -7,7 +7,7 @@ public class Door : MonoBehaviour
     public StartDialog Dialog1;
     public StartDialog Dialog2;
     public StartDialog Dialog3;
-    public BoolSO isLeather;
+    public BoolSO isSpecial;
     public BoolSO isKey;
     public double total;
     public DoubleSO progress;
@@ -15,7 +15,7 @@ public class Door : MonoBehaviour
     {
         if(isKey.isDone)
         {
-            if (progress.progress >= total * 0.8&!isLeather.isDone)
+            if (progress.progress >= total * 0.8&!isSpecial.isDone)
             {
                 Dialog2.StartDialogs();
             }
@@ -23,7 +23,7 @@ public class Door : MonoBehaviour
             {
                 Dialog1.StartDialogs();
             }
-            else if(progress.progress >= total * 0.8&isLeather.isDone)
+            else if(progress.progress >= total * 0.8& isSpecial.isDone)
             {
                  Dialog3 .StartDialogs();
             }

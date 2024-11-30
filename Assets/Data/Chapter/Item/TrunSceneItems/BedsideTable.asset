@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fe9dcd18ef38634d88d85ed1665eb62, type: 3}
-  m_Name: tableClose
+  m_Name: bed set
   m_EditorClassIdentifier: 
   chapterData: {fileID: 11400000, guid: a46c2d5a10081e14d905cb26cd6391e2, type: 2}
-  itemName: tableClose
-  itemImage: {fileID: 21300000, guid: 0c9efcada3b82544d955a27679e11497, type: 3}
+  itemName: bed set
+  itemImage: {fileID: 21300000, guid: dd84729375d389f4d85f43dea209ed3f, type: 3}
   itemCounter: 0
   introduction: 
   isUnlocked: 0

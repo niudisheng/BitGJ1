@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ClickBackScene : MonoBehaviour
 {
@@ -9,7 +10,11 @@ public class ClickBackScene : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            SceneLoadManager.LoadScene(backSceneName);
+            SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+            SceneManager.LoadSceneAsync(backSceneName, LoadSceneMode.Additive).completed += (op) =>
+            {
+                SceneManager.SetActiveScene(SceneManager.GetSceneByName(backSceneName));
+            };
         }
     }
 }

@@ -351,6 +351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Adolescent1
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!1 &1149813250
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,7 +431,7 @@ Transform:
   m_GameObject: {fileID: 1149813250}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.62, y: -2.48, z: 0}
+  m_LocalPosition: {x: -4.83, y: -2.74, z: 0}
   m_LocalScale: {x: 60, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -709,6 +710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Adolescent3
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!1 &1588672568
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,6 +815,7 @@ MonoBehaviour:
   isFinish: {fileID: 0}
   sceneName1: Computer
   sceneName2: 
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!61 &1588672572
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1020,7 +1023,7 @@ Transform:
   m_GameObject: {fileID: 1909859756}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.71, y: 1.75, z: 0}
+  m_LocalPosition: {x: -0.04, y: 2.67, z: 0}
   m_LocalScale: {x: 12, y: 10.04, z: 12}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1040,11 +1043,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8224897998075379350, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.4
+      value: -5.67
       objectReference: {fileID: 0}
     - target: {fileID: 8224897998075379350, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.68
+      value: 1.67
       objectReference: {fileID: 0}
     - target: {fileID: 8224897998075379350, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_LocalPosition.z
