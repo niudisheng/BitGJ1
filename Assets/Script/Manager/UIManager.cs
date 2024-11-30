@@ -15,9 +15,10 @@ public class UIManager : MonoBehaviour
         SceneLoadManager.Trans = trans;
         if (instance == null)
         {
-            return;
+            instance = this;
+            
         }
-        instance = this;
+        return;
     }
     private void Start()
     {
