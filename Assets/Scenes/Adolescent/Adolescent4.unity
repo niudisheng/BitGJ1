@@ -306,8 +306,8 @@ Transform:
   m_GameObject: {fileID: 495472566}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -2.48, z: 0}
-  m_LocalScale: {x: 60, y: 10, z: 1}
+  m_LocalPosition: {x: -0.0239, y: -2.1554, z: 0}
+  m_LocalScale: {x: 55.584373, y: 8.269938, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -435,8 +435,8 @@ Transform:
   m_GameObject: {fileID: 627604319}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.98, y: 0.32999998, z: 0}
-  m_LocalScale: {x: 4.5, y: 4.5, z: 4.5}
+  m_LocalPosition: {x: -5.5545, y: 0.1686, z: 0}
+  m_LocalScale: {x: 4.1688275, y: 3.7214723, z: 4.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
-  sceneToLaod: Midlife1
+  sceneToLaod: Old2
   isStartFirst: 0
   dialogue: {fileID: 0}
   DIalogDataSO: {fileID: 11400000, guid: e6f50a9c65f26c44fb0c59b90d4fff55, type: 2}
@@ -571,8 +571,8 @@ Transform:
   m_GameObject: {fileID: 1196066595}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.16, y: 3.7183394, z: 0}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalPosition: {x: -2.0156, y: 2.9708, z: 0}
+  m_LocalScale: {x: 5.558437, y: 4.961963, z: 6}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -607,7 +607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
-  sceneToLaod: Midlife1
+  sceneToLaod: Old2
   isStartFirst: 0
   dialogue: {fileID: 0}
   DIalogDataSO: {fileID: 11400000, guid: 06f7666ef89c31d4488a0de971fd283e, type: 2}
@@ -854,8 +854,8 @@ Transform:
   m_GameObject: {fileID: 1835627783}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.57, y: 0.62, z: 0}
-  m_LocalScale: {x: 3.8, y: 3.8, z: 3.8}
+  m_LocalPosition: {x: 4.2191, y: 0.4084, z: 0}
+  m_LocalScale: {x: 3.5203435, y: 3.1425765, z: 3.8}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -878,7 +878,6 @@ MonoBehaviour:
   isFinish: {fileID: 0}
   sceneName1: calendar
   sceneName2: 
-  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!61 &1835627787
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -935,6 +934,7 @@ GameObject:
   - component: {fileID: 2007037500}
   - component: {fileID: 2007037499}
   - component: {fileID: 2007037501}
+  - component: {fileID: 2007037502}
   m_Layer: 0
   m_Name: door2
   m_TagString: Untagged
@@ -1003,8 +1003,8 @@ Transform:
   m_GameObject: {fileID: 2007037498}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.27, y: 1.4, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalPosition: {x: 6.7204, y: 1.0534, z: 0}
+  m_LocalScale: {x: 4.632031, y: 4.134969, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -1024,10 +1024,55 @@ MonoBehaviour:
   Dialog1: {fileID: 1144268794}
   Dialog2: {fileID: 226127218}
   Dialog3: {fileID: 405215223}
-  isSpecial: {fileID: 0}
+  isSpecial: {fileID: 11400000, guid: f9251fa356a987143b7a176e5f31170e, type: 2}
   isKey: {fileID: 11400000, guid: 3f3ce94cf1757f14d84e59ab41de1fc2, type: 2}
-  total: 0
+  total: 8
   progress: {fileID: 11400000, guid: fe8f0ba5fdd682f4cbac668f3d8fa33a, type: 2}
+--- !u!61 &2007037502
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007037498}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 1.28}
+    newSize: {x: 0.64, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 1.28}
+  m_EdgeRadius: 0
 --- !u!1001 &2016860623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1042,11 +1087,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8224897998075379350, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.17
+      value: -6.11
       objectReference: {fileID: 0}
     - target: {fileID: 8224897998075379350, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.68
+      value: 1.73
       objectReference: {fileID: 0}
     - target: {fileID: 8224897998075379350, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1165,8 +1210,8 @@ Transform:
   m_GameObject: {fileID: 2058761536}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.62, y: -0.2, z: 0}
-  m_LocalScale: {x: 4.5, y: 4.5, z: 4.5}
+  m_LocalPosition: {x: 0.5598, y: -0.2697, z: 0}
+  m_LocalScale: {x: 4.1688275, y: 3.7214723, z: 4.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -1189,7 +1234,6 @@ MonoBehaviour:
   isFinish: {fileID: 0}
   sceneName1: Table
   sceneName2: 
-  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!61 &2058761540
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1313,8 +1357,8 @@ Transform:
   m_GameObject: {fileID: 2078043611}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.52, z: 0}
-  m_LocalScale: {x: 11.98, y: 10.01, z: 0}
+  m_LocalPosition: {x: -0.0146, y: 1.9797, z: 0}
+  m_LocalScale: {x: 11.098346, y: 8.278209, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

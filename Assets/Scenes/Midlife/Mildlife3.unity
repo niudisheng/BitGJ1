@@ -326,7 +326,7 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   DIalogDataSO: {fileID: 11400000, guid: f7e4090483650bb499d5c09045b40ccb, type: 2}
   DialogManager: {fileID: 0}
-  isRead: 0
+  isRead: {fileID: 0}
   dialog: {fileID: 0}
 --- !u!4 &232846670
 Transform:
@@ -462,7 +462,7 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   DIalogDataSO: {fileID: 11400000, guid: e6f50a9c65f26c44fb0c59b90d4fff55, type: 2}
   DialogManager: {fileID: 0}
-  isRead: 0
+  isRead: {fileID: 0}
   dialog: {fileID: 0}
 --- !u!4 &421165811
 Transform:
@@ -751,7 +751,6 @@ MonoBehaviour:
   isFinish: {fileID: 0}
   sceneName1: Dinnerdesk
   sceneName2: 
-  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!61 &1153203765
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1183,6 +1182,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1853376230}
   - component: {fileID: 1853376229}
+  - component: {fileID: 1853376232}
+  - component: {fileID: 1853376231}
   m_Layer: 0
   m_Name: door3
   m_TagString: Untagged
@@ -1257,6 +1258,71 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1853376231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853376228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4f26f38f9673974cb49446d0d635adf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDoor3: 1
+  Dialog1: {fileID: 421165810}
+  Dialog2: {fileID: 232846669}
+  Dialog3: {fileID: 0}
+  isSpecial: {fileID: 11400000, guid: f9251fa356a987143b7a176e5f31170e, type: 2}
+  isKey: {fileID: 0}
+  total: 0
+  progress: {fileID: 11400000, guid: a25a7e200d99cd747ad7bda5c2ef7e3c, type: 2}
+--- !u!61 &1853376232
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853376228}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.64, y: 1.28}
+    newSize: {x: 0.64, y: 1.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.64, y: 1.28}
+  m_EdgeRadius: 0
 --- !u!1001 &1910855165
 PrefabInstance:
   m_ObjectHideFlags: 0

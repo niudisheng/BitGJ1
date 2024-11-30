@@ -678,7 +678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Old1
-  GoNextSceneEvent: {fileID: 0}
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!212 &1345295334
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -5,10 +5,13 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine.Events;
 using Unity.VisualScripting;
-using static System.Net.Mime.MediaTypeNames;
 
 public class DialogManager : MonoBehaviour
 {
+    public Image Image;
+    public GameObject descption;
+    public TMP_Text description;
+    public TMP_Text itemName;
     [Header("组件")]
     public GameObject dialogue;
     //对话框

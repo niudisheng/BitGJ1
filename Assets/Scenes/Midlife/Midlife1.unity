@@ -365,7 +365,6 @@ MonoBehaviour:
   isFinish: {fileID: 0}
   sceneName1: Briefcase
   sceneName2: 
-  GoNextSceneEvent: {fileID: 0}
 --- !u!212 &358820465
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -736,7 +735,6 @@ MonoBehaviour:
   isFinish: {fileID: 0}
   sceneName1: Document
   sceneName2: 
-  GoNextSceneEvent: {fileID: 0}
 --- !u!1 &1153203761
 GameObject:
   m_ObjectHideFlags: 0
@@ -940,7 +938,7 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   DIalogDataSO: {fileID: 11400000, guid: 765cb25555ae6f44e9fe352c025c445b, type: 2}
   DialogManager: {fileID: 0}
-  isRead: 0
+  isRead: {fileID: 11400000, guid: 642e899f75aabf14b881ddb2ae9e8b23, type: 2}
   dialog: {fileID: 0}
 --- !u!4 &1333465975
 Transform:

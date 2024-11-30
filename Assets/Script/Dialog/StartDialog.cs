@@ -11,11 +11,10 @@ public class StartDialog : MonoBehaviour
     public GameObject dialogue;
     public DIalogDataSO DIalogDataSO;
     public DialogManager DialogManager;
-    public bool isRead;
+    public BoolSO isRead;
     public StartDialog dialog;
     private void Awake()
     {
-        isRead = false;
 
         //WaitTime(0.3f);
     }
@@ -25,9 +24,10 @@ public class StartDialog : MonoBehaviour
         {
             dialogue = GameObject.FindWithTag("DialogManager");
             DialogManager = dialogue.GetComponent<DialogManager>();
-            if (isStartFirst & !isRead)
+            if (isStartFirst &!isRead.isDone)
             {
                 StartDialogs();
+                isRead.isDone = true;
             }
         }
 
@@ -49,7 +49,6 @@ public class StartDialog : MonoBehaviour
         DialogManager.isPause = DIalogDataSO.isPause;
         DialogManager.ReadText(DIalogDataSO.TextAsset);
         DialogManager.ShowDialogRow();
-        isRead = true;
         isStartFirst = false;
         if (dialog != null&DialogManager.isOver)
         {
