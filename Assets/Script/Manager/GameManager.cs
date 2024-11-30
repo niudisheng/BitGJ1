@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
     public void OnStartGame()
     {
         StartCoroutine(updateChapter());
+        // SceneLoadManager.LoadScene("Old1");
     }
 
     public void OnloadGame()
@@ -68,8 +69,7 @@ public class GameManager : MonoBehaviour
         UIManager.instance.setUIActive(UIType.All,false);
         if (chapterNameStr == "Childhood1"||chapterNameStr == "Adolescent1"||chapterNameStr == "Midlife1")
         {
-            // UIManager.instance.setUIActive(UIType.descption, true);
-            // UIManager.instance.setUIActive(UIType.ItemDisplay, true);
+            
             isReady = true;
             
         }

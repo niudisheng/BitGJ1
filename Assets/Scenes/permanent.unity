@@ -628,7 +628,6 @@ GameObject:
   - component: {fileID: 421658933}
   - component: {fileID: 421658934}
   - component: {fileID: 421658935}
-  - component: {fileID: 421658936}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -692,34 +691,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: OnStartGame
         m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &421658936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421658932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b27855d116722284f8c33037c1f9ede0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eventSO: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 421658934}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: MoveToNextChapter
-        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1350,7 +1321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &802270440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1577,13 +1548,13 @@ MonoBehaviour:
       - m_Target: {fileID: 837693322}
         m_TargetAssemblyTypeName: SceneLoadManager, Assembly-CSharp
         m_MethodName: LoadScene
-        m_Mode: 3
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Old1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &934210265
@@ -2389,7 +2360,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1130843619
@@ -2959,9 +2930,9 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3750,6 +3721,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2086787999}
   - component: {fileID: 2086787998}
+  - component: {fileID: 2086788000}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -3771,7 +3743,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 1566638297}
   effectSource: {fileID: 1748086627}
-  musicClips: []
+  musicClips:
+  - name: MainMenu
+    clip: {fileID: 8300000, guid: 10090d3606ad9474bad55dc34bc585a7, type: 3}
+  - name: Childhood
+    clip: {fileID: 8300000, guid: 5f2219d9961883349980f30326463ebb, type: 3}
+  - name: mid
+    clip: {fileID: 8300000, guid: cdf5d459c8602794d99bbc3f03bd8ceb, type: 3}
+  - name: ado
+    clip: {fileID: 8300000, guid: f77e3d1709f63924abfc0386fd0303a1, type: 3}
+  - name: ending
+    clip: {fileID: 8300000, guid: 1a917c9132ac6044f9a8799a2f1e4ab7, type: 3}
+  - name: Old
+    clip: {fileID: 8300000, guid: b9952b4891b328542ad36c6e6fded9ee, type: 3}
   effectClips: []
 --- !u!4 &2086787999
 Transform:
@@ -3790,6 +3774,34 @@ Transform:
   - {fileID: 1748086626}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2086788000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2086787997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b27855d116722284f8c33037c1f9ede0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventSO: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2086787998}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: MoveToNextChapter
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2089853794
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -37,6 +38,8 @@ public class UIManager : MonoBehaviour
     {
         setUIActive(UIType.All,true);
     }
+
+    
 
     public void HideAllUI()
     {

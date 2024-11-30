@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,7 +10,17 @@ public class DragItem : MonoBehaviour,IBeginDragHandler, IDragHandler, IEndDragH
     public bool isDragging = false;
     public Vector2 startPos;
     private Vector2 endPos;
+    private DragContainer dragContainer;
+    private Collider2D collider;
     
+
+    private void Awake()
+    {
+        dragContainer = GetComponentInParent<DragContainer>();
+        collider = GetComponent<Collider2D>();
+        collider.enabled = true;
+    }
+
     //拖拽中
     public void OnDrag(PointerEventData eventData)
     {
@@ -29,15 +40,37 @@ public class DragItem : MonoBehaviour,IBeginDragHandler, IDragHandler, IEndDragH
 
     public virtual void OnEndDrag(PointerEventData eventData)
     {
-        this.transform.position = startPos;
         isDragging = false;
+        bool result = CheckCollision();
+        if (result)
+        {
+            Debug.Log("拖拽成功");
+            collider.enabled = false;
+            transform.position = dragContainer.startPos;
+            return;
+        }
+        this.transform.position = startPos;
         
+        
+
     }
-    
+
+    private void Update()
+    {
+        if (isDragging)
+        {
+            if (Input.GetMouseButtonUp(1))
+            {
+                this.transform.rotation = this.transform.rotation * Quaternion.Euler(0, 0, 90);
+            }
+        }
+    }
+
     private bool CheckCollision()
     {
         //pointA为起点，pointB为终点，连成四边形
         float Offset = 10f;
+        /*
         var hits = Physics2D.OverlapAreaAll(new Vector2(endPos.x - Offset,endPos.y - Offset), new Vector2(endPos.x + Offset, endPos.y + Offset));
         foreach (var hit in hits)
         {
@@ -48,6 +81,12 @@ public class DragItem : MonoBehaviour,IBeginDragHandler, IDragHandler, IEndDragH
                 
                 return true;
             }
+        }*/
+        Vector2 relativePos = this.transform.position - dragContainer.startPos;
+            
+        if (relativePos.magnitude < Offset)
+        {
+            return true;
         }
         return false;
     }
