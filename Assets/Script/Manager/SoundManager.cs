@@ -40,11 +40,16 @@ public class SoundManager : MonoBehaviour
     }
     public void PlayEffect(string name)
     {
-        AudioClip clip = effectClips.Find(x => x.name == name).clip;
-        if (clip != null)
+        if (effectClips.Find(x => x.name == name) != null)
         {
+            AudioClip clip = effectClips.Find(x => x.name == name).clip;
             effectSource.PlayOneShot(clip);
             
+        }
+        else
+        {
+            AudioClip clip2 = effectClips.Find(x => x.name == "default").clip;
+            effectSource.PlayOneShot(clip2);
         }
     }
 

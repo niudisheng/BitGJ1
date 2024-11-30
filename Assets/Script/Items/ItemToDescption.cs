@@ -28,6 +28,7 @@ public class ItemToDescption : NPCInteractor
     }
     public virtual void OnInteract1()
     {
+        SoundManager.instance.PlayEffect(itemData.name);
         if (dialogue == null)
         {
             dialogue = GameObject.FindWithTag("DialogManager");
