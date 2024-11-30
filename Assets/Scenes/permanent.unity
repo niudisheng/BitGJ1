@@ -206,7 +206,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 976843078}
         m_TargetAssemblyTypeName: DialogManager, Assembly-CSharp
         m_MethodName: OnClickNext
         m_Mode: 1
@@ -1905,7 +1905,7 @@ GameObject:
   - component: {fileID: 976843078}
   m_Layer: 0
   m_Name: DialogManager
-  m_TagString: Untagged
+  m_TagString: DialogManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1925,7 +1925,7 @@ MonoBehaviour:
   dialogue: {fileID: 1340742100}
   nPCName: {fileID: 1130843618}
   dialog: {fileID: 2077162528}
-  sprite: {fileID: 0}
+  sprite: {fileID: 1003518012}
   nextButton: {fileID: 56592242}
   isPause: 0
   oneName: 
@@ -1978,8 +1978,8 @@ Transform:
   m_GameObject: {fileID: 1003518010}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -685, y: -294, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_LocalPosition: {x: -685, y: -270, z: 0}
+  m_LocalScale: {x: 30, y: 30, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1340742101}
@@ -2025,7 +2025,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: 21300000, guid: 2e4c01f1fc51ea7439abfe7b96fccafd, type: 3}
+  m_Sprite: {fileID: 1169658581, guid: d4624e56c30952c4e9b7837d11dd9f66, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2171,8 +2171,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5f251cd899531d740bec23b5bbec05e6, type: 2}
+  m_sharedMaterial: {fileID: -1283778537355479558, guid: 66a0f5dc0e966354498cb599580dd84f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2235,7 +2235,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1130843619
@@ -3454,10 +3454,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: dialog
+  m_text: "\u4F60\u597D"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5f251cd899531d740bec23b5bbec05e6, type: 2}
+  m_sharedMaterial: {fileID: -1283778537355479558, guid: 66a0f5dc0e966354498cb599580dd84f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3520,7 +3520,7 @@ MonoBehaviour:
   m_margin: {x: 89.48694, y: 0, z: -879.9536, w: -122.29874}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2077162529

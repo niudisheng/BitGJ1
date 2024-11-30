@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class StartDialog : MonoBehaviour
 {
+    public ObjectEventSO GoNextSceneEvent;
     public string sceneToLaod;
     public bool isStartFirst;
     public GameObject dialogue;
@@ -14,33 +15,64 @@ public class StartDialog : MonoBehaviour
     public StartDialog dialog;
     private void Awake()
     {
-        dialogue = GameObject.Find("DialogManager");
-        DialogManager = dialogue.GetComponent<DialogManager>();
-        if (isStartFirst)
+        isRead = false;
+
+        //WaitTime(0.3f);
+    }
+    private void Update()
+    {
+        if (dialogue == null)
         {
-            StartDialogs();
+            dialogue = GameObject.FindWithTag("DialogManager");
+            DialogManager = dialogue.GetComponent<DialogManager>();
+            if (isStartFirst & !isRead)
+            {
+                StartDialogs();
+            }
         }
+
     }
     public void StartDialogs()
     {
+        DialogManager.isOver = false;
+        if (dialog != null)
+        {
+            DialogManager.UnityAction += dialog.StartDialogs;
+        }
+        if (GoNextSceneEvent != null)
+        {
+            DialogManager.UnityAction += TurnScene;
+        }
         DialogManager.dialogue.SetActive(true);
         DialogManager.oneName = DIalogDataSO.thisNPC;
         DialogManager.twoName = DIalogDataSO.otherNPC;
         DialogManager.isPause = DIalogDataSO.isPause;
         DialogManager.ReadText(DIalogDataSO.TextAsset);
         DialogManager.ShowDialogRow();
-        if (dialog != null)
+        isRead = true;
+        isStartFirst = false;
+        if (dialog != null&DialogManager.isOver)
         {
-            DialogManager.UnityAction += dialog.StartDialogs;
+            DialogManager.UnityAction -= dialog.StartDialogs;
         }
-        if (dialogue != null) 
+        if (GoNextSceneEvent != null & DialogManager.isOver)
         {
-            DialogManager.UnityAction += TurnScene;
+            DialogManager.UnityAction -= TurnScene;
         }
 
     }
     public void TurnScene()
     {
-        SceneLoadManager.LoadScene(sceneToLaod);
+         GoNextSceneEvent.RaiseEvent(sceneToLaod, this);
     }
+    //private IEnumerator WaitTime(float delayTime)
+    //{
+    //    yield return new WaitForSeconds(delayTime);
+    //    dialogue = GameObject.FindWithTag("DialogManager");
+    //    DialogManager = dialogue.GetComponent<DialogManager>();
+    //    if (isStartFirst & !isRead)
+    //    {
+    //        StartDialogs();
+    //    }
+    //}
 }

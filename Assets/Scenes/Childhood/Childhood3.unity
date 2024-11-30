@@ -152,7 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d641e76195ec547b4df7ca9bed1440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLaod: Adolescent1
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
+  sceneToLaod: Old1
   isStartFirst: 0
   dialogue: {fileID: 0}
   DIalogDataSO: {fileID: 11400000, guid: 27b0e9d4ba3c0354b9599482f9572a01, type: 2}
@@ -323,6 +324,7 @@ MonoBehaviour:
   isFinish: {fileID: 0}
   sceneName1: Vase
   sceneName2: 
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!1 &734893773
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,7 +405,7 @@ Transform:
   m_GameObject: {fileID: 734893773}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5416, y: -1.0392, z: 0}
+  m_LocalPosition: {x: -1.23, y: -1.04, z: 0}
   m_LocalScale: {x: 5.077248, y: 4.808889, z: 5.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -427,6 +429,7 @@ MonoBehaviour:
   isFinish: {fileID: 0}
   sceneName1: Record
   sceneName2: 
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!61 &734893777
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -589,7 +592,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.059675843}
+  m_Offset: {x: 0, y: -0.09605126}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -600,7 +603,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.48, y: 0.1506483}
+  m_Size: {x: 0.48, y: 0.07789745}
   m_EdgeRadius: 0
 --- !u!1 &963398556
 GameObject:
@@ -715,6 +718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d641e76195ec547b4df7ca9bed1440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GoNextSceneEvent: {fileID: 0}
   sceneToLaod: 
   isStartFirst: 0
   dialogue: {fileID: 0}
@@ -881,6 +885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Childhood2
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!1 &1487920521
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,9 +986,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Dialog1: {fileID: 1508380398}
   Dialog2: {fileID: 983727271}
-  Dialog3: {fileID: 0}
-  isLeather: 0
-  isKey: 1
+  Dialog3: {fileID: 1607808108}
+  isLeather: {fileID: 11400000, guid: f9251fa356a987143b7a176e5f31170e, type: 2}
+  isKey: {fileID: 11400000, guid: 93a49dd3b400f9946a02335245ec6916, type: 2}
   total: 11
   progress: {fileID: 11400000, guid: ab730793d508b554fbf20418d38d8058, type: 2}
 --- !u!61 &1487920525
@@ -1060,7 +1065,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d641e76195ec547b4df7ca9bed1440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLaod: Adolescent1
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
+  sceneToLaod: Old1
   isStartFirst: 0
   dialogue: {fileID: 0}
   DIalogDataSO: {fileID: 11400000, guid: 891cbd8d19f5e3d43884812261c64c02, type: 2}
@@ -1111,6 +1117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d641e76195ec547b4df7ca9bed1440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GoNextSceneEvent: {fileID: 0}
   sceneToLaod: 
   isStartFirst: 0
   dialogue: {fileID: 0}

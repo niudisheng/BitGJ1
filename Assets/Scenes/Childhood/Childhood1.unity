@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &200966491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,11 +152,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d641e76195ec547b4df7ca9bed1440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLaod: 
   isStartFirst: 1
   dialogue: {fileID: 0}
-  DIalogDataSO: {fileID: 11400000, guid: 0700375910b00a64c97ffd037f7a643a, type: 2}
+  DIalogDataSO: {fileID: 11400000, guid: 524b197fe8a444c4bb45451003937a2a, type: 2}
   DialogManager: {fileID: 0}
-  isRead: 0
+  isRead: 1
+  dialog: {fileID: 0}
 --- !u!4 &200966492
 Transform:
   m_ObjectHideFlags: 0
@@ -350,7 +352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Childhood2
-  GoNextSceneEvent: {fileID: 0}
+  GoNextSceneEvent: {fileID: 11400000, guid: 590031a5d6fa24e4b9f5c42f2d96bcc8, type: 2}
 --- !u!212 &687045065
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -964,13 +966,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021200693}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9197c7a10e113c4497056f99d4f42c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 367fa5c4acc7368418e763720d982cbc, type: 2}
   canInteract: 0
+  progress: {fileID: 0}
   AddTOItemDisplay: {fileID: 11400000, guid: e16e622b9e0717b43b803c8695e63414, type: 2}
 --- !u!61 &2021200697
 BoxCollider2D:
@@ -979,7 +982,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021200693}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -1024,7 +1027,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2021200693}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cc66b64e1669be42a090f43d6ad7f29, type: 3}
   m_Name: 

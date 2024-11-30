@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 253032069}
   - component: {fileID: 253032072}
   - component: {fileID: 253032071}
+  - component: {fileID: 253032073}
   m_Layer: 0
   m_Name: record
   m_TagString: Untagged
@@ -338,6 +339,20 @@ MonoBehaviour:
   canInteract: 0
   progress: {fileID: 11400000, guid: ab730793d508b554fbf20418d38d8058, type: 2}
   AddTOItemDisplay: {fileID: 11400000, guid: e16e622b9e0717b43b803c8695e63414, type: 2}
+--- !u!114 &253032073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253032068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55eac6745feb5b04d941f0487024667f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGet: {fileID: 11400000, guid: 613bbd3a273598f47ac4f6c34be33c61, type: 2}
+  ItemToDisplay: {fileID: 253032072}
 --- !u!1 &494367590
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +449,7 @@ GameObject:
   - component: {fileID: 1188490371}
   - component: {fileID: 1188490374}
   - component: {fileID: 1188490373}
+  - component: {fileID: 1188490375}
   m_Layer: 0
   m_Name: feather
   m_TagString: Untagged
@@ -615,6 +631,20 @@ MonoBehaviour:
   canInteract: 0
   progress: {fileID: 11400000, guid: ab730793d508b554fbf20418d38d8058, type: 2}
   AddTOItemDisplay: {fileID: 11400000, guid: e16e622b9e0717b43b803c8695e63414, type: 2}
+--- !u!114 &1188490375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188490370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55eac6745feb5b04d941f0487024667f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isGet: {fileID: 11400000, guid: f9251fa356a987143b7a176e5f31170e, type: 2}
+  ItemToDisplay: {fileID: 1188490374}
 --- !u!1 &1394892421
 GameObject:
   m_ObjectHideFlags: 0

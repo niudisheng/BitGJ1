@@ -11,6 +11,7 @@ TagManager:
   - Item2Show
   - ItemInter
   - Bullet
+  - DialogManager
   layers:
   - Default
   - TransparentFX

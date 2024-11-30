@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f5b20501e0458324a987919b8c2d1164, type: 3}
-  m_Name: FirstDialog 16
+  m_Name: midEnd1
   m_EditorClassIdentifier: 
-  TextAsset: {fileID: 4900000, guid: ebed8e09001839a40a645f36a668c85b, type: 3}
+  TextAsset: {fileID: 4900000, guid: c101c040f74fae443829e33729a48316, type: 3}
   thisNPC: "\u8001\u4EBA"
   otherNPC: ' '
   isPause: 0
