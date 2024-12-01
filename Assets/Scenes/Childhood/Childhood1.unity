@@ -1017,17 +1017,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2021200693}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ada30017885afee46a584faab058ab11, type: 3}
+  m_Script: {fileID: 11500000, guid: faf603bb029be464a8d2efaf49f8380d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: a224a48fdcc7c3849a7b4410f62a64a0, type: 2}
+  itemData: {fileID: 11400000, guid: c2b71445ec792fd45b0a29fcb7a475a4, type: 2}
   canInteract: 0
-  dialogue: {fileID: 0}
-  DialogManager: {fileID: 0}
-  descption: {fileID: 0}
-  asset: {fileID: 0}
-  assetName: {fileID: 0}
-  Sprite: {fileID: 0}
+  isNeedFinish: 0
+  isNotFinish: {fileID: 0}
+  sceneName1: TVInteration
+  sceneName2: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fe9dcd18ef38634d88d85ed1665eb62, type: 3}
-  m_Name: riji
+  m_Name: note
   m_EditorClassIdentifier: 
   chapterData: {fileID: 11400000, guid: fff9beff69d93aa448849c246e6eb0c6, type: 2}
-  itemName: riji
+  itemName: note
   itemImage: {fileID: 21300000, guid: f9e7fce6ce9ab204a9b502e7978e8b7d, type: 3}
   itemCounter: 0
   introduction: "*\u5E74\u6708*\u65E5 \u661F\u671F* \u9634 \u4ECA\u5929\u5728\u571F\u8DEF\u4E0A\u73A9\u5F39\u73E0\uFF0C**\u8BF4\u60F3\u548C\u6211\u73A9\uFF0C\u4EA4\u4E2A\u670B\u53CB\u3002\u6211\u8BF4\u597D\u3002\u6211\u4EEC\u8F6E\u6D41\u5F39\u5F39\u73E0\uFF0C\u6709\u65F6\u5019\u6211\u7684\u5F39\u73E0\u6CA1\u6253\u4E2D\u4ED6\u7684\uFF0C**\u5C31\u4F1A\u7B11\u3002\u6700\u540E\uFF0C\u6211\u8D62\u4E86\uFF0C**\u4E5F\u5F88\u5F00\u5FC3\u3002
