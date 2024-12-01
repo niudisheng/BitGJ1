@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
     public void OnStartGame()
     {
         StartCoroutine(updateChapter());
+        MoveToNextChapter("Old1");
         // SceneLoadManager.LoadScene("Old1");
     }
 

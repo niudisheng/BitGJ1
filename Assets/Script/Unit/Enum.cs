@@ -28,7 +28,7 @@ public enum EnemyStateEnum
 
 public enum UIType
 {
-    All,
+    All=4,
     ItemDisplay=0,
     descption=1,
     Dialog=2,

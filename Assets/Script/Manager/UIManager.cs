@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            HideAllUI();
+            
         }
         return;
     }
@@ -29,7 +29,7 @@ public class UIManager : MonoBehaviour
             uiDictionary.Add(uiType,uiList[i]);
         }
 
-        if (SceneManager.GetActiveScene().buildIndex == 1)
+        if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             HideAllUI();
         }
