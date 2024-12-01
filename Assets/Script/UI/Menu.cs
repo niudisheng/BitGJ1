@@ -32,7 +32,7 @@ public class Menu : MonoBehaviour
         {
             SceneManager.SetActiveScene(SceneManager.GetSceneByName("Old1"));
         };
-
+        gameObject.SetActive(true);
         startGame.RaiseEvent(null,this);
     }
     

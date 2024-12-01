@@ -1010,6 +1010,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 20be31f78bd4c6445b1df3e6403b0141, type: 2}
   canInteract: 0
+  isGot: {fileID: 11400000, guid: 599eeabcdcfa9644eb8e02468a3f4c33, type: 2}
   progress: {fileID: 11400000, guid: a25a7e200d99cd747ad7bda5c2ef7e3c, type: 2}
   AddTOItemDisplay: {fileID: 11400000, guid: e16e622b9e0717b43b803c8695e63414, type: 2}
 --- !u!1 &1549343282

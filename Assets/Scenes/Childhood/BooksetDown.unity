@@ -276,6 +276,7 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: 3aa2b90f7f7f8a34a8d8001c49e3c541, type: 3}
   - {fileID: 21300000, guid: d3c0e495df0f5244ea433a90b99d0b3b, type: 3}
+  currentIndex: 0
   PolygonCollider2D: {fileID: 615581723}
 --- !u!1 &1287100016
 GameObject:
@@ -463,6 +464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: f2ca1cb2f3c0acd4890626dd5f335bd2, type: 2}
   canInteract: 0
+  isGot: {fileID: 11400000, guid: 93a49dd3b400f9946a02335245ec6916, type: 2}
   progress: {fileID: 11400000, guid: ab730793d508b554fbf20418d38d8058, type: 2}
   AddTOItemDisplay: {fileID: 11400000, guid: e16e622b9e0717b43b803c8695e63414, type: 2}
 --- !u!1 &1758781107
@@ -572,6 +574,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4512159f82c99b34ea1f1245ba616bc4, type: 3}
   - {fileID: 21300000, guid: 896080d797c54b04495adda0774b0784, type: 3}
   - {fileID: 21300000, guid: c925e4e6be62f60429a3a16c8bb86b51, type: 3}
+  currentIndex: 0
 --- !u!60 &1758781111
 PolygonCollider2D:
   m_ObjectHideFlags: 0
