@@ -20,11 +20,13 @@ public class ItemTurnScene : NPCInteractor
         {
             if (isNotFinish.isDone)
             {
-                OnClick += OnInteract2;
+                if(sceneName2 != string.Empty)
+                {
+                    OnClick += OnInteract2;
+                }
             }
             else if(!isNotFinish.isDone)
             {
-                if (sceneName2 != null)
                     OnClick += OnInteract1;
             }
         }

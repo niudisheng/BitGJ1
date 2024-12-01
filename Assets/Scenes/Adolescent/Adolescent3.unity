@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 1497222118}
   - component: {fileID: 1497222117}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: chuwugui
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1007,6 +1007,7 @@ GameObject:
   - component: {fileID: 2091251447}
   - component: {fileID: 2091251451}
   - component: {fileID: 2091251450}
+  - component: {fileID: 2091251453}
   - component: {fileID: 2091251452}
   m_Layer: 0
   m_Name: cabinetClose
@@ -1097,7 +1098,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: a47101ff9ef01a543897e082245ee3d1, type: 2}
   canInteract: 0
-  isNeedFinish: 0
+  isNeedFinish: 1
   isNotFinish: {fileID: 11400000, guid: 1c4d8ae47d10e37498a872b7b1ffe2b6, type: 2}
   sceneName1: Lock
   sceneName2: 
@@ -1165,6 +1166,27 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: 890bc8ebc30baf840a0de8ffcee019f3, type: 3}
   - {fileID: 21300000, guid: 073df6462eb4c7c44aca667f65258e3f, type: 3}
+  isNotLock: {fileID: 11400000, guid: 1c4d8ae47d10e37498a872b7b1ffe2b6, type: 2}
+--- !u!114 &2091251453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091251446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b46c162ed120084eb3fa09743d362e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: bb1412fa4edf47144abf05a9dd7be78f, type: 2}
+  canInteract: 0
+  dialogue: {fileID: 0}
+  DialogManager: {fileID: 0}
+  descption: {fileID: 0}
+  asset: {fileID: 0}
+  assetName: {fileID: 0}
+  Sprite: {fileID: 0}
   isNotLock: {fileID: 11400000, guid: 1c4d8ae47d10e37498a872b7b1ffe2b6, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
