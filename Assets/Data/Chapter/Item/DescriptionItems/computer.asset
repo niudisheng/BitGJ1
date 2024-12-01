@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fe9dcd18ef38634d88d85ed1665eb62, type: 3}
-  m_Name: desk
+  m_Name: computerDesk
   m_EditorClassIdentifier: 
   chapterData: {fileID: 11400000, guid: a46c2d5a10081e14d905cb26cd6391e2, type: 2}
-  itemName: desk
-  itemImage: {fileID: 21300000, guid: 012942bbdee7c6b4a90e400c76658919, type: 3}
+  itemName: computerDesk
+  itemImage: {fileID: 21300000, guid: 31825b2820adc27408eb1eb0ce7a97dd, type: 3}
   itemCounter: 0
-  introduction: 
-  isUnlocked: 0
+  introduction: "\u67D4\u8F6F\u7684\u7535\u7ADE\u6905\uFF0C\u636E\u8BF4\u53EF\u4EE5\u9632\u6B62\u8170\u95F4\u76D8\u7A81\u51FA\uFF1F"
+  isUnlocked: 1
   isCompleted: 0

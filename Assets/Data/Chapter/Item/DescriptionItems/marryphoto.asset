@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fe9dcd18ef38634d88d85ed1665eb62, type: 3}
-  m_Name: desk
+  m_Name: MarryPhoto
   m_EditorClassIdentifier: 
   chapterData: {fileID: 11400000, guid: a46c2d5a10081e14d905cb26cd6391e2, type: 2}
-  itemName: desk
-  itemImage: {fileID: 21300000, guid: 012942bbdee7c6b4a90e400c76658919, type: 3}
+  itemName: MarryPhoto
+  itemImage: {fileID: 21300000, guid: 43547975fa7f41d4eb83d57f410cfa50, type: 3}
   itemCounter: 0
-  introduction: 
-  isUnlocked: 0
+  introduction: "\u50CF\u662F\u521A\u6302\u4E0A\u53BB\u4E0D\u4E45\u4E00\u6837\uFF0C\u76F8\u6846\u4E0A\u6CA1\u6709\u4E00\u4E1D\u5C18\u57C3"
+  isUnlocked: 1
   isCompleted: 0
