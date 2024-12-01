@@ -27,13 +27,13 @@ public class Menu : MonoBehaviour
 
     private void StartGame()
     {
-        SceneManager.UnloadSceneAsync("Mainmenu");
-        SceneManager.LoadSceneAsync("Old1", LoadSceneMode.Additive).completed += (op) =>
-        {
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName("Old1"));
-        };
+        //SceneManager.UnloadSceneAsync("Mainmenu");
+        //SceneManager.LoadSceneAsync("Old1", LoadSceneMode.Additive).completed += (op) =>
+        //{
+        //    SceneManager.SetActiveScene(SceneManager.GetSceneByName("Old1"));
+        //};
         gameObject.SetActive(true);
-        startGame.RaiseEvent(null,this);
+        startGame.RaiseEvent(null, this);
     }
     
     [ContextMenu("TestLoadGame")]

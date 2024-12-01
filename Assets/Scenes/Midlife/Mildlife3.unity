@@ -727,7 +727,7 @@ GameObject:
   - component: {fileID: 1153203763}
   - component: {fileID: 1153203762}
   - component: {fileID: 1153203765}
-  - component: {fileID: 1153203764}
+  - component: {fileID: 1153203766}
   m_Layer: 0
   m_Name: food&table
   m_TagString: Untagged
@@ -802,24 +802,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1153203764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1153203761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: faf603bb029be464a8d2efaf49f8380d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: 82970c779a58d67479c6b0042fd09832, type: 2}
-  canInteract: 0
-  isNeedFinish: 0
-  isNotFinish: {fileID: 0}
-  sceneName1: Dinnerdesk
-  sceneName2: 
 --- !u!61 &1153203765
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -865,6 +847,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.28, y: 1.28}
   m_EdgeRadius: 0
+--- !u!114 &1153203766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153203761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ada30017885afee46a584faab058ab11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: c046faf0dda8e194cab475d0c839c37c, type: 2}
+  canInteract: 0
+  dialogue: {fileID: 0}
+  DialogManager: {fileID: 0}
+  descption: {fileID: 0}
+  asset: {fileID: 0}
+  assetName: {fileID: 0}
+  Sprite: {fileID: 0}
 --- !u!1 &1205370907
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,11 +1408,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8224897998075379350, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.31
+      value: -7.25
       objectReference: {fileID: 0}
     - target: {fileID: 8224897998075379350, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.6
+      value: 1.71
       objectReference: {fileID: 0}
     - target: {fileID: 8224897998075379350, guid: 401e6283bff4d7f48ab1d134a75f454c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1566,7 +1568,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.12814856}
+  m_Offset: {x: 0.00072827935, y: -0.12814856}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1577,7 +1579,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.96, y: 0.2837029}
+  m_Size: {x: 1.0838203, y: 0.2837029}
   m_EdgeRadius: 0
 --- !u!1 &2072266278
 GameObject:
@@ -1634,8 +1636,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1102764585
-  m_SortingLayer: 9
+  m_SortingLayerID: 317670215
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8f8d874d5fd04d6418dde839affe7f61, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

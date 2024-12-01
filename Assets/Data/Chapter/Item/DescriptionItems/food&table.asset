@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fe9dcd18ef38634d88d85ed1665eb62, type: 3}
-  m_Name: desk
+  m_Name: food&table
   m_EditorClassIdentifier: 
   chapterData: {fileID: 11400000, guid: a46c2d5a10081e14d905cb26cd6391e2, type: 2}
-  itemName: desk
-  itemImage: {fileID: 21300000, guid: 012942bbdee7c6b4a90e400c76658919, type: 3}
+  itemName: food&table
+  itemImage: {fileID: 21300000, guid: 1d0f5733e83bdd84a86868efadb4f4c7, type: 3}
   itemCounter: 0
-  introduction: 
-  isUnlocked: 0
+  introduction: "\u6709\u7740\u975E\u5E38\u6E29\u99A8\u7684\u6C1B\u56F4\uFF0C\u5F88\u6E29\u6696\u7684\u611F\u89C9\u3002"
+  isUnlocked: 1
   isCompleted: 0
