@@ -312,6 +312,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: af694d9cd3d879546ba0d4814ee0699d, type: 3}
   - {fileID: 21300000, guid: b5223cadf1f6705438db7f550447a79e, type: 3}
   - {fileID: 21300000, guid: 896ffa9e54123c849b7fe83be71a9daf, type: 3}
+  currentIndex: 0
 --- !u!60 &144627499
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -517,13 +518,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 876466882}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9197c7a10e113c4497056f99d4f42c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 583dabc5e77e83f4489f027e3433247c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 11400000, guid: 9e64d971655a8574baf842a842031910, type: 2}
+  itemData: {fileID: 11400000, guid: f1240bfe5690a2c459c9cb7b71202be7, type: 2}
   canInteract: 0
+  dialogue: {fileID: 0}
+  DialogManager: {fileID: 0}
+  descption: {fileID: 0}
+  asset: {fileID: 0}
+  assetName: {fileID: 0}
+  Sprite: {fileID: 0}
   progress: {fileID: 11400000, guid: ab730793d508b554fbf20418d38d8058, type: 2}
-  AddTOItemDisplay: {fileID: 11400000, guid: e16e622b9e0717b43b803c8695e63414, type: 2}
+  isRead: {fileID: 11400000, guid: 2da5e8fce8229584783936bbd46bc55f, type: 2}
 --- !u!1 &1281879316
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,7 +628,7 @@ GameObject:
   - component: {fileID: 1399126857}
   - component: {fileID: 1399126858}
   m_Layer: 0
-  m_Name: hoodle
+  m_Name: hoodle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -708,6 +715,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 8d32bc5d52b13a443843432ed7f2e241, type: 2}
   canInteract: 0
+  isGot: {fileID: 11400000, guid: e29e81d53bca1154b812b2869575c7b2, type: 2}
   progress: {fileID: 11400000, guid: ab730793d508b554fbf20418d38d8058, type: 2}
   AddTOItemDisplay: {fileID: 11400000, guid: e16e622b9e0717b43b803c8695e63414, type: 2}
 --- !u!60 &1399126858
@@ -767,6 +775,51 @@ PolygonCollider2D:
       - {x: -0.005, y: -0.02}
       - {x: -0.055, y: 0.07}
   m_UseDelaunayMesh: 0
+--- !u!1 &1454362086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1454362088}
+  - component: {fileID: 1454362087}
+  m_Layer: 0
+  m_Name: Back
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1454362087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454362086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 242558d6a19a4e54e9a9eb99b9162978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backSceneName: Childhood1
+--- !u!4 &1454362088
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1454362086}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2034491075
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,6 +1004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: ccf5cc48c260a394dab318506c6157c8, type: 2}
   canInteract: 0
+  isGot: {fileID: 11400000, guid: 0d7cfd2e25a77234580655b1e371a7a4, type: 2}
   progress: {fileID: 11400000, guid: ab730793d508b554fbf20418d38d8058, type: 2}
   AddTOItemDisplay: {fileID: 11400000, guid: e16e622b9e0717b43b803c8695e63414, type: 2}
 --- !u!60 &2044975903
@@ -1015,3 +1069,4 @@ SceneRoots:
   - {fileID: 2044975901}
   - {fileID: 876466884}
   - {fileID: 144627497}
+  - {fileID: 1454362088}

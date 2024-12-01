@@ -307,6 +307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 3ef5a5ef81258c740ad93464e05661bd, type: 2}
   canInteract: 0
+  isGot: {fileID: 11400000, guid: e90c70121b790fd43a41e95aa2b49aee, type: 2}
   progress: {fileID: 11400000, guid: fe8f0ba5fdd682f4cbac668f3d8fa33a, type: 2}
   AddTOItemDisplay: {fileID: 11400000, guid: e16e622b9e0717b43b803c8695e63414, type: 2}
 --- !u!60 &936214647
@@ -600,6 +601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 77968035b30a0b74cbf30e7e11420afe, type: 2}
   canInteract: 0
+  isGot: {fileID: 11400000, guid: 92deaa04152818d4b9ab8b6818dac71e, type: 2}
   progress: {fileID: 11400000, guid: fe8f0ba5fdd682f4cbac668f3d8fa33a, type: 2}
   AddTOItemDisplay: {fileID: 11400000, guid: e16e622b9e0717b43b803c8695e63414, type: 2}
 --- !u!60 &1966291702

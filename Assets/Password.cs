@@ -37,34 +37,6 @@ public class Password : MonoBehaviour
         if (currentIndex == 4)
            PasswordCheck();
     }
-    public void PasswordBack()
-    {
-        if (inputNumber[0] != null)
-        {
-            if (inputNumber[1] != null) 
-            {
-                if (inputNumber[2] != null)
-                {
-                    if(inputNumber[3] != null)
-                    {
-                        inputNumber[3] = null;
-                    }
-                    else
-                    {
-                        inputNumber[2] = null;
-                    }
-                }
-                else
-                {
-                    inputNumber[1] = null;
-                }
-            }
-            else
-            {
-                inputNumber[0] = null;
-            }
-        }
-    }
     public void PasswordCheck()
     {
         if (inputNumberSprite[0].sprite == realNumber[0])
@@ -110,6 +82,7 @@ public class Password : MonoBehaviour
         inputNumberSprite[1].sprite = null;
         inputNumberSprite[2].sprite = null;
         inputNumberSprite[3].sprite = null;
+        currentIndex = 0;
     }
     public void PasswordInput1()
     {
@@ -180,8 +153,10 @@ public class Password : MonoBehaviour
     {
         if (currentIndex < inputNumberSprite.Count - 1)
         {
+            Debug.Log("choose9");
             inputNumberSprite[currentIndex].sprite = number[8];
             currentIndex++;
         }
+
     }
 }

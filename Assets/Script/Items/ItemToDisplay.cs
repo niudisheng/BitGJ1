@@ -9,12 +9,21 @@ using UnityEngine.EventSystems;
 /// </summary>
 public class ItemToDisplay : NPCInteractor
 {
+    public BoolSO isGot;
     public DoubleSO progress;
     public ObjectEventSO AddTOItemDisplay;
     private void Awake()
     {
-        base.Awake();
-        OnClick += OnInteract1;
+        if (isGot.isDone)
+        {
+            gameObject.SetActive(false);
+        }
+        else
+        {
+            base.Awake();
+            OnClick += OnInteract1;
+        }
+
         
     }
     public override void OnPointerClick(PointerEventData eventData)
@@ -25,6 +34,7 @@ public class ItemToDisplay : NPCInteractor
     {
         AddTOItemDisplay.RaiseEvent(this.itemData,this);
         progress.progress++;
+        isGot.isDone = true;
         Destroy(gameObject);
     }
     

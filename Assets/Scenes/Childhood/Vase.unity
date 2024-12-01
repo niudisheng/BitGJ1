@@ -337,6 +337,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: c0fbf3450183f1f42811db531247f46c, type: 2}
   canInteract: 0
+  isGot: {fileID: 11400000, guid: 613bbd3a273598f47ac4f6c34be33c61, type: 2}
   progress: {fileID: 11400000, guid: ab730793d508b554fbf20418d38d8058, type: 2}
   AddTOItemDisplay: {fileID: 11400000, guid: e16e622b9e0717b43b803c8695e63414, type: 2}
 --- !u!114 &253032073
@@ -629,6 +630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 207ea815d0681364eaa71d8182b34350, type: 2}
   canInteract: 0
+  isGot: {fileID: 11400000, guid: f9251fa356a987143b7a176e5f31170e, type: 2}
   progress: {fileID: 11400000, guid: ab730793d508b554fbf20418d38d8058, type: 2}
   AddTOItemDisplay: {fileID: 11400000, guid: e16e622b9e0717b43b803c8695e63414, type: 2}
 --- !u!114 &1188490375
@@ -1018,6 +1020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: c9a348cf52a1790459df61ffac398897, type: 2}
   canInteract: 0
+  isGot: {fileID: 11400000, guid: 941b86eb29bc6604ba6d25d65224ddfd, type: 2}
   progress: {fileID: 11400000, guid: ab730793d508b554fbf20418d38d8058, type: 2}
   AddTOItemDisplay: {fileID: 11400000, guid: e16e622b9e0717b43b803c8695e63414, type: 2}
 --- !u!1660057539 &9223372036854775807

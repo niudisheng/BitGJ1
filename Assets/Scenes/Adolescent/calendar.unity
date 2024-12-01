@@ -584,6 +584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 85411d31ca916e74ea809195fba43a87, type: 2}
   canInteract: 0
+  isGot: {fileID: 11400000, guid: 3f3ce94cf1757f14d84e59ab41de1fc2, type: 2}
   progress: {fileID: 11400000, guid: fe8f0ba5fdd682f4cbac668f3d8fa33a, type: 2}
   AddTOItemDisplay: {fileID: 11400000, guid: e16e622b9e0717b43b803c8695e63414, type: 2}
 --- !u!60 &2147055584
