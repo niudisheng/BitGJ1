@@ -3,13 +3,13 @@ using UnityEngine;
 
 public class TurnScene : MonoBehaviour
 {
-    [Header("×îÖÕ½á¾Ö")]
+    [Header("æœ€ç»ˆç»“å±€")]
     public DoubleSO child;
     public DoubleSO ado;
     public DoubleSO mid;
     public StartDialog end1;
     public StartDialog end2;
-    [Header("´«ËÍ")]
+    [Header("ä¼ é€")]
     public string childScene;
     public string adoScene;
     public string midScene;

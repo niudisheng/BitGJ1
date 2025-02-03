@@ -26,15 +26,14 @@ public class ItemToDisplay : NPCInteractor
 
         
     }
-    public override void OnPointerClick(PointerEventData eventData)
-    {
-          OnClick?.Invoke();
-    }
+
         public void OnInteract1()
     {
         AddTOItemDisplay.RaiseEvent(this.itemData,this);
         progress.progress++;
         isGot.isDone = true;
+        Debug.Log("OnPointerClick");
+        Bag.instance.AddBagItems(itemData);
         Destroy(gameObject);
     }
     

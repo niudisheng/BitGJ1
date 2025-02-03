@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fe9dcd18ef38634d88d85ed1665eb62, type: 3}
-  m_Name: hoodle
+  m_Name: hoodle2
   m_EditorClassIdentifier: 
   chapterData: {fileID: 11400000, guid: fff9beff69d93aa448849c246e6eb0c6, type: 2}
-  itemName: hoodle
+  itemName: hoodle2
   itemImage: {fileID: 21300000, guid: 6604b66d98ad5c84b9e71872e6e68358, type: 3}
   itemCounter: 0
   introduction: 

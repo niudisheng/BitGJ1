@@ -10,6 +10,7 @@ public class UIManager : MonoBehaviour
     public List<GameObject> uiList;
     Dictionary<UIType,GameObject> uiDictionary=new();
     public GameObject trans;
+    public GameObject bag;
     static public UIManager instance;
     private void Awake()
     {
@@ -34,6 +35,15 @@ public class UIManager : MonoBehaviour
             HideAllUI();
         }
     }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            bag.SetActive(true);
+        }
+    }
+
     public void ShowAllUI()
     {
         setUIActive(UIType.All,true);
@@ -62,11 +72,11 @@ public class UIManager : MonoBehaviour
         ui.SetActive(active);
     }
 
-    public void OnChangeDescription(object obj)
-    {
-        string description = (string)obj;
-        Text text = uiDictionary[UIType.descption].GetComponentInChildren<Text>();
-        text.text = description;
-        
-    }
+    //public void OnChangeDescription(object obj)
+    //{
+    //    string description = (string)obj;
+    //    Text text = uiDictionary[UIType.descption].GetComponentInChildren<Text>();
+    //    text.text = description;
+    //    
+    //}
 }

@@ -9,10 +9,6 @@ public class Envelop : NPCInteractor
     {
         OnClick += GoDestroy;
     }
-    public override void OnPointerClick(PointerEventData eventData)
-    {
-            OnClick?.Invoke();
-    }
     public void GoDestroy()
     {
         Destroy(gameObject);

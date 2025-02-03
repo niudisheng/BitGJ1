@@ -39,6 +39,7 @@ public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public virtual void OnPointerClick(PointerEventData eventData)
     {
+
         OnClick?.Invoke();
     }
 

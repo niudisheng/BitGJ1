@@ -16,10 +16,7 @@ public class ItemChangeSpriteWithoutPlayer : NPCInteractor
         OnClick += OnInteract1;
 
     }
-    public override void OnPointerClick(PointerEventData eventData)
-    {
-        OnClick?.Invoke();
-    }
+
     public virtual void OnInteract1()
     {
         itemData.isCompleted = true;

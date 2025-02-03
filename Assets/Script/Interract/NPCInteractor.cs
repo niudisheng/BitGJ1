@@ -27,15 +27,6 @@ public class NPCInteractor : BaseItem
     //            }
     //        }
     //}
-    public override void OnPointerClick(PointerEventData eventData)
-    {
-        if (canInteract)
-        {
-            Debug.Log("点击了NPC");
-            OnClick?.Invoke();
-        }
-
-    }
     //检测玩家
     private void OnTriggerStay2D(Collider2D collision)
     {

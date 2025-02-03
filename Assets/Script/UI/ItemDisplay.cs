@@ -19,8 +19,10 @@ public class ItemDisplay : MonoBehaviour
     
     public void AddItem(object itemData1)
     {
+        Debug.Log("hi");
         ItemSO itemData = itemData1 as ItemSO;
         Debug.Log("Adding item: " + itemData.name);
+        Bag.instance.AddBagItems(itemData);
         items.Add(itemData);
         int index = items.Count-1;
         GameObject item = Instantiate(itemPrefab, transform);

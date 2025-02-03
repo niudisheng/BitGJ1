@@ -30,10 +30,7 @@ public class Envelops : ItemToDescption
             progress.progress++;
         }
     }
-    public override void OnPointerClick(PointerEventData eventData)
-    {
-          OnClick?.Invoke();
-    }
+
     public override void OnPointerExit(PointerEventData eventData)
     {
         base.OnPointerExit(eventData);

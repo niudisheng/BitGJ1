@@ -47,10 +47,6 @@ public class NumberItem : NPCInteractor
             OnClick += OnInteract9;
         }
     }
-    public override void OnPointerClick(PointerEventData eventData)
-    {
-        OnClick?.Invoke();
-    }
     public virtual void OnInteract1()
     {
         Password.PasswordInput1();

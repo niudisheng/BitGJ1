@@ -33,5 +33,6 @@ public enum UIType
     descption=1,
     Dialog=2,
     PauseMenu=3,
+    Bag=5,
 }
 
