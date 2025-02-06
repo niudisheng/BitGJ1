@@ -230,6 +230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   endPos: {x: 20.4, y: 2.8, z: 0}
   startPos: {x: 6.9119987, y: 4.2799997, z: 0}
+  RotateVector: {x: 0, y: 0, z: 0}
 --- !u!212 &6448917381501982636
 SpriteRenderer:
   m_ObjectHideFlags: 0

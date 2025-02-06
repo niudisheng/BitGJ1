@@ -8,6 +8,7 @@ public class DragItem : MonoBehaviour,IBeginDragHandler, IDragHandler, IEndDragH
 {
     public Sprite icon;
     public bool isDragging = false;
+    public Vector3 offSetPos;
     public Vector2 startPos;
     private Vector2 endPos;
     private DragContainer dragContainer;
@@ -28,7 +29,7 @@ public class DragItem : MonoBehaviour,IBeginDragHandler, IDragHandler, IEndDragH
         //非攻击卡拖拽
         Vector3 screenPos=new(Input.mousePosition.x,Input.mousePosition.y,10);
         Vector3 worldPos=Camera.main.ScreenToWorldPoint(screenPos);
-        this.transform.position = worldPos;
+        this.transform.position = worldPos - offSetPos;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -46,7 +47,7 @@ public class DragItem : MonoBehaviour,IBeginDragHandler, IDragHandler, IEndDragH
         {
             Debug.Log("拖拽成功");
             collider.enabled = false;
-            transform.position = dragContainer.startPos;
+            transform.position = dragContainer.endPos;
             return;
         }
         this.transform.position = startPos;
@@ -69,7 +70,7 @@ public class DragItem : MonoBehaviour,IBeginDragHandler, IDragHandler, IEndDragH
     private bool CheckCollision()
     {
         //pointA为起点，pointB为终点，连成四边形
-        float Offset = 10f;
+        float Offset = 0.5f;
         /*
         var hits = Physics2D.OverlapAreaAll(new Vector2(endPos.x - Offset,endPos.y - Offset), new Vector2(endPos.x + Offset, endPos.y + Offset));
         foreach (var hit in hits)
@@ -82,7 +83,7 @@ public class DragItem : MonoBehaviour,IBeginDragHandler, IDragHandler, IEndDragH
                 return true;
             }
         }*/
-        Vector2 relativePos = this.transform.position - dragContainer.startPos;
+        Vector2 relativePos = this.transform.position - dragContainer.endPos;
             
         if (relativePos.magnitude < Offset)
         {
