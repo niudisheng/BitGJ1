@@ -11,6 +11,7 @@ public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public UnityAction OnClick;
     public ItemSO itemData;
     protected Vector3 originalScale;
+    public float distance;
     protected virtual void Awake()
     {
         collider = GetComponent<Collider2D>();
@@ -27,8 +28,10 @@ public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public virtual void OnPointerEnter(PointerEventData eventData)
     {
-        this.transform.localScale = originalScale* 1.2f;
-        
+        if (Mathf.Abs(this.transform.position.x - NewPlayer.instance.transform.position.x)<distance)
+        {
+            this.transform.localScale = originalScale* 1.2f; 
+        }
     }
 
     public virtual void OnPointerExit(PointerEventData eventData)
@@ -39,8 +42,17 @@ public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public virtual void OnPointerClick(PointerEventData eventData)
     {
+        if (Mathf.Abs(this.transform.position.x - NewPlayer.instance.transform.position.x)<distance)
+        {
+            OnClick?.Invoke();
+        } 
 
-        OnClick?.Invoke();
     }
 
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        // 绘制从起点到终点的线
+        Gizmos.DrawLine(transform.position - Vector3.right * distance, transform.position + Vector3.right * distance); 
+    }
 }

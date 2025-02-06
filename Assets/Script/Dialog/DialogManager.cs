@@ -113,10 +113,7 @@ public class DialogManager : MonoBehaviour
     public void OnClickNext()
     {
         {
-            if (isPause)
-            {
-                Time.timeScale = 0;
-            }
+            Time.timeScale = 0;
             ShowDialogRow();
         }
     }

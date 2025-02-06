@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 
 public class NewPlayer : CharacterBase
 {
-    
+    public static NewPlayer instance;
     public float speed = 5f;
     [Header("移动相关")]
     public bool isClick = false;
@@ -15,6 +15,7 @@ public class NewPlayer : CharacterBase
     public Rigidbody2D rb;
     private void Start()
     {
+        instance = this;
         stateMachine = new PlayerStateMachine();
         stateMachine.Initialize(this,new IdleState(this,stateMachine));
         rb = this.transform.GetComponent<Rigidbody2D>();

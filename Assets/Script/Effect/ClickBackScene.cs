@@ -14,6 +14,8 @@ public class ClickBackScene : MonoBehaviour
             SceneManager.LoadSceneAsync(backSceneName, LoadSceneMode.Additive).completed += (op) =>
             {
                 SceneManager.SetActiveScene(SceneManager.GetSceneByName(backSceneName));
+                NewPlayer.instance.GetComponent<Transform>().position = SceneLoadManager.instance.position;
+                NewPlayer.instance.gameObject.SetActive(true);
             };
         }
     }

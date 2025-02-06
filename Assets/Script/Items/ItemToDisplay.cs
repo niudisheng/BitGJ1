@@ -36,5 +36,8 @@ public class ItemToDisplay : NPCInteractor
         Bag.instance.AddBagItems(itemData);
         Destroy(gameObject);
     }
-    
+    public override void OnPointerClick(PointerEventData eventData)
+    {
+        OnClick?.Invoke();
+    } 
 }

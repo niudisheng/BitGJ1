@@ -16,4 +16,8 @@ public class ItemToDescptionWithoutPlayer : ItemToDescption
             progress.progress++;
         }
     }
+    public override void OnPointerClick(PointerEventData eventData)
+    {
+        OnClick?.Invoke();
+    }
 }

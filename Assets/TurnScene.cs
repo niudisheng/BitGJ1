@@ -47,6 +47,6 @@ public class TurnScene : MonoBehaviour
     public void GoNextScene(string sceneName)
     {
         GoNextSceneEvent.RaiseEvent(sceneName,this);
-        
+        NewPlayer.instance.gameObject.transform.position = new Vector3(-5,1.3f,0);
     }
 }

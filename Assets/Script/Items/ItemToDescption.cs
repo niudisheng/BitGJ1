@@ -21,9 +21,6 @@ public class ItemToDescption : NPCInteractor
         
         OnClick += OnInteract1;
         
-    }
-    private void Update()
-    {   
         
     }
     public virtual void OnInteract1()

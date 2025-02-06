@@ -34,6 +34,7 @@ public class Menu : MonoBehaviour
         //};
         gameObject.SetActive(true);
         startGame.RaiseEvent(null, this);
+        SceneLoadManager.instance.LoadPlayer();
     }
     
     [ContextMenu("TestLoadGame")]

@@ -8,6 +8,15 @@ using UnityEngine.SceneManagement;
 public class SceneLoadManager : MonoBehaviour
 {
     static public bool isready = false;
+    public GameObject player;
+    public Vector3 position;
+    public static SceneLoadManager instance;
+    private void Start()
+    {
+        instance = this;
+
+    }
+
     static public string CurrentSceneName
     {
         get { return SceneManager.GetActiveScene().name; }
@@ -18,18 +27,20 @@ public class SceneLoadManager : MonoBehaviour
     public void LoadScene()
     {
         LoadScene(CurrentSceneName);
-    }
 
+    }
+    
     static public void LoadScene(string sceneName)
     {
-        
+
         Trans.SetActive(true);
-        
         DelayedAction.instance.StartDelayedAction(0.5f, delegate()
         {
             UnloadScene();
             SceneManager.LoadSceneAsync(sceneName,LoadSceneMode.Additive).completed += (op) =>
             {
+                Debug.Log("Scene Loaded");
+
                 SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName));
             };
         });
@@ -63,4 +74,9 @@ public class SceneLoadManager : MonoBehaviour
         SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void LoadPlayer()
+    {
+        GameObject P = Instantiate(player, new Vector3(-5,1.3f,0), Quaternion.identity);
+        SceneManager.MoveGameObjectToScene(P, SceneManager.GetSceneByName("permanent"));
+    }
 }

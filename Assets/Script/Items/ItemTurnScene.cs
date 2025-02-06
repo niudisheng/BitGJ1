@@ -46,13 +46,16 @@ public class ItemTurnScene : NPCInteractor
         }
         else
         {
+            NewPlayer.instance.isClick = false;
+            NewPlayer.instance.gameObject.SetActive(false);
             //TODO:应该也需要调用描述
+            SceneLoadManager.instance.position = NewPlayer.instance.GetComponent<Transform>().position;
             SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
             SceneManager.LoadSceneAsync(sceneName1, LoadSceneMode.Additive).completed += (op) =>
             {
                 SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName1));
             };
-            Debug.Log("trun");
+            Debug.Log("trun1");
         }
     }
     public void OnInteract2()
@@ -65,11 +68,12 @@ public class ItemTurnScene : NPCInteractor
         {
             //TODO:应该也需要调用描述
             SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+           
             SceneManager.LoadSceneAsync(sceneName2, LoadSceneMode.Additive).completed += (op) =>
             {
                 SceneManager.SetActiveScene(SceneManager.GetSceneByName(sceneName2));
             };
-           Debug.Log("trun");
+           Debug.Log("trun2");
         }
     }
     public void ItemToTurnScene()

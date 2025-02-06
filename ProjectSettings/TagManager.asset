@@ -10,7 +10,6 @@ TagManager:
   - NPC
   - Item2Show
   - ItemInter
-  - Bullet
   - DialogManager
   layers:
   - Default
@@ -19,12 +18,12 @@ TagManager:
   - 
   - Water
   - UI
-  - MiniMap
+  - 
   - Player
-  - Enemy
+  - 
   - Ground
   - Wall
-  - Bullet
+  - 
   - NPC
   - Container
   - 
