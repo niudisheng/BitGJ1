@@ -76,7 +76,7 @@ public class SceneLoadManager : MonoBehaviour
 
     public void LoadPlayer()
     {
-        GameObject P = Instantiate(player, new Vector3(-5,1.3f,0), Quaternion.identity);
+        GameObject P = Instantiate(player, new Vector3(-1.3f,1.4f,0), Quaternion.identity);
         SceneManager.MoveGameObjectToScene(P, SceneManager.GetSceneByName("permanent"));
     }
 }
