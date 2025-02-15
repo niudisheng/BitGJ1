@@ -32,7 +32,7 @@ public class ItemDisplay : MonoBehaviour
         
     }
 
-    public void CheckItem(object itemData1)
+    public virtual void UseItem()
     {
         
     }

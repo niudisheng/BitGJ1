@@ -79,4 +79,8 @@ public class UIManager : MonoBehaviour
     //    text.text = description;
     //    
     //}
+    public void CannotUse()
+    {
+        uiList[4].SetActive(true);
+    }
 }

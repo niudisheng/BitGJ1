@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
+
 /// <summary>
 /// 点击某个格子切换状态（左到右）
 /// </summary>
@@ -18,7 +20,13 @@ public class ItemChangeSprite : NPCInteractor
         OnClick += OnInteract1;
         
     }
-
+    public override void OnPointerEnter(PointerEventData eventData)
+    {
+        if (Mathf.Abs(this.transform.position.x - NewPlayer.instance.transform.position.x-offSet)<distance&&currentIndex != sprites.Count-1)
+        {
+            this.transform.localScale = originalScale* 1.2f; 
+        }
+    }
     public virtual void OnInteract1()
     {
         itemData.isCompleted = true;

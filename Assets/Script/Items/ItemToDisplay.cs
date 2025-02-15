@@ -33,11 +33,16 @@ public class ItemToDisplay : NPCInteractor
         progress.progress++;
         isGot.isDone = true;
         Debug.Log("OnPointerClick");
-        Bag.instance.AddBagItems(itemData);
-        Destroy(gameObject);
+        Bag.instance.AddBagItems(itemData,this);
+        gameObject.SetActive(false);
     }
     public override void OnPointerClick(PointerEventData eventData)
     {
         OnClick?.Invoke();
-    } 
+    }
+
+    public virtual void UseItem()
+    {
+        UIManager.instance.CannotUse();
+    }
 }

@@ -7,6 +7,8 @@ using UnityEngine.EventSystems;
 
 public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,IPointerClickHandler
 {
+    public UnityEvent afterOnPointerHandler;
+    public float offSet;
     private Collider2D collider;
     public UnityAction OnClick;
     public ItemSO itemData;
@@ -15,7 +17,7 @@ public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     protected virtual void Awake()
     {
         collider = GetComponent<Collider2D>();
-        itemData.InitItem(this.gameObject.name,this.GetComponent<SpriteRenderer>().sprite);
+        itemData.InitItem();
     }
 
     private void Start()
@@ -28,7 +30,7 @@ public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public virtual void OnPointerEnter(PointerEventData eventData)
     {
-        if (Mathf.Abs(this.transform.position.x - NewPlayer.instance.transform.position.x)<distance)
+        if (Mathf.Abs(this.transform.position.x - NewPlayer.instance.transform.position.x-offSet)<distance)
         {
             this.transform.localScale = originalScale* 1.2f; 
         }
@@ -42,9 +44,10 @@ public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public virtual void OnPointerClick(PointerEventData eventData)
     {
-        if (Mathf.Abs(this.transform.position.x - NewPlayer.instance.transform.position.x)<distance)
+        if (Mathf.Abs(this.transform.position.x - NewPlayer.instance.transform.position.x-offSet)<distance)
         {
             OnClick?.Invoke();
+            afterOnPointerHandler?.Invoke();
         } 
 
     }
@@ -53,6 +56,6 @@ public class BaseItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         Gizmos.color = Color.red;
         // 绘制从起点到终点的线
-        Gizmos.DrawLine(transform.position - Vector3.right * distance, transform.position + Vector3.right * distance); 
+        Gizmos.DrawLine(transform.position - Vector3.right * distance-new Vector3(offSet,0,0), transform.position + Vector3.right * distance-new Vector3(offSet,0,0)); 
     }
 }

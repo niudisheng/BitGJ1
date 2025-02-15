@@ -14,12 +14,8 @@ public class ItemSO : ScriptableObject
     public bool isUnlocked=true;
     public bool isCompleted=false;
 
-    public void InitItem(string name, Sprite image)
+    public void InitItem()
     {
-            itemImage = image;
             chapterData.AddNpc(this);
-            itemName = name;
-            this.name = name;
-
     }
 }
